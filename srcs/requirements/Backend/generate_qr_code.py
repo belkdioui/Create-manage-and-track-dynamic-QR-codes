@@ -1,6 +1,5 @@
 import qrcode
 
-# Function to generate QR code based on ID
 def generate_qr_code_from_id(user_id, file_path):
     data_to_encode = f"ID: {user_id}"  # Using the ID in the QR code data
     qr = qrcode.QRCode(
