@@ -1,0 +1,174 @@
+    /* GLOBAL CSS START */
+    *,
+    *:before,
+    *:after {
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+    /* GLOBAL CSS END */
+
+    .main-div {
+      width: 90%;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid rgb(161, 148, 148);
+      box-shadow: 10px 5px 10px rgb(128, 123, 123);
+    }
+
+    /* Input field text, email and select classes START */
+    input,
+    textarea {
+      font-family: inherit;
+      font-size: inherit;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select {
+      margin: 8px;
+      padding: 5px;
+      box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+      border: solid 1px;
+      border-radius: 4px;
+    }
+
+    select {
+      padding: 10px;
+      width: 46%;
+    }
+    /* Input field text, email and select classes END */
+
+    /* Row and Col classes START */
+    .row {
+      padding: 10px;
+      width: 100%;
+      display: flex;
+    }
+    .col {
+      width: 45%;
+    }
+    .col .control-label {
+      display: inline-flex;
+      font-weight: 600;
+      width: 25%;
+    }
+
+    .col .control-label::after {
+      content: ":";
+    }
+    /* Row and Col classes END */
+
+    /* Custom Radio Button Classes START */
+    .radio-control {
+      position: relative;
+      padding-left: 6%;
+      cursor: pointer;
+    }
+
+    .radio-control input {
+      opacity: 0;
+    }
+    .radio-control span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 20px;
+      width: 20px;
+      background-color: #eee;
+      border-radius: 50%;
+      border: 1px solid gray;
+    }
+
+    .radio-control input:checked + span {
+      background-color: #2196f3;
+    }
+
+    .radio-control span:after {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: white;
+      display: none;
+    }
+
+    .radio-control input:checked + span::after {
+      display: block;
+    }
+    /*Custom Radio Button Classes END*/
+
+    /*Custom Checkbox Classes START */
+
+    .control-checkbox {
+      position: relative;
+      padding-left: 6%;
+      cursor: pointer;
+    }
+    .control-checkbox input {
+      opacity: 0;
+    }
+    .control-checkbox span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 20px;
+      width: 20px;
+      background-color: #eee;
+      border: 1px solid gray;
+    }
+
+    .control-checkbox input:checked + span {
+      background-color: #2196f3;
+    }
+    .control-checkbox span::after {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 6px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      transform: rotate(45deg);
+      display: none;
+    }
+    .control-checkbox input:checked + span:after {
+      display: block;
+    }
+    /*Custom Checkbox Classes END */
+
+    /* Button CSS START */
+
+    input[type="submit"],
+    input[type="button"] {
+      padding: 10px;
+      background-color: #4caf50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 17px;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    input[type="button"] {
+      background-color: rgb(182, 174, 174);
+    }
+    /* Button CSS END */
+
+    /* Field Control CSS START for validation START */
+
+    .field-control {
+      display: inline-grid;
+    }
+    .field-control span {
+      font-size: 12px;
+      margin-left: 8px;
+      color: red;
+    }
