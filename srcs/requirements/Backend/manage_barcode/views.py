@@ -9,3 +9,6 @@ def submit_form(request):
         FormData.objects.create(name=name, email=email)
         return JsonResponse({'message': 'Data saved successfully'})
     return render(request, 'index.html')
+
+def index(request):
+    return render(request, 'index.html')
