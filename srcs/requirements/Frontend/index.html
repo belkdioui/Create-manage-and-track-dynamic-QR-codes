@@ -6,6 +6,7 @@
 </head>
 <body>
     <form id="dataForm" action="/submit/" method="POST">
+         {% csrf_token %}
         <label for="name">Name:</label>
         <input type="text" id="name" name="name"><br>
         <label for="email">Email:</label>
