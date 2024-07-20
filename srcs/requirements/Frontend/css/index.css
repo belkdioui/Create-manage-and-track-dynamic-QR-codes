@@ -1,3 +1,126 @@
 body{
-  background-color: bisque;
+  background-color: #535561;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.container{
+  max-width: none;
+  height: 90vh;
+  width: 90vw;
+  background-color: #282A37;
+  border-radius: 50px;
+  background-image: linear-gradient(to right, rgba(40, 42, 55, 1) 0% , rgba(40, 42, 55, 1) 50%, rgba(40, 42, 55, 0.80) 100%), 
+                    url("../images/chuttersnap-kq8iWoh5-mU-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.beff-form{
+  width: 60%;
+  margin-top: 2%;
+  margin-left: 5%;
+
+}
+
+.text-create{
+  font-weight: bold;
+  color: #FFFFFF;
+  font-size: 4vw ;
+}
+
+.text-already{
+  color: #9AA5B4;
+  font-size: 1vw;
+}
+.link-login{
+  color: #EF552D;
+}
+.link-login:visited {
+  color: #EF552D;
+}
+
+.point_1{
+  color: #EF552D;
+}
+
+.input-item{
+  position: relative;
+}
+
+.icon-input{
+  position: absolute;
+  color: #A8ACB0;
+  right: 0;
+  top: 0;
+  background-color: transparent;
+  border: none;
+  margin: 10px;
+  font-size: 1.5vw;
+}
+.bi{
+    position: absolute;
+    color: #A8ACB0;
+    right: 0;
+    top: 0;
+    background-color: transparent;
+    border: none;
+    margin: 10px;
+    align-content: center;
+    font-size: 1.5vw;
+}
+
+label{
+  color: #6C6E79;
+}
+
+
+.form-floating input:focus{
+  padding-right: 36px !important;
+  background-color: #323644;
+  color: #FFFFFF;
+  outline: none !important;
+  border-color: #EF552D;
+  box-shadow: 0 0 10px #EF552D;
+}
+
+.form-floating input{
+  padding-right: 36px !important;
+  background-color: #323644;
+  border-radius: 15px;
+  color: #FFFFFF;
+}
+.Logo-name{
+  margin-left: 15%;
+  color: #FFFFFF;
+  font-size: 25px;
+  font-family: cursive;
+}
+
+.d-inline-block{
+  width: 60px;
+  height: 60px;
+}
+
+.navbar {
+  padding-top: 4%;
+  padding-left: 4%;
+}
+
+.div_form{
+  width: 50%;
+  /* padding: 3%; */
+  margin: 3% 0px 0px 5% !important;
+}
+
+
+
+@media (min-width: 768px) {
+
 }
