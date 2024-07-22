@@ -1,0 +1,79 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+
+{% block header_content %}
+    <link rel="stylesheet" type="text/css" href="{% static 'auth/css/signup.css' %}">
+{% endblock header_content %}
+
+
+{% block body_content %}
+<div class="beff-form">
+    <span class="text-create">
+        Create new account<span class="point_1"> .</span>
+    </span>
+    <p class="text-already">
+      Already A Member? 
+      <a href="/" class="link-login">Log In</a>
+    </p>
+</div>
+  <div class="div_form">
+      
+      <form id="dataForm" action="/submit/" method="POST">
+          {% csrf_token %}
+          <div class="row mb-3">
+              <div class="col input-group input-item">
+                <div class="form-floating flex-grow-1">
+                  <input type="text" class="form-control" placeholder="First name" required>
+                  <label for="fname">First name</label>
+                </div>
+                <span class="input-group-text icon-input"><i class="bi bi-person-vcard-fill"></i></span>
+              </div>
+              <div class="col input-group input-item">
+                <div class="form-floating flex-grow-1">
+                  <input type="text" class="form-control" placeholder="Last name" required>
+                  <label for="lname">Last name</label>
+                </div>
+                <span class="input-group-text icon-input"><i class="bi bi-person-vcard-fill"></i></span>
+              </div>
+            </div>
+          <div class="input-group mb-3">
+              <div class="form-floating flex-grow-1">
+                  <input type="email" class="form-control" name="Email" placeholder="Email" required>
+                  <label for="Email">Email</label>
+              </div>
+              <span class="input-group-text icon-input"><i class="bi bi-envelope-at-fill"></i></span>
+            </div>
+            <div class="input-group mb-3">
+              <div class="form-floating flex-grow-1">
+                  <input type="text" class="form-control" name="Phone_Number" placeholder="Phone_Number" required>
+                  <label for="Phone_Number">Phone Number</label>
+              </div>
+              <span class="input-group-text icon-input"><i class="bi bi-telephone-fill"></i></span>
+            </div>
+            <div class="input-group mb-3">
+              <div class="form-floating flex-grow-1">
+                  <input type="password" class="form-control" id="Password" name="Password" placeholder="Password" required>
+                  <label for="Password">Password</label>
+              </div>
+              <span class="input-group-text icon-input">
+                  <a onclick="togglePasswordVisibility()"><i class="bi bi-eye-fill" id="toggle-icon"></i></a>
+              </span>
+          </div>
+          <div class="input-group mb-1">
+            <div class="form-floating flex-grow-1">
+                <input type="password" class="form-control" name="conf_pass" placeholder="conf_pass" required>
+                <label for="conf_pass">Confirm Password</label>
+            </div>
+          </div>
+          <br>
+          <button type="submit" class="btn btn-primary">Sign up</button>
+      <!-- <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br>
+      <input type="submit" value="Submit"> -->
+      </form>
+  </div>
+  <script src="{% static 'auth/js/index.js' %}"></script>
+{% endblock body_content %}

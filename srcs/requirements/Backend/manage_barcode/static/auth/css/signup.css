@@ -1,0 +1,131 @@
+.beff-form{
+    width: 80%;
+    margin-top: 2%;
+    margin-left: 10%;
+  
+  }
+  
+  
+  
+  .text-create{
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 3rem ;
+    
+  }
+  
+  .text-already{
+    color: #9AA5B4;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+  }
+  .link-login{
+    color: #EF552D;
+  }
+  .link-login:visited {
+    color: #EF552D;
+  }
+  
+  .point_1{
+    color: #EF552D;
+  }
+  
+  .input-item{
+    position: relative;
+  }
+  
+  .icon-input{
+    position: absolute;
+    color: #A8ACB0;
+    right: 0;
+    top: 0;
+    background-color: transparent;
+    border: none;
+    margin: 10px;
+    font-size: 1.1vw;
+  }
+  .bi{
+      position: absolute;
+      margin-right: 50%;
+      color: #A8ACB0;
+      right: 0;
+      top: 0;
+      background-color: transparent;
+      border: none;
+      align-content: center;
+      font-size: 1.6rem;
+  }
+  
+  label{
+    color: #6C6E79;
+  }
+  
+  .btn-primary,
+  .btn-primary:visited,
+  .btn-primary:active,
+  .btn-primary:focus,
+  .btn-primary:focus-visible,
+  .btn-primary:focus-within{
+    background-color:#EF552D;
+    border-color: #EF552D;
+    width: 12rem;
+    height: 4rem;
+    border-radius: 20px;
+    color:  #FFFFFF;
+  
+  }
+  
+  .btn-primary:hover{
+    box-shadow: 0 0 10px #EF552D;
+    background-color: #323644;
+    border-color: #EF552D;
+  
+  
+  }
+  
+
+  
+  .form-floating input:focus{
+    padding-right: 36px !important;
+    background-color: #323644;
+    color: #FFFFFF;
+    outline: none !important;
+    border-color: #EF552D;
+    box-shadow: 0 0 10px #EF552D;
+  }
+  
+  .form-floating input{
+    padding-right: 36px !important;
+    min-width: 150px;
+    background-color: #323644;
+    border-radius: 15px;
+    color: #FFFFFF;
+  }
+
+  .div_form{
+    max-width: 450px;
+    margin: 3% 0px 0px 10% !important;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .bi{
+        font-size: 1.5rem;
+    }
+  
+    .div_form{
+      width: 90%;
+      margin: auto !important;
+    }
+  
+    .text-create{
+      font-size: 1.5rem ;
+    }
+  
+    .row{
+      gap: 1rem;
+    }
+    .text-already{
+      font-size: 1.0rem;
+    }
+  }

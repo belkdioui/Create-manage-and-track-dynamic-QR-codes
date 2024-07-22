@@ -1,0 +1,154 @@
+.header1
+{
+	color: rgb(249, 245, 245);
+	font-size: 50px;
+	font-family: ui-serif;
+	text-align: center;
+	max-width: 90%;
+	height: auto;
+	width: auto;
+	margin: auto;
+	margin-bottom: 20px;
+}
+#motlform
+{
+	width: 100%;
+	height: 100%;
+	margin:auto;
+}
+
+.form1
+{
+	display: flex;
+	flex-direction:column;
+	height: auto;
+	width: auto;
+	gap: 30px;
+	margin: auto;
+	max-width: 500px;
+
+}
+
+.login-data0
+{
+	height: auto;
+	width: auto;
+	margin: auto;
+	margin-top: 10%;
+}
+#email,#password
+{
+	color: aliceblue;
+	background-color: #323644;
+	width: 100%;
+	height: 60px;
+	border: 2px solid #525561;
+	border-radius: 15px;
+	padding-left: 20px;
+}
+.signref
+{
+	width: 100%;
+	height: 100%;
+}
+.signs
+{
+	display: flex;
+	flex-direction: row;
+	gap:20px;
+	width: 100%;
+	height: 100%;
+}
+input:focus
+{
+	border-color: #ef542c !important;
+	outline: none;
+}
+#signin,#signup
+{
+	color: white;
+	border-radius: 15px;
+	width: 100%;
+	height: auto;
+	min-height: 50px;
+	max-height: 70px;
+	border: 2px solid #525561;
+	
+}
+
+.lmail
+{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+.l3inin
+{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+.bi-eye
+{
+	cursor: pointer;
+}
+
+.bi
+{
+	right:10px;
+	top:50%;
+	position: absolute;
+	transform: translateY(-50%);
+	margin: auto;
+}
+
+.bi::before {
+	color: #fff;
+}
+#signin:hover
+{
+	background-color: #b23f22;
+}
+#signup:hover
+{
+	background-color: #161922;
+}
+#signin
+{
+	background-color: #ef542c;
+}
+#signup
+{
+	background-color: #2a2d38;
+}
+.f-pass:hover
+{
+	color: #ef542c;
+
+}
+.f-pass
+{
+	margin: 0;
+	padding-left: 10px;
+	font-size: 18px;
+	color: white;
+	cursor: pointer;
+	width: 150px;
+}
+
+@media only screen and (max-width: 760px) {
+	.login-data0
+	{
+		margin: 5%;
+		margin-top: 20%;
+	}
+	.f-pass
+	{
+		width: 50%;
+	}
+	.form1
+	{
+		gap:30px;
+		max-width:300px;
+	}
+  }

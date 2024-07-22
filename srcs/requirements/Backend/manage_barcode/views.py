@@ -11,4 +11,6 @@ def submit_form(request):
     return render(request, 'index.html')
 
 def index(request):
-    return render(request, 'index.html')
+    return render(request, 'auth/login.html')
+def signup(request):
+    return render(request, 'auth/signup.html')

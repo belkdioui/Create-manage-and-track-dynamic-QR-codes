@@ -1,0 +1,62 @@
+body
+{
+  background-color: #535561;
+  min-height: 100dvh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #282A37;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(to right, rgba(40, 42, 55, 1) 0% , rgba(40, 42, 55, 1) 50%, rgba(40, 42, 55, 0.80) 100%), 
+                    url("../images/chuttersnap-kq8iWoh5-mU-unsplash.jpg");
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.container{
+  max-width: none;
+  margin: 0 auto;
+  min-height: 100dvh;
+  height: 100%;
+  width: 100%; 
+  padding: 0px 10px 30px;
+  position: relative;
+}
+
+.point_1{
+  color: #EF552D;
+}
+
+.navbar-brand{
+  display: flex;
+  align-items: center;
+
+}
+
+.Logo-name{
+  margin-left: 2%;
+  color: #FFFFFF;
+  font-size: 2rem;
+  font-family: cursive;
+}
+
+.d-inline-block{
+  width: 6%;
+  height: auto;
+  min-width: 60px;
+}
+
+.navbar {
+  padding-top: 4%;
+  padding-left: 10%;
+}
+
+.logo-big{
+  position: absolute;
+  width: clamp(20px, 30%, 300px);
+  height: auto;
+  bottom: 0;
+  right: 0;
+}
