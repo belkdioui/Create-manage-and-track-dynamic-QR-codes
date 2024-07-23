@@ -23,8 +23,10 @@ def check_errors(type, data):
             errors["err_pass"]="password should contain at least 8 characters"
         if not re.match(data["password"], data["cpassword"]):
             errors["err_pass_c"]="password doesn't match confirm password"
-        email_exists = FormData.objects.filter(email=data["email"]).exists()
-        if email_exists:
-            errors["err_email_ex"] = "email already exist"
+        try:
+            FormData.objects.get(email=data["email"])
+            errors["err_email_ex"] = "email already exists"
+        except FormData.DoesNotExist:
+            pass
 
     return errors
