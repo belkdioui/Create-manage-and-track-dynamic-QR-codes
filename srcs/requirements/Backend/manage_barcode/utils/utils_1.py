@@ -1,4 +1,7 @@
 import re
+from django.core.exceptions import ObjectDoesNotExist
+from manage_barcode.models import FormData
+
 
 def check_errors(type, data):
     EMAIL_REGEX = r"(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)"
@@ -16,16 +19,12 @@ def check_errors(type, data):
             errors["err_email"]="email invalid "
         if not re.match(PHONE_REGEX, data["tel"]):
             errors["err_tel"]="Phone Number invalid "
+        if not re.match("^.{8,}$" , data["password"]):
+            errors["err_pass"]="password should contain at least 8 characters"
+        if not re.match(data["password"], data["cpassword"]):
+            errors["err_pass_c"]="password doesn't match confirm password"
+        email_exists = FormData.objects.filter(email=data["email"]).exists()
+        if email_exists:
+            errors["err_email_ex"] = "email already exist"
+
     return errors
-    # def check_register(data):
-    #     def check_if_emaail_is_valdi(email):
-    #         pass
-    
-    # def check_login(data):
-    #     pass
-
-
-    # if type == "register":
-    #     check_register(data)
-    # elif type == "login":
-    #     check_login(data)
