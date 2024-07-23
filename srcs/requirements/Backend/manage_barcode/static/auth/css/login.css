@@ -36,6 +36,16 @@
 	margin: auto;
 	margin-top: 10%;
 }
+#pass-text
+{
+	color: red;
+	margin: 0;
+
+}
+.wrong_pass
+{
+	margin: 0;
+}
 #email,#password
 {
 	color: aliceblue;
@@ -124,16 +134,16 @@ input:focus
 .f-pass:hover
 {
 	color: #ef542c;
-
 }
 .f-pass
 {
+	text-decoration: none;
 	margin: 0;
 	padding-left: 10px;
 	font-size: 18px;
 	color: white;
 	cursor: pointer;
-	width: 150px;
+	width: fit-content;
 }
 
 @media only screen and (max-width: 760px) {

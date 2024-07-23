@@ -12,9 +12,9 @@
 {% block body_content %}
 			<div class="login-data0">
 				<h1 class='header1'>Login</h1>
-				<form action="" method="post" id="motlform">
+				<form action="/" method="POST" id="motlform">
+					{% csrf_token %}
 					<div class="form1">
-						{% comment %} {% csrf_token %} {% endcomment %}
 						<div class="l3inin">
 							<i class="bi bi-envelope-at"></i>
 							<input type="email" placeholder="Email" name="email" id="email" required>
@@ -23,9 +23,14 @@
 							<i onclick='show_password()' class="bi bi-eye" id='logo-eyes'></i>
 							<input type="password" placeholder="password" name="password" id="password" required />
 						</div>
-						<a class='f-pass'>forgot password</a>
+						{% if pass %}
+							<div class="wrong_pass">
+								<p id='pass-text'>Incorrect password. Try again or click "Forgot password" to reset it.</p>
+							</div>
+						{% endif %}
+						<a class='f-pass'>Forgot password?</a>
 						<div class="signs">
-							<a href='#' class='signref'><button type="button" value="sign in" id="signin">sign_in</button></a>
+							<button type="submit" value="sign in" id="signin">sign_in</button>
 							<a href='/signup/'class='signref'><button type="button" value="sign up" id="signup">sign_up</button></a>
 						</div>
 					</div>
