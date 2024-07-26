@@ -16,6 +16,8 @@ def send_email(request, db_user):
     message['From'] = sender_email
     message['To'] = recipient_list[0]
     message['Subject'] = subject
+    print(f"------sendemail---\n{sender_email}")
+    print(os.environ.get('EMAIL_HOST_PASSWORD'))
     try:
             server.ehlo()
             server.starttls()
@@ -49,11 +51,11 @@ def verifie(request, token):
     except Exception as e:
                 return JsonResponse({'Error': f"Error sending email: tamalek{e}"})
     return redirect('/')
+
 def is_email_verified(request):
-    if (FormData.objects.get(email=request.user).activated == True):
-        return
-    else:
+    if (FormData.objects.get(email=request.user).activated != True):
         return render(request, '/', {'valide':'false'})
+    
 def forgot_password(request):
     ctx= {}
     if request.method == "POST":

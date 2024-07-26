@@ -1,0 +1,22 @@
+.infos {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .infos-span {
+    font-family: monospace;
+    flex-grow: 1;
+    font-size: 1.1rem;
+    text-align: center; 
+  }
+
+
+  .infos-span:not(.country) {
+    color: white;
+  }
+
+.country{
+    color: #EF552D;
+}

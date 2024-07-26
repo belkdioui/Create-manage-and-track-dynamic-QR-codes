@@ -10,6 +10,7 @@ pymongo = "==3.12.3"
 pytz = "*"
 dnspython = "*"
 cython = "*"
+python-dotenv = "*"
 
 [dev-packages]
 

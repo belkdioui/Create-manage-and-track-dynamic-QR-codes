@@ -2,7 +2,12 @@
 {% load static %}
 {% block header_content %}
     <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{% static '/css/home.css' %}">
 {% endblock header_content %}
 {% block body_content %}
-
+<div class="infos">
+    <span class="country infos-span">Morocco</span>
+    <span class="infos-span">Tickets : <span class="tickets"></span></span>
+    <span class="infos-span">Wallet : <span class="budget"></span></span>
+</div>
 {% endblock body_content %}

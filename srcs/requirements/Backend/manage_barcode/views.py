@@ -26,11 +26,8 @@ def signup(request):
         data= {"fname": fname,"lname": lname, "email":email, "tel":tel, "password":password, "cpassword":cpassword }
         ctx['errors'] = utils_1.check_errors("sign_up", data)
         if(len(ctx['errors']) == 0):
-            try:
-                User.objects.get(username=email)
-            except User.DoesNotExist:
-                user = User.objects.create_user(db_user.email, db_user.email, db_user.password)
-                user.save()
+            user = User.objects.create_user(email, email, password=password)
+            user.save()
             db_user = FormData.objects.create(fname=fname, lname=lname, email=email, tel=tel, password=password)
             db_user.token = hashlib.sha256(password.encode("utf-8")).hexdigest()
             db_user.save()

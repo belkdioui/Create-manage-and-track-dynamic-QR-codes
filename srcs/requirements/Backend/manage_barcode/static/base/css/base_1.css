@@ -19,7 +19,8 @@ body {
   min-height: 100dvh;
   height: 100%;
   width: 100%;
-  padding: 0px 10px 30px;
+  padding-left: 10%;
+  padding-right: 10%;
   position: relative;
 }
 
@@ -48,7 +49,7 @@ body {
 
 .navbar {
   padding-top: 4%;
-  padding-left: 10%;
+  /* padding-left: 10%; */
   width: 100%;
 }
 
@@ -66,7 +67,7 @@ body {
 
 
 .nav-item{
-  padding: 0px 2.3rem;
+  padding: 0px 2.1rem;
 }
 
 .nav-item:has(.active){
@@ -112,4 +113,12 @@ body {
   margin-top: 20px ;
   text-align: center;
 }
+}
+
+@media ((max-width: 1357px) and (min-width:991px)){
+
+  .nav-item{
+    padding: 0px 0.8rem;
+  }
+  
 }
