@@ -1,0 +1,115 @@
+body {
+  background-color: #535561;
+  min-height: 100dvh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #282A37;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(to right, rgba(40, 42, 55, 1) 0%, rgba(40, 42, 55, 1) 50%, rgba(40, 42, 55, 0.80) 100%), url("../images/chuttersnap-kq8iWoh5-mU-unsplash.jpg");
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.container {
+  max-width: none;
+  margin: 0 auto;
+  min-height: 100dvh;
+  height: 100%;
+  width: 100%;
+  padding: 0px 10px 30px;
+  position: relative;
+}
+
+.point_1 {
+  color: #EF552D;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+
+.Logo-name {
+  margin-left: 2%;
+  color: #FFFFFF;
+  font-size: 2rem;
+  font-family: cursive;
+}
+
+.d-inline-block {
+  width: 6%;
+  height: auto;
+  min-width: 60px;
+}
+
+.navbar {
+  padding-top: 4%;
+  padding-left: 10%;
+  width: 100%;
+}
+
+.logo-big {
+  position: absolute;
+  width: clamp(20px, 30%, 300px);
+  height: auto;
+  bottom: 0;
+  right: 0;
+}
+
+
+
+
+
+
+.nav-item{
+  padding: 0px 2.3rem;
+}
+
+.nav-item:has(.active){
+  background-color: #EF552D;
+  border-radius: 30px;
+}
+
+.nav-link:not(.active){
+  font-family: monospace;
+  color: #FFFFFF!important;
+  box-shadow: 0 0 10px #EF552D;
+  border-radius: 30px;
+}
+
+.nav-link:not(.active):hover{
+  color: #EF552D!important;
+}
+
+.nav-item:has(.active):hover{
+  box-shadow: 0 0 10px #EF552D;
+
+}
+
+.active{
+  color: #FFFFFF !important;
+}
+
+.active:hover{
+  color: #282A37!important;
+}
+
+.navbar-toggler{
+  color: #FFFFFF !important;
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")!important;
+}
+
+@media (max-width: 991px){
+
+.nav-item{
+  padding: 0px 0px !important;
+  margin-top: 20px ;
+  text-align: center;
+}
+}
