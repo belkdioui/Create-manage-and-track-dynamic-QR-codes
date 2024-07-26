@@ -6,6 +6,7 @@ import smtplib
 import os
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login
+
 def send_email(request, db_user):
     subject = "Email Verification"
     body = "Hello " + (str)(db_user.fname).capitalize() + ' ' + (str)(db_user.lname).capitalize() + "click this link to verifie your email http://10.30.252.32:8000/email_verification/" + (str)(db_user.token)
@@ -55,6 +56,8 @@ def verifie(request, token):
 def is_email_verified(request):
     if (FormData.objects.get(email=request.user).activated != True):
         return render(request, '/', {'valide':'false'})
+    return render(request, 'home.html')
+
     
 def forgot_password(request):
     ctx= {}

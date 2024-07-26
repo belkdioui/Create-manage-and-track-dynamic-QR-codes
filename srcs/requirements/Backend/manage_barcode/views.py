@@ -32,7 +32,7 @@ def signup(request):
             db_user.token = hashlib.sha256(password.encode("utf-8")).hexdigest()
             db_user.save()
             EmailVerification.send_email(request, db_user)
-            return render(request, 'auth/login.html')
+            return render(request, 'auth/login.html') # redirect to /
     return render(request, 'auth/signup.html', context=ctx)
 
 def index(request):
@@ -40,14 +40,15 @@ def index(request):
     if request.user.is_authenticated:
         if request.user.is_superuser:
             logout_api(request)
+            return redirect('/')
         print('222222222222')
-        EmailVerification.is_email_verified(request)
         return render(request, 'home.html')
+
+
     return login_api(request)
     
 
 def login_api(request):
-   
     ctx= {}
     if request.method == "POST":
         email = request.POST.get('email')

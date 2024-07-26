@@ -1,5 +1,6 @@
 from djongo import models
 
+
 class FormData(models.Model):
     fname = models.CharField(max_length=100)
     lname = models.CharField(max_length=100)
@@ -10,6 +11,21 @@ class FormData(models.Model):
     password = models.CharField(max_length=50)
     def __str__(self):
         return f'{self.fname}'
+
+class Tickets(models.Model):
+    client = models.ForeignKey(FormData, on_delete=models.CASCADE, related_name='tickets')
+    barcode = models.CharField(max_length=100, unique=True)
+    ticket_number = models.PositiveIntegerField()
+
+    def __str__(self):
+        return f'Ticket {self.ticket_number} (Barcode: {self.barcode}) for {self.client.fname} {self.client.lname}'
+
+class Wallet(models.Model):
+    client = models.OneToOneField(FormData, on_delete=models.CASCADE, related_name='wallet')
+    balance = models.DecimalField(max_digits=10, decimal_places=2)
+    
+    def __str__(self):
+        return f'Wallet for {self.client.fname} {self.client.lname} - Balance: {self.balance}'
 
 class reset_password(models.Model):
     token = models.CharField(max_length=100)
