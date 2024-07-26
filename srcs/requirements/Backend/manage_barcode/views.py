@@ -38,6 +38,9 @@ def signup(request):
 def index(request):
     ctx= {}
     if request.user.is_authenticated:
+        if request.user.is_superuser:
+            logout_api(request)
+        print('222222222222')
         EmailVerification.is_email_verified(request)
         return render(request, 'home.html')
     return login_api(request)
