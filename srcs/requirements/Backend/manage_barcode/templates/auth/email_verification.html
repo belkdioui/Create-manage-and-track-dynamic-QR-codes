@@ -1,0 +1,18 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block header_content %}
+{% endblock header_content %}
+{% block body_content %}
+    {% if verifie_email %}
+        <div class='send_email'>
+            <img src='' alt='check_image'>
+            <h1 class='header'>Email Has Been Send Please Check Your Inbox</h1>
+            <p>{% lorem 1 b random %}</p>
+        </div>
+        <div class='email_buttun'>
+        </div>
+    {% endif %}
+    {% if reset_password %}
+    {% endif %}
+{% endblock body_content %}

@@ -6,5 +6,6 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('signup/', views.signup, name='signup'), 
     path('logout/', views.logout_api, name='logout'), 
-    
+    path('send_email/', views.send_email, name='send_email'),
+    path('email_verification/<str:category>/', views.verifie, name='verifie'),
 ]

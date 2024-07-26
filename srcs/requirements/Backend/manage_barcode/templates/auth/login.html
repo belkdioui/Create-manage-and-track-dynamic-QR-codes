@@ -28,6 +28,11 @@
 								<p id='pass-text'>Incorrect password. Try again or click "Forgot password" to reset it.</p>
 							</div>
 						{% endif %}
+						{% if valide %}
+							<div class="wrong_pass">
+								<p id='pass-text'>Please verifie your email <a class='verifie_button' href='/email_verification/'>Resend email verification</button></p>
+							</div>
+						{% endif %}
 						<a class='f-pass'>Forgot password?</a>
 						<div class="signs">
 							<button type="submit" value="sign in" id="signin">sign_in</button>
