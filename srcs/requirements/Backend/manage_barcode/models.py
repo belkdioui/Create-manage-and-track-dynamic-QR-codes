@@ -8,7 +8,9 @@ class FormData(models.Model):
     tel = models.CharField(max_length=13)
     activated = models.BooleanField(default=False)
     token = models.CharField(max_length=100, blank=True, null=True)
-    password = models.CharField(max_length=50)
+    balance = models.IntegerField(default=500)
+
+
     def __str__(self):
         return f'{self.fname}'
 
@@ -19,13 +21,6 @@ class Tickets(models.Model):
 
     def __str__(self):
         return f'Ticket {self.ticket_number} (Barcode: {self.barcode}) for {self.client.fname} {self.client.lname}'
-
-class Wallet(models.Model):
-    client = models.OneToOneField(FormData, on_delete=models.CASCADE, related_name='wallet')
-    balance = models.DecimalField(max_digits=10, decimal_places=2)
-    
-    def __str__(self):
-        return f'Wallet for {self.client.fname} {self.client.lname} - Balance: {self.balance}'
 
 class reset_password(models.Model):
     token = models.CharField(max_length=100)

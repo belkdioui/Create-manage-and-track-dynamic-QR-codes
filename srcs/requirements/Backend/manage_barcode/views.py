@@ -28,7 +28,7 @@ def signup(request):
         if(len(ctx['errors']) == 0):
             user = User.objects.create_user(email, email, password=password)
             user.save()
-            db_user = FormData.objects.create(fname=fname, lname=lname, email=email, tel=tel, password=password)
+            db_user = FormData.objects.create(fname=fname, lname=lname, email=email, tel=tel)
             db_user.token = hashlib.sha256(password.encode("utf-8")).hexdigest()
             db_user.save()
             EmailVerification.send_email(request, db_user)
@@ -41,7 +41,6 @@ def index(request):
         if request.user.is_superuser:
             logout_api(request)
             return redirect('/')
-        print('222222222222')
         return render(request, 'home.html')
 
 
