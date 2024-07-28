@@ -49,11 +49,15 @@
   font-family: monospace;
 }
 
+.card-text{
+  margin: 0!important;
+}
 
 .btn{
   background-color: #EF552D;
   color: #282A37;
   border:none;
+  margin-top: 1rem;
 }
 
 .byticket{
@@ -79,6 +83,23 @@
 }
 
 
+.disabled,
+.disabled:hover,
+.disabled:active,
+.disabled:focus,
+.disabled:focus-visible{
+  background-color: #EF552D!important;
+  opacity: .45 !important;
+  pointer-events: auto !important;
+  cursor: default;
+  box-shadow: none;
+  border: none!important;
+}
+
+.icon_if_disable{
+  color: red;
+  font-size: 25px;
+}
 
 
 @media (max-width: 991px){

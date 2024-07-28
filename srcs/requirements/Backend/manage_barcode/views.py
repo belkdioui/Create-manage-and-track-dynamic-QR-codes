@@ -60,7 +60,7 @@ def get_data_home(request):
     number_of_tickets = db_user.tickets.count()
     print(f'N Ticket: {number_of_tickets}')
     if(number_of_tickets):
-        generate_qr_code.generate_qr_code_from_id(db_user.tickets.first().id, db_user.email)
+        generate_qr_code.generate_qr_code_from_id(db_user.tickets.first().id, db_user)
     ctx = {
         'db_user' : db_user,
         'count_ticket' : number_of_tickets,

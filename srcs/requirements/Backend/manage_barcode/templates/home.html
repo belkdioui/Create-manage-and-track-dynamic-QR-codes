@@ -15,8 +15,9 @@
     <div class="card-body">
       <!-- <h5 class="card-title">Card title</h5> -->
       <p class="card-text">Don't have ticket ? <a href="#" class="byticket">Buy one</a></p>
-      <a href="#" class="btn btn-primary">Activate barcode</a>
+      <div class="icon_if_disable"></div>
+      <a href="#" class="btn btn-primary {% if count_ticket == 0 %}disabled{% endif %}" onclick="check_if_disable(this)">Activate barcode</a>
     </div>
   </div>
-
+<script src="{% static 'js/home.js'%}"></script>
 {% endblock body_content %}
