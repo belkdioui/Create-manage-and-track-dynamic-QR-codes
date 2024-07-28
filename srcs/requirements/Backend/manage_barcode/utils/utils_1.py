@@ -8,8 +8,11 @@ def check_errors(type, data):
     PHONE_REGEX = r"(^(?:05|06|07)\d{8}$|^\+212\d{9}$)"
 
     errors = {}
-    if type=="login":
-        print("login")
+    if type=="reset_password":
+        if not re.match("^.{8,}$" , data["password"]):
+            errors["err_pass"]="password should contain at least 8 characters"
+        if not re.match(data["password"], data["cpassword"]):
+            errors["err_pass_c"]="password doesn't match confirm password"
     elif type=="sign_up":
         if any(char.isdigit() for char in data["fname"]):
             errors["err_fname"]="First Name invalid "

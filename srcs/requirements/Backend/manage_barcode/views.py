@@ -3,6 +3,12 @@ from django.http import JsonResponse
 from manage_barcode.utils import utils_1 ,EmailVerification, generate_qr_code
 from .models import FormData, Tickets
 import hashlib
+
+from django.db import IntegrityError
+import smtplib
+import os
+from datetime import date
+
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 
@@ -24,10 +30,10 @@ def signup(request):
             user = User.objects.create_user(email, email, password=password)
             user.save()
             db_user = FormData.objects.create(fname=fname, lname=lname, email=email, tel=tel)
-            db_user.token = hashlib.sha256(password.encode("utf-8")).hexdigest()
+            db_user.token = hashlib.sha256((email + (str)(date.today())).encode("utf-8")).hexdigest()
             db_user.save()
-            EmailVerification.send_email(request, db_user)
-            return render(request, 'auth/login.html') # redirect to /
+            EmailVerification.send_email(request, db_user, 'email_verification')
+            return render(request, 'auth/login.html')
     return render(request, 'auth/signup.html', context=ctx)
 
 
@@ -38,7 +44,6 @@ def index(request):
             logout_api(request)
             return redirect('/')
         return redirect('/home/')
-
 
     return login_api(request)
 
@@ -73,9 +78,12 @@ def login_api(request):
                 ctx['valide'] = 'false'
                 return render(request, 'auth/login.html', context=ctx)
             login(request, user)
-
             return redirect('/home/')
-        ctx['pass'] = 'Invalide password'
+        try:
+            FormData.objects.get(email=email)
+            ctx['pass'] = 'Invalide password'
+        except FormData.DoesNotExist:
+            ctx['email'] = 'Invalide email'
     return render(request, 'auth/login.html', context=ctx)
 
 
@@ -85,5 +93,13 @@ def logout_api(request):
     return redirect('/')
 
 
-
+def profile(request):
+    if request.user.is_authenticated:
+        try:
+            db_user = FormData.objects.get(email=request.user)
+            data = {'tel':db_user.tel, 'email':db_user.email, 'fname':db_user.fname, 'lname':db_user.lname}
+        except Exception as e:
+            return JsonResponse({'Error': f"Error sending email: {e}"})
+        return render(request, 'profile.html', data)
+    return redirect('/')
         

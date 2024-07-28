@@ -1,0 +1,18 @@
+{% extends 'base/base_1.html' %}
+{% load static %}
+{% block header_content %}
+    <title>Profile</title>
+    <link rel='stylesheet' href="{% static 'auth/css/profile.css' %}">
+{% endblock header_content %}
+{% block body_content %}
+    <div class='Profile'>
+        <div class='Profile_resume'>
+            <div class='image'>
+                <img src="{% static 'profile.png' %}" class='profile_photo' alt='avatar'>
+            </div>
+            <div class='resum_text'>
+                <p>This is a description of the user</p>
+            </div>
+        </div>
+    </div>
+{% endblock body_content %}

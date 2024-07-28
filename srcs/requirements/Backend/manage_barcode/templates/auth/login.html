@@ -10,35 +10,40 @@
 		<script src="{% static 'auth/js/password.js' %}"></script>
 {% endblock header_content %}
 {% block body_content %}
-			<div class="login-data0">
-				<h1 class='header1'>Login</h1>
-				<form action="/" method="POST" id="motlform">
-					{% csrf_token %}
-					<div class="form1">
-						<div class="l3inin">
-							<i class="bi bi-envelope-at"></i>
-							<input type="email" placeholder="Email" name="email" id="email" required>
-						</div>
-						<div class='l3inin'>
-							<i onclick='show_password()' class="bi bi-eye" id='logo-eyes'></i>
-							<input type="password" placeholder="password" name="password" id="password" required />
-						</div>
-						{% if pass %}
-							<div class="wrong_pass">
-								<p id='pass-text'>Incorrect password. Try again or click "Forgot password" to reset it.</p>
-							</div>
-						{% endif %}
-						{% if valide %}
-							<div class="wrong_pass">
-								<p id='pass-text'>Please verifie your email <a class='verifie_button' href='/email_verification/'>Resend email verification</button></p>
-							</div>
-						{% endif %}
-						<a href='/email_verification/' class='f-pass'>Forgot password?</a>
-						<div class="signs">
-							<button type="submit" value="sign in" id="signin">sign_in</button>
-							<a href='/signup/'class='signref'><button type="button" value="sign up" id="signup">sign_up</button></a>
-						</div>
+	<div class="login-data0">
+		<h1 class='header1'>Login</h1>
+		<form action="/" method="POST" id="motlform">
+			{% csrf_token %}
+			<div class="form1">
+				<div class="l3inin">
+					<i class="bi bi-envelope-at"></i>
+					<input type="email" placeholder="Email" name="email" id="email" required>
+				</div>
+				<div class='l3inin'>
+					<i onclick='show_password()' class="bi bi-eye" id='logo-eyes'></i>
+					<input type="password" placeholder="password" name="password" id="password" required />
+				</div>
+				{% if email %}
+					<div class="wrong_pass">
+						<p id='pass-text'>We couldn't find an account with that username. Try another</p>
 					</div>
-				</form>
+				{% endif %}
+				{% if pass %}
+					<div class="wrong_pass">
+						<p id='pass-text'>Incorrect password. Try again or click "Forgot password" to reset it.</p>
+					</div>
+				{% endif %}
+				{% if valide %}
+					<div class="wrong_pass">
+						<p id='pass-text'>Please verifie your email <a class='verifie_button' href='/email_verification/'>Resend email verification</button></p>
+					</div>
+				{% endif %}
+				<a href='/reset_password/' class='f-pass'>Forgot password?</a>
+				<div class="signs">
+					<button type="submit" value="sign in" id="signin">sign_in</button>
+					<a href='/signup/'class='signref'><button type="button" value="sign up" id="signup">sign_up</button></a>
+				</div>
 			</div>
+		</form>
+	</div>
 {% endblock body_content %}

@@ -2,6 +2,8 @@ body {
   background-color: #535561;
   min-height: 100dvh;
   width: 100vw;
+  height: 100vh;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;

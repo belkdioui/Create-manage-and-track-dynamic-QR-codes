@@ -12,9 +12,9 @@ dnspython = "*"
 cython = "*"
 python-dotenv = "*"
 qrcode = "*"
+pillow = "*"
 
 [dev-packages]
 
 [requires]
 python_version = "3.12"
-
