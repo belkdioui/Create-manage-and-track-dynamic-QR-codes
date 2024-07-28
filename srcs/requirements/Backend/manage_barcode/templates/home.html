@@ -6,8 +6,17 @@
 {% endblock header_content %}
 {% block body_content %}
 <div class="infos">
-    <span class="country infos-span">Morocco</span>
-    <span class="infos-span">Tickets : <span class="tickets"></span></span>
-    <span class="infos-span">Wallet : <span class="budget"></span></span>
+    <span class="fname infos-span">{{ db_user.fname }} {{ db_user.lname }}</span>
+    <span class="infos-span">Tickets: <span class="tickets">{{ count_ticket }}</span></span>
+    <span class="infos-span">Wallet: <span class="budget">{{ db_user.balance }}Dh</span></span>
 </div>
+<div class="card">
+    <img class="card-img-top" src="{% static 'barcodes/' %}{% if count_ticket == 0 %}test.png{% else %}{{ db_user.email }}.png{% endif %}" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <!-- <h5 class="card-title">Card title</h5> -->
+      <p class="card-text">Don't have ticket ? <a href="#" class="byticket">Buy one</a></p>
+      <a href="#" class="btn btn-primary">Activate barcode</a>
+    </div>
+  </div>
+
 {% endblock body_content %}

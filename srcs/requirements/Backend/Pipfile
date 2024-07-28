@@ -11,8 +11,10 @@ pytz = "*"
 dnspython = "*"
 cython = "*"
 python-dotenv = "*"
+qrcode = "*"
 
 [dev-packages]
 
 [requires]
 python_version = "3.12"
+

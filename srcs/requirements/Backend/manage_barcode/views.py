@@ -1,13 +1,8 @@
 from django.shortcuts import render, redirect
 from django.http import JsonResponse
-from manage_barcode.utils import utils_1
-from manage_barcode.utils import EmailVerification
-from .models import FormData
-from email.mime.text import MIMEText
+from manage_barcode.utils import utils_1 ,EmailVerification, generate_qr_code
+from .models import FormData, Tickets
 import hashlib
-from django.db import IntegrityError
-import smtplib
-import os
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 
@@ -35,17 +30,37 @@ def signup(request):
             return render(request, 'auth/login.html') # redirect to /
     return render(request, 'auth/signup.html', context=ctx)
 
+
 def index(request):
     ctx= {}
     if request.user.is_authenticated:
         if request.user.is_superuser:
             logout_api(request)
             return redirect('/')
-        return render(request, 'home.html')
+        return redirect('/home/')
 
 
     return login_api(request)
+
+def get_data_home(request):
+    if not request.user.is_authenticated:
+        return redirect('/')
+
+    if request.user.is_authenticated and request.user.is_superuser:
+        logout_api(request)
+        return redirect('/')
     
+    ctx={}
+    db_user = FormData.objects.get(email=request.user.username)
+    number_of_tickets = db_user.tickets.count()
+    print(f'N Ticket: {number_of_tickets}')
+    if(number_of_tickets):
+        generate_qr_code.generate_qr_code_from_id(db_user.tickets.first().id, db_user.email)
+    ctx = {
+        'db_user' : db_user,
+        'count_ticket' : number_of_tickets,
+    }
+    return render(request, 'home.html', ctx)
 
 def login_api(request):
     ctx= {}
@@ -58,7 +73,8 @@ def login_api(request):
                 ctx['valide'] = 'false'
                 return render(request, 'auth/login.html', context=ctx)
             login(request, user)
-            return render(request, 'home.html')
+
+            return redirect('/home/')
         ctx['pass'] = 'Invalide password'
     return render(request, 'auth/login.html', context=ctx)
 

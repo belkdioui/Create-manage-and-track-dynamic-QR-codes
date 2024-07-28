@@ -1,5 +1,5 @@
-from djongo import models
-
+# from djongo import models
+from django.db import models
 
 class FormData(models.Model):
     fname = models.CharField(max_length=100)
@@ -10,17 +10,16 @@ class FormData(models.Model):
     token = models.CharField(max_length=100, blank=True, null=True)
     balance = models.IntegerField(default=500)
 
-
     def __str__(self):
-        return f'{self.fname}'
+        return f'{self.fname} {self.lname}'
 
 class Tickets(models.Model):
     client = models.ForeignKey(FormData, on_delete=models.CASCADE, related_name='tickets')
     barcode = models.CharField(max_length=100, unique=True)
-    ticket_number = models.PositiveIntegerField()
 
     def __str__(self):
-        return f'Ticket {self.ticket_number} (Barcode: {self.barcode}) for {self.client.fname} {self.client.lname}'
+        return f'{self.id} - {self.barcode}'
+        # return f'Ticket {self.barcode} for {self.client.fname} {self.client.lname}'
 
 class reset_password(models.Model):
     token = models.CharField(max_length=100)

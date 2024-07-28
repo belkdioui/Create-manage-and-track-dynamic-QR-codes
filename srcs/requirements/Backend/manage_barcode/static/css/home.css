@@ -13,10 +13,77 @@
   }
 
 
-  .infos-span:not(.country) {
+  .infos-span:not(.fname) {
     color: white;
   }
 
-.country{
+.fname{
     color: #EF552D;
+}
+
+
+
+.card{
+  float:none;
+  margin: 3rem auto ;
+  width: 90%;
+  max-width: 40rem;
+  height: auto;
+  background-color: transparent;
+  box-shadow: 0 0 10px #EF552D;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+.card-img-top{
+  width: 100%;
+  height: auto;
+  filter: blur(14px);
+}
+
+.card-body{
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  color: #FFFFFF;
+  font-family: monospace;
+}
+
+
+.btn{
+  background-color: #EF552D;
+  color: #282A37;
+  border:none;
+}
+
+.byticket{
+  color: #EF552D;
+}
+
+.byticket:hover,
+.byticket:active,
+.byticket:focus,
+.byticket:focus-visible{
+  color: green;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus,
+.btn:focus-visible{
+  background-color: green;
+  color: #FFFFFF;
+  border:none;
+  box-shadow: 0 0 10px green;
+
+}
+
+
+
+
+@media (max-width: 991px){
+
+  .fname{
+    display: none;
+  }
 }
