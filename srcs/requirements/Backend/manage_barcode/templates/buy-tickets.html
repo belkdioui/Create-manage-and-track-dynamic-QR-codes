@@ -1,0 +1,70 @@
+{% extends 'base/base_1.html' %}
+{% load static %}
+{% block header_content %}
+    <title>Buy-tickets</title>
+    <link rel="stylesheet" type="text/css" href="{% static '/css/buy-tickets.css' %}">
+{% endblock header_content %}
+{% block body_content %}
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <div class="image-container">
+          <img src="{% static '/images/amy-chen-lIp5q8s0e7s-unsplash.jpg' %}" class="card-img-top">
+          <div class="card-text-number">Flexible Tickets</div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title  simple">Number of Tickets</h5>
+          <div class="input-group">
+            <button id="decrement" class="incre_decre" onclick="decr_incre(1, 'input_1', '-')">-</button>
+            <input type="number" id="input_1" value="1" readonly>
+            <button id="increment" class="incre_decre" onclick="decr_incre(1, 'input_1', '+')">+</button>
+          </div>
+        </div>
+        <div class="card-footer">
+          <button type="submit" class="card-footer-butt">Buy Now <span id="total_1">5</span> DH</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <div class="image-container">
+          <img src="{% static '/images/bus-1263266_1280.jpg' %}" class="card-img-top">
+          <div class="card-text-number">10 Tickets</div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">10 Tickets, 2 on Us!</h5>
+          <div class="input-group">
+            <button id="decrement" class="incre_decre" onclick="decr_incre(10, 'input_2', '-')">-</button>
+            <input type="number" id="input_2" value="12" readonly>
+            <button id="increment" class="incre_decre" onclick="decr_incre(10, 'input_2', '+')">+</button>
+          </div>
+        </div>
+        <div class="card-footer">
+          <button type="submit" class="card-footer-butt">Buy Now <span id="total_2">50</span> DH</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <div class="image-container">
+          <img src="{% static '/images/basil-lade-cUDugBG7cFY-unsplash.jpg' %}" class="card-img-top">
+          <div class="card-text-number">20 Tickets</div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">20 Tickets, 5 on Us!</h5>
+          <div class="input-group">
+            <button id="decrement" class="incre_decre" onclick="decr_incre(20, 'input_3', '-')">-</button>
+            <input type="number" id="input_3" value="25" readonly>
+            <button id="increment" class="incre_decre" onclick="decr_incre(20, 'input_3', '+')">+</button>
+          </div>
+        </div>
+        <div class="card-footer">
+          <button type="submit" class="card-footer-butt">Buy Now <span id="total_3">100</span> DH</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="{% static '/js/buy-tickets.js'%}"></script>
+
+{% endblock body_content %}

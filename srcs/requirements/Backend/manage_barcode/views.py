@@ -36,17 +36,6 @@ def signup(request):
             return render(request, 'auth/login.html')
     return render(request, 'auth/signup.html', context=ctx)
 
-
-def index(request):
-    ctx= {}
-    if request.user.is_authenticated:
-        if request.user.is_superuser:
-            logout_api(request)
-            return redirect('/')
-        return redirect('/home/')
-
-    return login_api(request)
-
 def get_data_home(request):
     if not request.user.is_authenticated:
         return redirect('/')
@@ -66,6 +55,26 @@ def get_data_home(request):
         'count_ticket' : number_of_tickets,
     }
     return render(request, 'home.html', ctx)
+
+def buy_tickets(request):
+    if not request.user.is_authenticated:
+        return redirect('/')
+
+    if request.user.is_authenticated and request.user.is_superuser:
+        logout_api(request)
+        return redirect('/')
+    return render(request, 'buy-tickets.html')
+
+def index(request):
+    ctx= {}
+    if request.user.is_authenticated:
+        if request.user.is_superuser:
+            logout_api(request)
+            return redirect('/')
+        return redirect('/home/')
+
+    return login_api(request)
+
 
 def login_api(request):
     ctx= {}

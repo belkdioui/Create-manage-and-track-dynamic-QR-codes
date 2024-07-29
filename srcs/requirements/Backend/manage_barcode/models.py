@@ -19,7 +19,6 @@ class Tickets(models.Model):
 
     def __str__(self):
         return f'{self.id} - {self.barcode}'
-        # return f'Ticket {self.barcode} for {self.client.fname} {self.client.lname}'
 
 class reset_password(models.Model):
     token = models.CharField(max_length=100)

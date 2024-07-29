@@ -13,8 +13,7 @@
 <div class="card">
     <img class="card-img-top" src="{% static 'barcodes/' %}{% if count_ticket == 0 %}test.png{% else %}{{ db_user.email }}.png{% endif %}" alt="Card image" style="width:100%">
     <div class="card-body">
-      <!-- <h5 class="card-title">Card title</h5> -->
-      <p class="card-text">Don't have ticket ? <a href="#" class="byticket">Buy one</a></p>
+      <p class="card-text">Don't have ticket ? <a href="/buy-tickets/" class="buyticket">Buy one</a></p>
       <div class="icon_if_disable"></div>
       <a href="#" class="btn btn-primary {% if count_ticket == 0 %}disabled{% endif %}" onclick="check_if_disable(this)">Activate barcode</a>
     </div>

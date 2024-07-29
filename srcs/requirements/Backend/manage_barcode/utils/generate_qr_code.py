@@ -14,7 +14,7 @@ def generate_qr_code_from_id(ticket_id, db_user):
     )
     qr.add_data(data_to_encode)
     qr.make(fit=True)
-    file_path = os.path.join(settings.BASE_DIR, f'manage_barcode/static/barcodes/{ticket_id}:{db_user.email}.png')
+    file_path = os.path.join(settings.BASE_DIR, f'manage_barcode/static/barcodes/{db_user.email}.png')
     img = qr.make_image(fill_color="#EF552D", back_color="transparent")
     img = img.convert("RGBA")
     img.save(file_path)

@@ -60,14 +60,14 @@
   margin-top: 1rem;
 }
 
-.byticket{
+.buyticket{
   color: #EF552D;
 }
 
-.byticket:hover,
-.byticket:active,
-.byticket:focus,
-.byticket:focus-visible{
+.buyticket:hover,
+.buyticket:active,
+.buyticket:focus,
+.buyticket:focus-visible{
   color: green;
 }
 
