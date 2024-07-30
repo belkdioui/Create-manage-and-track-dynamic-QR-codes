@@ -3,12 +3,11 @@ from django.http import JsonResponse
 from manage_barcode.utils import utils_1 ,EmailVerification, generate_qr_code
 from .models import FormData, Tickets
 import hashlib
-
 from django.db import IntegrityError
 import smtplib
 import os
 from datetime import date
-
+import json
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 
@@ -56,6 +55,10 @@ def get_data_home(request):
     }
     return render(request, 'home.html', ctx)
 
+
+
+
+
 def buy_tickets(request):
     if not request.user.is_authenticated:
         return redirect('/')
@@ -63,7 +66,42 @@ def buy_tickets(request):
     if request.user.is_authenticated and request.user.is_superuser:
         logout_api(request)
         return redirect('/')
+    if(request.method == 'POST'):
+        data = json.loads(request.body)
+        tickets = int(data.get('tikcets_t', 0))
+        balance = int(data.get('total_c', 0))
+        db_user = FormData.objects.get(email=request.user.username)
+        if(db_user.balance >= balance):
+            db_user.balance -= balance
+            db_user.save()
+            for x in range(tickets):
+                print(tickets)
+                try:
+                    ticket = Tickets.objects.create(client=db_user)
+                    barcode = f"{ticket.id}{db_user.fname}"
+                    ticket.barcode = barcode
+                    ticket.save()
+                except:
+                    print("error")
+                    return JsonResponse({
+                        'type': 'error',
+                        'message': 'Error during ticket creation'
+                    })
+            return JsonResponse({
+                'type': 'success',
+                'message': 'Order done'
+            })
+        else:
+            return JsonResponse({
+                'type': 'error',
+                'message': 'Insufficient Balance'
+            })
+            
     return render(request, 'buy-tickets.html')
+
+
+
+
 
 def index(request):
     ctx= {}

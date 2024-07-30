@@ -47,3 +47,40 @@ function decr_incre(value, id, operation)
         }
     }
 }
+
+function getCookie(name) {
+    let cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+        const cookies = document.cookie.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+            const cookie = cookies[i].trim();
+            if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+    return cookieValue;
+}
+
+function post_data(tick, total)
+{
+    var tikcets = document.getElementById(tick).value;
+    var total_cash = document.getElementById(total).innerText;
+    const csrfToken = getCookie('csrftoken');
+    data = {
+        tikcets_t : tikcets ,
+        total_c : total_cash
+    };
+    fetch('/buy-tickets/', {
+        method: 'POST',
+        headers : {
+            'Content-Type': 'application/json',
+            'X-CSRFToken': csrfToken
+        },
+        body: JSON.stringify(data)
+    }).then(
+        res => {return res.json() }
+    )
+
+}
