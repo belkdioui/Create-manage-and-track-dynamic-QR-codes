@@ -3,83 +3,50 @@
 {% block header_content %}
     <title>Profile</title>
     <link rel='stylesheet' href="{% static 'auth/css/profile.css' %}">
-    <script src="{% static 'auth/js/profile.js' %}"></script>
 {% endblock header_content %}
 {% block body_content %}
-<div class="box_data">
-    <div class="avatar_info">
-        <div class="avatar_photo">
-            <p class="user_name">{{ profile.fname}} {{profile.lname}}</p>
-            <div class="icon_photo">
-                <img src="{% static "/profile.jpg" %}" id="icon_photo">
-                <div class="pin">
-                    <i class="bi bi-pencil-square" id="upload-icon" onclick="reclick()"></i>
+    <form class="box_data">
+        <div class="photo_info">
+            <h1>EDIT INFORMATION</h1>
+            <div class="photo_container">
+                <img src="{% static 'profile.jpg' %}">
+                <div class="photo_button">
+                    <button type="button" id="Choose_button">Choose a file</button>
+                    <p>Acceptable formats jpg,png only<p>
                 </div>
             </div>
         </div>
-        <div class="upload_photo">
-            <form action='/update_avatar/' method="POST" enctype="multipart/form-data">
-                {% csrf_token %}
-                <input type="file" id="file-upload" name="photo"/>
-                <div class="save_button">
-                    <button type="submit" class="btn btn-primary mb-3 save_button1" id="save_button1" disabled>Save</button>
-                </div>
-            </form>
-        </div>
-        <div class="ticket">
-            <div class="ticket_icon">
-                <i class="bi bi-ticket-perforated"></i>
+        <div class="account_info">
+            <h1>ACCOUNT INFORMATION</h1>
+            <div class="data-account">
+                <label for="first_name">First Name</label>
+                <input type="text" name="first_name" id="input_button" value="First name"disabled>
             </div>
-            <p class="tag_icon">Ticket: {{profile.ticket}}</p>
-        </div>
-        <div class="balance">
-            <div class="balance_icon">
-                <i class="bi bi-bank"></i>
+            <div class="data-account">
+                <label for="last_name">Last Name</label>
+                <input type="text" name="last_name" id="input_button" value="Last name"disabled>
             </div>
-            <p class="tag_icon">Balance: {{profile.balance}}</p>
+            <div class="data-account">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="input_button" value="Email"disabled>
+            </div>
         </div>
-        <div class="date_info">
-            <p>Member Since: "29 September 2021"</p>
+        <div class="password_info">
+            <h1>CHANGE PASSWORD</h1>
+            <div class="data-account">
+                <label for="pas">Current Password</label>
+                <input type="password" name="pas" id="input_button" value="current password"disabled>
+            </div>
+            <div class="data-account">
+                <label for="npas">New Password</label>
+                <input type="password" name="npas" id="input_button" value="new password"disabled>
+            </div>
+            <div class="data-account">
+                <label for="cpas">Confirm Password</label>
+                <input type="password" name="cpas" id="input_button" value="confirm password"disabled>
+            </div>
+            <button type="submit" id="save">save</button>
         </div>
-    </div>
-    <div class="profile_info">
-        <h1 class="edit-profile">Edit Profile</h1>
-        <div class="profile_data">
-            <form class="form_profile_data">
-
-                <div class="data_colum_input">
-                    <label class="data_label" for="f_name">First name</label>
-                    <input type="text" id="f_name" name="f_name" value="{{profile.fname}}"/>
-                </div>
-                <div class="data_colum_input">
-                    <label class="data_label" for="l_name">Last name</label>
-                    <input type="text" id="l_name" name="l_name" value="{{profile.lname}}"/>
-                </div>
-                <div class="data_colum_input">
-                    <label class="data_label" for="email">Email</label>
-                    <input type="email" id="email" name="email" value="{{profile.email}}"/>
-                </div>
-                <div class="data_colum_input">
-                    <label class="data_label" for="tel">Phone number</label>
-                    <input type="tel" id="tel" name="tel" value="{{profile.tel}}"/>
-                </div>
-                {% comment %} <div class="data_colum_input">
-                    <div class="la_label">
-                        <label for="password">Password</label>
-                    </div>
-                    <input type="password" id="password" name="password"/>
-                </div>
-                <div class="data_colum_input">
-                    <div class="la_label">
-                        <label for="c_password">Confirm Password</label>
-                    </div>
-                    <input type="password" id="c_password" name="c_password"/> {% endcomment %}
-                    {% comment %} </div> {% endcomment %}
-            </form>
-                <div class="edit_button">
-                    <button type="submit" class="btn btn-primary mb-3 edit_button1">Save</button>
-                </div>
-        </div>
-    </div>
-</div>
+    </form>
+    <script src="{% static 'auth/js/profile.js' %}"></script>
 {% endblock body_content %}

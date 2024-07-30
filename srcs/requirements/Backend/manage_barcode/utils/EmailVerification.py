@@ -110,10 +110,46 @@ def forgot_password(request):
     ctx['verifie_email'] = 'true'
     return render(request, 'auth/reset_password.html', context=ctx)
 
+
+
+
+import uuid
+from django.conf import settings
+
+
 def update_avatar(request):
+    # if request.method == "POST":
+    #     file = request.FILES['photo']
+    #     user = request.user
+    #     filepath = settings.STATIC_URL + "media/" + file.name
+    #     print(filepath)
+    #     if file and user:
+    #         db_user = FormData.objects.get(email=user)
+    #         db_user.path_avatar = filepath
+    #     print('77777777777777777')
+    #     print(settings.STATIC_URL)
+    #     with open(filepath, 'wb+') as destination:
+    #         for chunk in file.chunks():
+    #             destination.write(chunk)
     if request.method == "POST":
-        email = request.POST.get('photo')
-        return JsonResponse({'email': email})
-    email="wale"
-    return JsonResponse({'email': email})
+        file = request.FILES['photo']
+        user = request.user
+
+        if file and user:
+            db_user = FormData.objects.get(email=user)
+
+            filename = file.name  # Use the original filename
+            filepath = os.path.join(settings.MEDIA_ROOT, 'manage_barcode/static/media/', filename)  # Create path within 'images' folder
+            print("1111111111111111111111")
+            # Save the uploaded file
+            print(filepath)
+            with open(filepath, 'wb+') as destination:
+                for chunk in file.chunks():
+                    destination.write(chunk)
+
+            # Store the relative path in the database (recommended)
+            db_user.path_avatar = os.path.join('/static/media/', filename)  # Relative path within 'images' folder
+            db_user.save()
+    return redirect('/profile/')
+
     

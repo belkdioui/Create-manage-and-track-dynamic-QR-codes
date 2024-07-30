@@ -5,6 +5,7 @@ function reclick()
     document.getElementById('file-upload').click();
     displayit()
 }
+
 function displayit()
 {
     const fileInput = document.getElementById('file-upload');
@@ -18,3 +19,22 @@ function displayit()
   }
     });
 }
+
+  const fileInput = document.getElementById("file-upload");
+  console.log(fileInput)
+  const imageOutput = document.getElementById("icon_photo");
+
+  fileInput.addEventListener("change", async () => {
+    console.log("ana f event lisner")
+    let file = fileInput.files[0];
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      console.log("ana f onload")
+      imageOutput.src = e.target.result;
+    };
+    reader.onerror = (err) => {
+        console.error("Error reading file:", err);
+        alert("An error occurred while reading the file.");
+    };
+    reader.readAsDataURL(file);
+  })

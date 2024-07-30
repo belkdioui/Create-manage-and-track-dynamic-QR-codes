@@ -1,5 +1,7 @@
 # from djongo import models
 from django.db import models
+import os
+from django.conf import settings
 
 class FormData(models.Model):
     fname = models.CharField(max_length=100)
@@ -9,7 +11,7 @@ class FormData(models.Model):
     activated = models.BooleanField(default=False)
     token = models.CharField(max_length=100, blank=True, null=True)
     balance = models.IntegerField(default=500)
-
+    path_avatar = models.TextField(default=f"{settings.STATIC_URL}media/profile.jpg")
     def __str__(self):
         return f'{self.fname} {self.lname}'
 

@@ -3,7 +3,7 @@ from django.http import JsonResponse
 from manage_barcode.utils import utils_1 ,EmailVerification, generate_qr_code
 from .models import FormData, Tickets
 import hashlib
-
+from django.core.exceptions import ObjectDoesNotExist
 from django.db import IntegrityError
 import smtplib
 import os
@@ -101,15 +101,17 @@ def logout_api(request):
     logout(request)
     return redirect('/')
 
+from django.conf import settings
 
 def profile(request):
-    if request.user.is_authenticated:
+    if request.user.is_superuser:
+        logout_api(request)
+    elif request.user.is_authenticated:
         try:
             db_user = FormData.objects.get(email=request.user)
-            data = {'tel':db_user.tel, 'email':db_user.email, 'fname':db_user.fname.capitalize(), 'lname':db_user.lname.capitalize(), 'ticket':db_user.tickets.count(), 'balance':db_user.balance}
-            print(db_user.tickets.count())
+            profile = db_user.path_avatar
+            data = {'tel':db_user.tel, 'email':db_user.email, 'fname':db_user.fname.capitalize(), 'lname':db_user.lname.capitalize(), 'ticket':db_user.tickets.count(), 'balance':db_user.balance, 'avatar':profile}
         except Exception as e:
             return JsonResponse({'Error': f"Error sending email: {e}"})
         return render(request, 'profile.html', {'profile':data})
     return redirect('/')
-        
