@@ -1,17 +1,258 @@
-.container
+.box_data
 {
+    position: relative;
+    display: flex;
+    margin: auto;
+    margin-top: 4rem;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*******************************************************************/
+.avatar_info
+{
+    box-shadow: 0 0 10px #EF552D;
+    border-radius: 10px;
+    width: 25%;
+    height: 50rem;
+    margin: auto;
+    margin-top: 0;
+    margin-right: 0;
+}
+
+.user_name
+{
+    text-align: center;
+    font-weight: bold;
+}
+#icon_photo
+{
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+    border-radius: 50%;
+}
+
+.icon_photo
+{
+    position: relative;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    /*************/
 
 }
-.image
-{
-    
+
+
+input[type="file"] {
+    display: none;
 }
-.Profile{
-    height: 100%;
+.custom-file-upload
+{
+    text-align: center;
+    color: azure;
+}
+#upload-icon
+{
+    cursor: pointer;
+}
+
+.pin
+{
+    top:0;
+    position: absolute;
+}
+
+.save_button1:disabled,
+.save_button1:disabled:hover
+{
+    border: #ba3f20;
+    background-color: #ba3f20;
+}
+.save_button1
+{
+    margin: auto;
+    width: 50%;
+    margin-left: 25%;
+}
+.save_button
+{
     width: 100%;
+    height: 100%;
 }
-.profile_photo
+.btn-primary:hover
 {
-    width: 30%;
-    height: 30%;
+    background-color: #ba3f20;
+    border: 2px solid #EF552D;
+
+
+}
+.edit_button
+{
+    margin: auto;
+}
+.btn-primary,
+.btn-primary:visited,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:focus-visible,
+.btn-primary:focus-within{
+  background-color:#EF552D;
+  border-color: #EF552D;
+  height: 3rem;
+  border-radius: 10px;
+  color:  #FFFFFF;
+
+}
+.ticket, .balance, .date_info
+{
+    font-size: larger;
+    position: relative;
+    margin-left: 10px;
+}
+.tag_icon
+{
+    margin-left: 40px;
+}
+.ticket_icon,.balance_icon
+{
+    position: absolute;
+}
+
+.saviha
+{
+    color: white;
+    font-size: larger;
+    padding: 0;
+}
+.save_info
+{
+    position: relative;
+}
+
+
+/*******************************************************************/
+.profile_info
+{
+    margin: auto;
+    margin-top: 0;
+    box-shadow: 0 0 10px #EF552D;
+    border-radius: 10px;
+    width: 50%;
+    height: 50rem;
+}
+
+.data_colum_input
+{
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 50%;
+}
+.edit-profile
+{
+    text-align: center;
+}
+.profile_data
+{
+
+    width: 100%;
+    height: 100%;
+    font-size: larger;
+}
+.data_label
+{
+    font-weight: bold;
+    display: block;
+}
+
+#f_name,#l_name,#email,#tel,#password,#c_password
+{
+    /* background-color: #2f313d;
+    color: white;
+    border: 1px solid black;
+    min-width: 300px;
+    border-radius: 5px; */
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid gray;
+    outline: 0;
+    font-size: 1.3rem;
+    color: white;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+.edit_button1
+{
+    width: 50%;
+}
+
+@media (max-width: 991px)
+{
+    .box_data
+    {
+        flex-direction: column;
+        gap:20px;
+        margin:auto;
+    }
+    .profile_info
+    {
+        margin: 0;
+        width: auto;
+        height: auto;
+        border: 2px solid none;
+        box-shadow: 0 0 0px #EF552D;
+        border-radius: 0px;
+    }
+    .avatar_info
+    {
+        margin: 0;
+        width: auto;
+        height: auto;
+        box-shadow: 0 0 0px #EF552D;
+        border-radius: 0px;
+    }
+    .data_colum_input
+    {
+        width: 100%;
+    }
+    .icon_photo
+    {
+        margin: auto;
+        width: 20%;
+        height: 20%;
+    }
+    #icon_photo
+    {
+        width: 90%;
+        height: 90%;
+        /* margin-left: 35%; */
+    }
+    
+    .box_data
+    {
+        box-shadow: 0 0 10px #EF552D;
+        width: auto;
+        height: auto;
+    }
+    .save_button1
+    {
+        width: 25%;
+        margin-left: 40%;
+    }
+    .edit-profile
+    {
+        border: 2px solid #ba3f20;
+        border-radius: 0;
+    }
+    .edit_button1
+    {
+        bottom:0;
+        width: 100%;
+        margin: auto;
+    }
 }

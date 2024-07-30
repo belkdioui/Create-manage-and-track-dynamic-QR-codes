@@ -106,9 +106,10 @@ def profile(request):
     if request.user.is_authenticated:
         try:
             db_user = FormData.objects.get(email=request.user)
-            data = {'tel':db_user.tel, 'email':db_user.email, 'fname':db_user.fname, 'lname':db_user.lname}
+            data = {'tel':db_user.tel, 'email':db_user.email, 'fname':db_user.fname.capitalize(), 'lname':db_user.lname.capitalize(), 'ticket':db_user.tickets.count(), 'balance':db_user.balance}
+            print(db_user.tickets.count())
         except Exception as e:
             return JsonResponse({'Error': f"Error sending email: {e}"})
-        return render(request, 'profile.html', data)
+        return render(request, 'profile.html', {'profile':data})
     return redirect('/')
         

@@ -17,5 +17,6 @@ urlpatterns = [
     path('reset_password/<str:token>/', EmailVerification.verifie, name='verifie'),
     path('reset_password/', EmailVerification.forgot_password, name='forgot_password'),
     path('update_password/', EmailVerification.save_new_password, name='savepassword'),
-    
+    path('update_avatar/', EmailVerification.update_avatar, name='update_avatar'),
+
 ]

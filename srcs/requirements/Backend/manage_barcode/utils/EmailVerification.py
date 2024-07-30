@@ -12,7 +12,7 @@ from django.contrib.auth import authenticate, login
 
 def send_email(request, db_user, reason):
     subject = "Email Verification"
-    body = "Hello " + (str)(db_user.fname).capitalize() + ' ' + (str)(db_user.lname).capitalize() + f"click this link to verifie your email http://10.30.252.32:8000/{reason}/" + (str)(db_user.token)
+    body = f"Hello {db_user.fname.capitalize()} {db_user.lname.capitalize()} click this link to verifie your email http://10.30.252.32:8000/{reason}/{db_user.token}"
     sender_email = os.environ.get('EMAIL_HOST_USER')
     recipient_list = [db_user.email]
     server = smtplib.SMTP('smtp.gmail.com', 587)
@@ -50,6 +50,9 @@ def verifie(request, token):
             db_user.activated = True
             if request.path.find("reset_password") != -1:
                 print("passssssssssssssssssss")
+                email = db_user.email
+                if email != None:
+                    request.session['email'] = email
                 return render(request, 'auth/reset_password.html', {'verifie_password':'true'})
             db_user.token = ''
             db_user.save()
@@ -68,7 +71,7 @@ def save_new_password(request):
     ctx = {}
     if request.method == "POST":
         try:
-            name = request.POST.get('email')
+            name = request.session.get('email')
             new_password = request.POST.get('new_password')
             c_password = request.POST.get('c_password')
             data = {'password':new_password, 'cpassword':c_password}
@@ -86,6 +89,8 @@ def save_new_password(request):
             user.save()
             db_user.token = ''
             db_user.save()
+            if request.session.get('email') != None:
+                del request.session['email']
         except Exception as e:
             return JsonResponse({'Error': f"Error saving password: {e}"})
     return render(request, 'auth/login.html')
@@ -104,3 +109,11 @@ def forgot_password(request):
             ctx['wrong_email'] = "true"
     ctx['verifie_email'] = 'true'
     return render(request, 'auth/reset_password.html', context=ctx)
+
+def update_avatar(request):
+    if request.method == "POST":
+        email = request.POST.get('photo')
+        return JsonResponse({'email': email})
+    email="wale"
+    return JsonResponse({'email': email})
+    
