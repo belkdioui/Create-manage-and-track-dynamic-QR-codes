@@ -46,7 +46,6 @@ def get_data_home(request):
     ctx={}
     db_user = FormData.objects.get(email=request.user.username)
     number_of_tickets = db_user.tickets.count()
-    print(f'N Ticket: {number_of_tickets}')
     if(number_of_tickets):
         generate_qr_code.generate_qr_code_from_id(db_user.tickets.first().id, db_user)
     ctx = {
@@ -69,27 +68,31 @@ def buy_tickets(request):
     
     ctx={}
     if(request.method == 'POST'):
-        data = json.loads(request.body)
-        tickets = int(data.get('tickets_t', 0))
-        balance = int(data.get('total_c', 0))
-        db_user = FormData.objects.get(email=request.user.username)
-        print(db_user.tickets.count())
-        if(db_user.balance >= balance):
-            db_user.balance -= balance
-            db_user.save()
-            for x in range(tickets):
-                try:
-                    ticket = Tickets.objects.create(client=db_user)
-                    barcode = f"{ticket.id}{db_user.fname}"
-                    ticket.barcode = barcode
-                    ticket.save()
-                except Exception as e:
-                    print(f"Error: {e}")
+        try:
+            data = json.loads(request.body)
+            tickets = int(data.get('tickets_t', 0))
+            balance = int(data.get('total_c', 0))
+            db_user = FormData.objects.get(email=request.user.username)
+            if(db_user.balance >= balance):
+                db_user.balance -= balance
+                db_user.save()
+                for _ in range(tickets):
+                    try:
+                        ticket = Tickets.objects.create(client=db_user)
+                        barcode = f"{ticket.id}{db_user.fname}"
+                        ticket.barcode = barcode
+                        ticket.save()
+                    except Exception as e:
+                        return JsonResponse({'error': f"Error creating ticket: {e}"}, status=400)
+            else:
+                return JsonResponse({'error': "Insufficient balance"}, status=400)
+        except Exception as e:
+            return JsonResponse({'error': f"Unexpected error: {e}"}, status=400)
         ctx = {
         'balance': db_user.balance,
         'count_ticket': db_user.tickets.count()
     }
-        return JsonResponse(ctx)
+        return JsonResponse(ctx, status=200)
     elif(request.method == 'GET'):
         db_user = FormData.objects.get(email=request.user.username)
         ctx = {
@@ -144,7 +147,6 @@ def profile(request):
         try:
             db_user = FormData.objects.get(email=request.user)
             data = {'tel':db_user.tel, 'email':db_user.email, 'fname':db_user.fname.capitalize(), 'lname':db_user.lname.capitalize(), 'ticket':db_user.tickets.count(), 'balance':db_user.balance}
-            print(db_user.tickets.count())
         except Exception as e:
             return JsonResponse({'Error': f"Error sending email: {e}"})
         return render(request, 'profile.html', {'profile':data})

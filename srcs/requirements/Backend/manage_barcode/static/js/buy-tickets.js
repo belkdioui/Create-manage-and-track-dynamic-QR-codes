@@ -82,7 +82,6 @@ function post_data(tick, total) {
     })
     .then(response => response.json())
     .then(data => {
-        console.log(data);
         document.querySelector('.budget').innerText = data.balance;
         document.querySelector('.tickets').innerText = data.count_ticket;
     })
