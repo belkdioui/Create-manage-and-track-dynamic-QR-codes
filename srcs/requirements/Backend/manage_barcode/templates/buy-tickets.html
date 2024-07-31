@@ -5,6 +5,11 @@
     <link rel="stylesheet" type="text/css" href="{% static '/css/buy-tickets.css' %}">
 {% endblock header_content %}
 {% block body_content %}
+<div class="infos">
+  <span class="fname infos-span">{{ db_user.fname }} {{ db_user.lname }}</span>
+  <span class="infos-span">Tickets: <span class="tickets">{{ count_ticket }}</span></span>
+  <span class="infos-span">Wallet: <span class="budget">{{ db_user.balance }}Dh</span></span>
+</div>
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
     <div class="col">
       <div class="card h-100">

@@ -1,3 +1,28 @@
+
+.infos {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .infos-span {
+    font-family: monospace;
+    flex-grow: 1;
+    font-size: 1.1rem;
+    text-align: center; 
+  }
+
+
+  .infos-span:not(.fname) {
+    color: white;
+  }
+
+.fname{
+    color: #EF552D;
+}
+
+
 .card {
     border: none;
     background-color: transparent;

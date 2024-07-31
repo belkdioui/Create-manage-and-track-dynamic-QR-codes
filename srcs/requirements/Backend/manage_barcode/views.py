@@ -66,38 +66,37 @@ def buy_tickets(request):
     if request.user.is_authenticated and request.user.is_superuser:
         logout_api(request)
         return redirect('/')
+    
+    ctx={}
     if(request.method == 'POST'):
         data = json.loads(request.body)
-        tickets = int(data.get('tikcets_t', 0))
+        tickets = int(data.get('tickets_t', 0))
         balance = int(data.get('total_c', 0))
         db_user = FormData.objects.get(email=request.user.username)
+        print(db_user.tickets.count())
         if(db_user.balance >= balance):
             db_user.balance -= balance
             db_user.save()
             for x in range(tickets):
-                print(tickets)
                 try:
                     ticket = Tickets.objects.create(client=db_user)
                     barcode = f"{ticket.id}{db_user.fname}"
                     ticket.barcode = barcode
                     ticket.save()
-                except:
-                    print("error")
-                    return JsonResponse({
-                        'type': 'error',
-                        'message': 'Error during ticket creation'
-                    })
-            return JsonResponse({
-                'type': 'success',
-                'message': 'Order done'
-            })
-        else:
-            return JsonResponse({
-                'type': 'error',
-                'message': 'Insufficient Balance'
-            })
-            
-    return render(request, 'buy-tickets.html')
+                except Exception as e:
+                    print(f"Error: {e}")
+        ctx = {
+        'balance': db_user.balance,
+        'count_ticket': db_user.tickets.count()
+    }
+        return JsonResponse(ctx)
+    elif(request.method == 'GET'):
+        db_user = FormData.objects.get(email=request.user.username)
+        ctx = {
+            'db_user' : db_user,
+            'count_ticket' : db_user.tickets.count()
+        }
+    return render(request, 'buy-tickets.html', ctx)
 
 
 

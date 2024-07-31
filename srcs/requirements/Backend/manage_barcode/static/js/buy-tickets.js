@@ -63,24 +63,28 @@ function getCookie(name) {
     return cookieValue;
 }
 
-function post_data(tick, total)
-{
-    var tikcets = document.getElementById(tick).value;
+function post_data(tick, total) {
+    var tickets = document.getElementById(tick).value;
     var total_cash = document.getElementById(total).innerText;
     const csrfToken = getCookie('csrftoken');
-    data = {
-        tikcets_t : tikcets ,
-        total_c : total_cash
+    const data = {
+        tickets_t: tickets,
+        total_c: total_cash
     };
+
     fetch('/buy-tickets/', {
         method: 'POST',
-        headers : {
+        headers: {
             'Content-Type': 'application/json',
             'X-CSRFToken': csrfToken
         },
         body: JSON.stringify(data)
-    }).then(
-        res => {return res.json() }
-    )
-
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        document.querySelector('.budget').innerText = data.balance;
+        document.querySelector('.tickets').innerText = data.count_ticket;
+    })
+    .catch(error => console.error('Error:', error));
 }
