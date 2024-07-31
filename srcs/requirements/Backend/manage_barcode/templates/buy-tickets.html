@@ -69,7 +69,23 @@
       </div>
     </div>
   </div>
-
+  <div id="spinner-overlay" class="spinner-overlay">
+    <div class="spinner-border text-primary" role="status">
+    </div>
+  </div>
+  <div class="toast-container position-fixed p-3">
+    <!-- Toast -->
+    <div id="myToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="true" data-bs-delay="5000">
+      <div class="toast-header">
+        <strong class="me-auto">Toast Title</strong>
+        <small>Just now</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        This toast will automatically hide after 5 seconds.
+      </div>
+    </div>
+  </div>
   <script src="{% static '/js/buy-tickets.js'%}"></script>
 
 {% endblock body_content %}

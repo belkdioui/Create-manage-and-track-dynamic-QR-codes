@@ -71,7 +71,7 @@ function post_data(tick, total) {
         tickets_t: tickets,
         total_c: total_cash
     };
-
+    showSpinner();
     fetch('/buy-tickets/', {
         method: 'POST',
         headers: {
@@ -84,6 +84,24 @@ function post_data(tick, total) {
     .then(data => {
         document.querySelector('.budget').innerText = data.balance;
         document.querySelector('.tickets').innerText = data.count_ticket;
+        hideSpinner();
+        showToast();
     })
     .catch(error => console.error('Error:', error));
 }
+
+function showSpinner() {
+    spiner = document.getElementById("spinner-overlay").classList.add('active');
+}
+
+function hideSpinner() {
+    spiner = document.getElementById("spinner-overlay").classList.remove('active');
+}
+
+function showToast() {
+    var toast = new bootstrap.Toast(document.getElementById('myToast'));
+    toast.show();
+    setTimeout(function() {
+        toast.hide();
+      }, 5000);
+  }
