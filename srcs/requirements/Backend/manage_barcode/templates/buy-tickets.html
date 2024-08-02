@@ -1,8 +1,10 @@
 {% extends 'base/base_1.html' %}
 {% load static %}
 {% block header_content %}
-    <title>Buy-tickets</title>
-    <link rel="stylesheet" type="text/css" href="{% static '/css/buy-tickets.css' %}">
+  <title>Buy-tickets</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+  <link rel="stylesheet" type="text/css" href="{% static '/css/buy-tickets.css' %}">
+  <script src="{% static '/js/buy-tickets.js'%}" defer></script>
 {% endblock header_content %}
 {% block body_content %}
 <div class="infos">
@@ -73,19 +75,13 @@
     <div class="spinner-border text-primary" role="status">
     </div>
   </div>
-  <div class="toast-container position-fixed p-3">
-    <!-- Toast -->
-    <div id="myToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="true" data-bs-delay="5000">
-      <div class="toast-header">
-        <strong class="me-auto">Toast Title</strong>
-        <small>Just now</small>
-        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-      </div>
-      <div class="toast-body">
-        This toast will automatically hide after 5 seconds.
-      </div>
-    </div>
+
+  <ul class="notifications"></ul>
+  <div class="buttons">
+    <button class="btn" id="success">Success</button>
+    <button class="btn" id="error">Error</button>
+    <button class="btn" id="warning">Warning</button>
+    <button class="btn" id="info">Info</button>
   </div>
-  <script src="{% static '/js/buy-tickets.js'%}"></script>
 
 {% endblock body_content %}

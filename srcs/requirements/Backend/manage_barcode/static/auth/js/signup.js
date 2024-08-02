@@ -1,4 +1,4 @@
-// alert("rani 5adaaaaaam")
+
 function togglePasswordVisibility() {
     const passwordInput = document.getElementById('Password');
     const toggleIcon = document.getElementById('toggle-icon');
@@ -13,3 +13,17 @@ function togglePasswordVisibility() {
         toggleIcon.classList.add('bi-eye-fill');
     }
 }
+
+
+
+// function signup_btn_funct()
+// {
+//     {% for field, field_errors in errors.items %}
+//     <div style="color: white">
+//       {{field_errors}}
+//     </div>
+//     {%endfor%}
+//     // console.log("hereeee");
+//     createToast("success", "verifay your email");
+// }
+

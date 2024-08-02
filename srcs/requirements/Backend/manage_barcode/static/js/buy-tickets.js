@@ -85,7 +85,6 @@ function post_data(tick, total) {
         document.querySelector('.budget').innerText = data.balance;
         document.querySelector('.tickets').innerText = data.count_ticket;
         hideSpinner();
-        showToast();
     })
     .catch(error => console.error('Error:', error));
 }
@@ -98,10 +97,52 @@ function hideSpinner() {
     spiner = document.getElementById("spinner-overlay").classList.remove('active');
 }
 
-function showToast() {
-    var toast = new bootstrap.Toast(document.getElementById('myToast'));
-    toast.show();
-    setTimeout(function() {
-        toast.hide();
-      }, 5000);
-  }
+
+
+
+
+
+const notifications = document.querySelector(".notifications"),
+buttons = document.querySelectorAll(".buttons .btn");
+const toastDetails = {
+    timer: 10000,
+    success: {
+        icon: 'fa-circle-check',
+        text: 'Success: This is a success toast.',
+    },
+    error: {
+        icon: 'fa-circle-xmark',
+        text: 'Error: This is an error toast.',
+    },
+    warning: {
+        icon: 'fa-triangle-exclamation',
+        text: 'Warning: This is a warning toast.',
+    },
+    info: {
+        icon: 'fa-circle-info',
+        text: 'Info: This is an information toast.',
+    }
+}
+
+const removeToast = (toast) => {
+    toast.classList.add("hide");
+    if(toast.timeoutId) clearTimeout(toast.timeoutId);
+    setTimeout(() => toast.remove(), 10000);
+}
+
+const createToast = (id) => {
+    const { icon, text } = toastDetails[id];
+    const toast = document.createElement("li");
+    toast.className = `toast_1 ${id}`;
+    toast.innerHTML = `<div class="column">
+                         <i class="fa-solid ${icon}"></i>
+                         <span>${text}</span>
+                      </div>
+                      <i class="fa-solid fa-xmark" onclick="removeToast(this.parentElement)"></i>`;
+    notifications.appendChild(toast);
+    toast.timeoutId = setTimeout(() => removeToast(toast), toastDetails.timer);
+}
+
+buttons.forEach(btn => {
+    btn.addEventListener("click", () => createToast(btn.id));
+});

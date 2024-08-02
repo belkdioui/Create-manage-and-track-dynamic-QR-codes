@@ -96,7 +96,7 @@ DATABASES = {
         'ENGINE': 'djongo',
         'ENFORCE_SCHEMA': True,
         "CLIENT": {
-           "name": 'barcodedb',
+           "name": 'barcode_db',
            "host": 'mongodb+srv://pedrooo-111:barcode@cluster0.63iiiah.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',
            "username": 'pedrooo-111',
            "password": 'barcode',
