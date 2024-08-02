@@ -8,7 +8,7 @@ from django.db import IntegrityError
 import smtplib
 import os
 from datetime import date
-
+import json
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 
@@ -56,6 +56,10 @@ def get_data_home(request):
     }
     return render(request, 'home.html', ctx)
 
+
+
+
+
 def buy_tickets(request):
     if not request.user.is_authenticated:
         return redirect('/')
@@ -63,7 +67,45 @@ def buy_tickets(request):
     if request.user.is_authenticated and request.user.is_superuser:
         logout_api(request)
         return redirect('/')
-    return render(request, 'buy-tickets.html')
+    
+    ctx={}
+    if(request.method == 'POST'):
+        try:
+            data = json.loads(request.body)
+            tickets = int(data.get('tickets_t', 0))
+            balance = int(data.get('total_c', 0))
+            db_user = FormData.objects.get(email=request.user.username)
+            if(db_user.balance >= balance):
+                db_user.balance -= balance
+                db_user.save()
+                for _ in range(tickets):
+                    try:
+                        ticket = Tickets.objects.create(client=db_user)
+                        barcode = f"{ticket.id}{db_user.fname}"
+                        ticket.barcode = barcode
+                        ticket.save()
+                    except Exception as e:
+                        return JsonResponse({'error': f"Error creating ticket: {e}"}, status=400)
+            else:
+                return JsonResponse({'error': "Insufficient balance"}, status=400)
+        except Exception as e:
+            return JsonResponse({'error': f"Unexpected error: {e}"}, status=400)
+        ctx = {
+        'balance': db_user.balance,
+        'count_ticket': db_user.tickets.count()
+    }
+        return JsonResponse(ctx, status=200)
+    elif(request.method == 'GET'):
+        db_user = FormData.objects.get(email=request.user.username)
+        ctx = {
+            'db_user' : db_user,
+            'count_ticket' : db_user.tickets.count()
+        }
+    return render(request, 'buy-tickets.html', ctx)
+
+
+
+
 
 def index(request):
     ctx= {}
@@ -111,6 +153,7 @@ def profile(request):
             db_user = FormData.objects.get(email=request.user)
             profile = db_user.path_avatar
             data = {'tel':db_user.tel, 'email':db_user.email, 'fname':db_user.fname.capitalize(), 'lname':db_user.lname.capitalize(), 'ticket':db_user.tickets.count(), 'balance':db_user.balance, 'avatar':profile}
+            data = {'tel':db_user.tel, 'email':db_user.email, 'fname':db_user.fname.capitalize(), 'lname':db_user.lname.capitalize(), 'ticket':db_user.tickets.count(), 'balance':db_user.balance}
         except Exception as e:
             return JsonResponse({'Error': f"Error sending email: {e}"})
         return render(request, 'profile.html', {'profile':data})
