@@ -69,6 +69,10 @@ h1
 {
     display: none;
 }
+.bi-shadows:hover
+{
+    color: #EF552D;
+}
 /********************************/
 .account_info
 {

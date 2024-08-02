@@ -12,11 +12,16 @@ urlpatterns = [
 
     path('logout/', views.logout_api, name='logout'),
     path('profile/', views.profile, name='profile'),
-    path('email_verification/<str:token>/', EmailVerification.verifie, name='verifie'),
-    path('email_verification/', EmailVerification.forgot_password, name='forgot_password'),
-    path('reset_password/<str:token>/', EmailVerification.verifie, name='verifie'),
+    
     path('reset_password/', EmailVerification.forgot_password, name='forgot_password'),
-    path('update_password/', EmailVerification.save_new_password, name='savepassword'),
-    path('update_avatar/', EmailVerification.update_avatar, name='update_avatar'),
+    
+    path('email_verification/<str:token>/', EmailVerification.verifie, name='verifie'),
+    path('reset_password/<str:token>/', EmailVerification.verifie, name='verifie'),
+    
+    path('update_password/<str:token>/', EmailVerification.save_new_password, name='savepassword'),
+
+
+
+    path('update_data/', EmailVerification.update_data, name='update_data'),
 
 ]

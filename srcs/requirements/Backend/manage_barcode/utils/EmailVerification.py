@@ -12,7 +12,7 @@ from django.contrib.auth import authenticate, login
 
 def send_email(request, db_user, reason):
     subject = "Email Verification"
-    body = f"Hello {db_user.fname.capitalize()} {db_user.lname.capitalize()} click this link to verifie your email http://10.30.252.32:8000/{reason}/{db_user.token}"
+    body = f"Hello {db_user.fname.capitalize()} {db_user.lname.capitalize()} click this link to verifie your email http://0.0.0.0:8000/{reason}/{db_user.token}"
     sender_email = os.environ.get('EMAIL_HOST_USER')
     recipient_list = [db_user.email]
     server = smtplib.SMTP('smtp.gmail.com', 587)
@@ -22,122 +22,146 @@ def send_email(request, db_user, reason):
     message['Subject'] = subject
     print(f"------sendemail---\n{sender_email}")
     print(os.environ.get('EMAIL_HOST_PASSWORD'))
-    try:
-            server.ehlo()
-            server.starttls()
-            server.login(sender_email, os.environ.get('EMAIL_HOST_PASSWORD'))
-            server.sendmail(sender_email, recipient_list, message.as_string())
-    except Exception as e:
-        print(f"Error sending email: {e}")
-        return JsonResponse({'Error': f"Error sending email: {e}"})
-    
-    
+    server.ehlo()
+    server.starttls()
+    server.login(sender_email, os.environ.get('EMAIL_HOST_PASSWORD'))
+    server.sendmail(sender_email, recipient_list, message.as_string())
 
 def verifie(request, token):
-    db_user = ''
+    if request.user.is_authenticated:
+        return redirect('/')
+    ctx = {}
     try:
-        for data in FormData.objects.all():
-            print(f"{data.token} token = {token}")
-            if data.token == token:
-                db_user = data
-        if db_user != '':
-            try:
-                user = User.objects.get(username=db_user.email)
-            except User.DoesNotExist:
-                user = User.objects.create_user(db_user.email, db_user.email, db_user.password)
-                user.save()
-            print(f"hada authonticated################# ")
-            db_user.activated = True
-            if request.path.find("reset_password") != -1:
-                print("passssssssssssssssssss")
-                email = db_user.email
-                if email != None:
-                    request.session['email'] = email
-                return render(request, 'auth/reset_password.html', {'verifie_password':'true'})
-            db_user.token = ''
-            db_user.save()
-            print(f"#####{request.path}#######")
-            return render(request, 'auth/login.html')
+        db_user = FormData.objects.get(token=token)
+        
+        if request.path.find("reset_password") != -1:
+            return render(request, 'auth/reset_password.html', {'verifie_password':'true', 'token': token})
+
+        db_user.activated = True
+        db_user.token = ''
+        db_user.save()
+
+        return redirect('/')
+    
+    except FormData.DoesNotExist:
+        ctx['errors']['form_not_exist'] = 'Invalide token'
     except Exception as e:
-                return JsonResponse({'Error': f"Error sending email: tamalek{e}"})
-    return redirect('/')
+            ctx['errors']['sending_mail'] = 'Error sending email'
 
-def is_email_verified(request):
-    if (FormData.objects.get(email=request.user).activated != True):
-        return render(request, '/', {'valide':'false'})
-    return render(request, 'home.html')
+    return render(request, 'auth/reset_password.html', context=ctx)
+    
 
-def save_new_password(request):
+def save_new_password(request, token):
+    if request.user.is_authenticated:
+        return redirect('/')
+
     ctx = {}
     if request.method == "POST":
         try:
-            name = request.session.get('email')
+            user_db = FormData.objects.get(token=token)
+            
             new_password = request.POST.get('new_password')
             c_password = request.POST.get('c_password')
+
             data = {'password':new_password, 'cpassword':c_password}
             ctx['errors'] = check_errors("reset_password", data)
-            try:
-                FormData.objects.get(email=name)
-            except FormData.DoesNotExist:
-                ctx['errors']['email'] = 'Enter valide email'
+            
             if(len(ctx['errors']) != 0):
                 ctx['verifie_password'] = 'true'
                 return render(request, 'auth/reset_password.html', context=ctx)
-            user = User.objects.get(username=name)
-            db_user = FormData.objects.get(email=user.username)
+
+            user = User.objects.get(username=user_db.email)
             user.set_password(new_password)
             user.save()
-            db_user.token = ''
-            db_user.save()
-            if request.session.get('email') != None:
-                del request.session['email']
+
+            user_db.token = ''
+            user_db.save()
+
+        except User.DoesNotExist:
+            ctx['errors']['user_error'] = 'Enter valid email'
+        except FormData.DoesNotExist:
+            ctx['errors']['email'] = 'Enter valid email'
         except Exception as e:
-            return JsonResponse({'Error': f"Error saving password: {e}"})
-    return render(request, 'auth/login.html')
+            ctx['errors']['exception'] = f"Error saving password: {e}"
+
+        if(len(ctx['errors']) != 0):
+            ctx['verifie_password'] = 'true'
+            return render(request, 'auth/reset_password.html', context=ctx)
+        
+    return redirect('/')
 
 def forgot_password(request):
+    if request.user.is_authenticated:
+        return redirect('/')
+
     ctx= {}
     if request.method == "POST":
-        email = request.POST.get('email')
         try:
+            email = request.POST.get('email')
             db_user = FormData.objects.get(email=email)
             db_user.token = hashlib.sha256((db_user.email + (str)(date.today())).encode("utf-8")).hexdigest()
             db_user.save()
-            ctx['send'] = 'true'
             send_email(request, db_user, 'reset_password')
+            ctx['send'] = 'true'
+
         except FormData.DoesNotExist:
             ctx['wrong_email'] = "true"
+        except Exception:
+            ctx['email_error'] = "true"
     ctx['verifie_email'] = 'true'
     return render(request, 'auth/reset_password.html', context=ctx)
-
-
 
 
 import uuid
 from django.conf import settings
 
 
-def update_avatar(request):
-
+def update_data(request):
+    if not request.user.is_authenticated:
+        return redirect('/')
+    ctx = {}
     if request.method == "POST":
-        file = request.FILES['photo']
+        if 'photo' in request.FILES:
+            file = request.FILES['photo']
+        else:
+            return redirect('/profile/')
         user = request.user
+        print(file)
+        print("1111111111")
+        print(user.password)
+        print(request.POST.get('pas'))
+        # if file and user:
+        #     db_user = FormData.objects.get(email=user.username)
+        #     fname = request.POST.get('first_name')
+        #     lname = request.POST.get('last_name')
+        #     email = request.POST.get('email')
+        #     password = request.POST.get('pas')
+        #     if authenticate(db_user.email, password) == None:
+        #         ctx["errors"]["password"] = "wrong password"
+        #     new_password = request.POST.get('npas')
+        #     confirm_password = request.POST.get('cpas')
+        #     if new_password != confirm_password:
+        #         ctx["errors"]["confirm_password"] = "password is not the same as the confirmation password"
+        #     filename = file.name  # Use the original filename
+        #     filepath = os.path.join(settings.MEDIA_ROOT, 'manage_barcode/static/media/', filename)
+        #     # Save the uploaded file
+        #     with open(filepath, 'wb+') as destination:
+        #         for chunk in file.chunks():
+        #             destination.write(chunk)
 
-        if file and user:
-            db_user = FormData.objects.get(email=user)
-
-            filename = file.name  # Use the original filename
-            filepath = os.path.join(settings.MEDIA_ROOT, 'manage_barcode/static/media/', filename)  # Create path within 'images' folder
-            print("1111111111111111111111")
-            # Save the uploaded file
-            print(filepath)
-            with open(filepath, 'wb+') as destination:
-                for chunk in file.chunks():
-                    destination.write(chunk)
-
-            # Store the relative path in the database (recommended)
-            db_user.path_avatar = os.path.join('/static/media/', filename)  # Relative path within 'images' folder
-            db_user.save()
+        #     # Store the relative path in the database (recommended)
+        #     if (fname != db_user.fname):
+        #         db_user.fname = fname
+        #     if (lname != db_user.lname):
+        #         db_user.lname = lname
+        #     if (email != db_user.email):
+        #         user = User.objects.get(username=db_user.email)
+        #         db_user.email = email
+        #         user.email = email
+        #         user.save()
+        #     # update mot de pass
+        #     db_user.path_avatar = os.path.join('/static/media/', filename)
+        #     db_user.save()
     return redirect('/profile/')
 
     

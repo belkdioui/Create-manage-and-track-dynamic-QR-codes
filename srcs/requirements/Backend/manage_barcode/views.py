@@ -15,7 +15,6 @@ from django.contrib.auth import authenticate, login, logout
 def signup(request):
     if request.user.is_authenticated:
         return redirect('/')
-
     ctx = {}
     if request.method == 'POST':
         fname = request.POST.get('fname')
@@ -24,16 +23,19 @@ def signup(request):
         tel = request.POST.get('tel')
         password = request.POST.get('Password')
         cpassword = request.POST.get('conf_pass')
-        data= {"fname": fname,"lname": lname, "email":email, "tel":tel, "password":password, "cpassword":cpassword }
+        data= {"fname": fname,"lname": lname, "email":email, "tel":tel, "password":password, "cpassword":cpassword}
         ctx['errors'] = utils_1.check_errors("sign_up", data)
         if(len(ctx['errors']) == 0):
-            user = User.objects.create_user(email, email, password=password)
-            user.save()
-            db_user = FormData.objects.create(fname=fname, lname=lname, email=email, tel=tel)
-            db_user.token = hashlib.sha256((email + (str)(date.today())).encode("utf-8")).hexdigest()
-            db_user.save()
-            EmailVerification.send_email(request, db_user, 'email_verification')
-            return render(request, 'auth/login.html')
+            try:
+                user = User.objects.create_user(username=email, email=email, password=password)
+                user.save()
+                db_user = FormData.objects.create(fname=fname, lname=lname, email=email, tel=tel)
+                db_user.token = hashlib.sha256((email + (str)(date.today())).encode("utf-8")).hexdigest()
+                db_user.save()
+                EmailVerification.send_email(request, db_user, 'email_verification')
+                return render(request, 'auth/login.html')
+            except Exception as e:
+                ctx['errors']['email_error'] = "Error during sending an email"
     return render(request, 'auth/signup.html', context=ctx)
 
 def get_data_home(request):
@@ -114,7 +116,6 @@ def index(request):
             logout_api(request)
             return redirect('/')
         return redirect('/home/')
-
     return login_api(request)
 
 
@@ -150,10 +151,9 @@ def profile(request):
         logout_api(request)
     elif request.user.is_authenticated:
         try:
-            db_user = FormData.objects.get(email=request.user)
+            db_user = FormData.objects.get(email=request.user.username)
             profile = db_user.path_avatar
             data = {'tel':db_user.tel, 'email':db_user.email, 'fname':db_user.fname.capitalize(), 'lname':db_user.lname.capitalize(), 'ticket':db_user.tickets.count(), 'balance':db_user.balance, 'avatar':profile}
-            data = {'tel':db_user.tel, 'email':db_user.email, 'fname':db_user.fname.capitalize(), 'lname':db_user.lname.capitalize(), 'ticket':db_user.tickets.count(), 'balance':db_user.balance}
         except Exception as e:
             return JsonResponse({'Error': f"Error sending email: {e}"})
         return render(request, 'profile.html', {'profile':data})
