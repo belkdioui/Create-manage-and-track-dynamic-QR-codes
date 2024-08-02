@@ -5,14 +5,16 @@
     <link rel='stylesheet' href="{% static 'auth/css/profile.css' %}">
 {% endblock header_content %}
 {% block body_content %}
-    <form class="box_data">
+    <form method="post" class="box_data" action="/update_data">
+      {% csrf_token %}
+        <h1>EDIT INFORMATION</h1>
         <div class="photo_info">
-            <h1>EDIT INFORMATION</h1>
             <div class="photo_container">
-                <img src="{% static 'profile.jpg' %}">
+                <img src="{% static 'profile.jpg' %}" id="avatar_photo" >
                 <div class="photo_button">
-                    <button type="button" id="Choose_button">Choose a file</button>
-                    <p>Acceptable formats jpg,png only<p>
+                    <button onclick="reclick()" id="Choose_button" type="button" >Choose a file</button>
+                    <input type="file" id="file-upload" name="photo">
+                    <p id="choose_paragraph">Acceptable formats jpg,png only</p>
                 </div>
             </div>
         </div>
@@ -20,32 +22,35 @@
             <h1>ACCOUNT INFORMATION</h1>
             <div class="data-account">
                 <label for="first_name">First Name</label>
-                <input type="text" name="first_name" id="input_button" value="First name"disabled>
+                <input type="text" name="first_name" id="input_button" value="{{ profile.fname }}" disabled="true">
             </div>
             <div class="data-account">
                 <label for="last_name">Last Name</label>
-                <input type="text" name="last_name" id="input_button" value="Last name"disabled>
+                <input type="text" name="last_name" id="input_button" value="{{ profile.lname }}" disabled="true">
             </div>
             <div class="data-account">
                 <label for="email">E-mail</label>
-                <input type="email" name="email" id="input_button" value="Email"disabled>
+                <input type="email" name="email" id="input_button" value="{{ profile.email }}" disabled="true">
             </div>
         </div>
         <div class="password_info">
             <h1>CHANGE PASSWORD</h1>
             <div class="data-account">
                 <label for="pas">Current Password</label>
-                <input type="password" name="pas" id="input_button" value="current password"disabled>
+                <input type="password" name="pas" id="input_button" value="password"  disabled="true">
             </div>
             <div class="data-account">
                 <label for="npas">New Password</label>
-                <input type="password" name="npas" id="input_button" value="new password"disabled>
+                <input type="password" name="npas" id="input_button" value="password" disabled="true">
             </div>
             <div class="data-account">
                 <label for="cpas">Confirm Password</label>
-                <input type="password" name="cpas" id="input_button" value="confirm password"disabled>
+                <input type="password" name="cpas" id="input_button" value="password" disabled="true">
             </div>
-            <button type="submit" id="save">save</button>
+            <div class="save_button">
+                <button id="edit" type="button" onclick="edit_data()">edit</button>
+                <button type="submit" id="save">save</button>
+            </div>
         </div>
     </form>
     <script src="{% static 'auth/js/profile.js' %}"></script>

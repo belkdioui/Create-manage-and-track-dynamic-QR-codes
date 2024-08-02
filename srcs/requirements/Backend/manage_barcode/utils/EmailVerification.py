@@ -118,19 +118,7 @@ from django.conf import settings
 
 
 def update_avatar(request):
-    # if request.method == "POST":
-    #     file = request.FILES['photo']
-    #     user = request.user
-    #     filepath = settings.STATIC_URL + "media/" + file.name
-    #     print(filepath)
-    #     if file and user:
-    #         db_user = FormData.objects.get(email=user)
-    #         db_user.path_avatar = filepath
-    #     print('77777777777777777')
-    #     print(settings.STATIC_URL)
-    #     with open(filepath, 'wb+') as destination:
-    #         for chunk in file.chunks():
-    #             destination.write(chunk)
+
     if request.method == "POST":
         file = request.FILES['photo']
         user = request.user

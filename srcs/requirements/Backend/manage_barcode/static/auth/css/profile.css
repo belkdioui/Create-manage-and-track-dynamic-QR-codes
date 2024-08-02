@@ -1,65 +1,88 @@
 h1
 {
     color: #ef552d;
+    margin: auto;
+    font-family: monospace;
+    font-size:xx-large;
+    padding-top: 1.5rem;
+
 }
 
 .box_data
 {
+    padding: 5%;
+    padding-top: 20px;
     font-family: monospace;
-    background-color: #4263755b;
+    background-color: #282a37b1;
     display: flex;
     flex-direction: column;
-    width: 700px;
+    width: 50%;
+    min-width: 600px;
     margin: auto;
     border: 2px solid #ef552d;
+    border-radius: 15px;
 }
 
 /* ***************** */
 .photo_info
 {
-    margin: auto;
-    width: 600px;
+    margin: 0;
+
 }
 .photo_container
 {
     display: flex;
     gap: 20px;
-    width: 60%;
-    height: 30%;
 }
 .photo_button
 {
-    width: 100%;
+    width: 50%;
     height: 100%;
     margin: auto;
-    margin-top: 10%;
+}
+#avatar_photo
+{
+    border-radius: 50%;
+    width: 11rem;
+    height: 11rem;
+    object-fit: cover;
 }
 #Choose_button
 {
+    color: white;
     background-color: #ef552d;
     border: 2px solid #ef552d;
     border-radius: 8px;
-    height: 34px;
-    width: 150px;
+}
+#Choose_button:hover
+{
+    box-shadow: 0 0 10px #EF552D;
+    color: black;
+}
+
+#choose_paragraph
+{
+    padding-top: 1.1rem;
+    margin: 0;
+}
+#file-upload
+{
+    display: none;
 }
 /********************************/
 .account_info
 {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    margin: auto;
-    width: 600px;
-
+    gap: 35px;
+    margin: 0;
 }
 /********************************/
 .password_info
 {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    margin: auto;
-    width: 600px;
+    gap: 35px;
 }
 /* shared******************* */
 
@@ -67,8 +90,117 @@ h1
 {
     width: 300px;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 15px;
     float: right;
     border: 0px ;
+}
+.save_button
+{
+    margin-top: -10px;
+    width: 100%;
+    padding-bottom: 0;
+}
+#save
+{
+    color: white;
+
+    width: 150px;
+    padding: 10px;
+    background-color: #ef552d;
+    border: 2px solid #ef552d;
+    border-radius: 8px;
+    float: right;
+}
+#save:hover
+{
+    box-shadow: 0 0 10px #EF552D;
+    color: black;
+}
+#edit
+{
+    color: white;
+    width: 150px;
+    padding: 10px;
+    background-color: #ef552d;
+    border: 2px solid #ef552d;
+    border-radius: 8px;
+    float: left;
+}
+#edit:hover
+{
+    box-shadow: 0 0 10px #EF552D;
+    color: black;
+}
+label
+{
+    position: relative;
+    padding-top: 0.5rem;
+    margin: auto;
+}
+
+@media (max-width: 991px)
+{
+
+    .box_data
+    {
+        width: 100%;
+        min-width: 0;
+        gap:30px
+    }
+
+    #input_button
+    {
+        max-width: 300px;
+        width: 80%;
+    }
+    #edit
+    {
+        color: white;
+        width: auto;
+        padding: 10px;
+        background-color: #ef552d;
+        border: 2px solid #ef552d;
+        border-radius: 8px;
+        float: left;
+    }
+    h1
+    {
+        display: none;
+    }
+    #save
+    {
+        color: white;
+        width: auto;
+        padding: 10px;
+        background-color: #ef552d;
+        border: 2px solid #ef552d;
+        border-radius: 8px;
+        float: right;
+    }
+    #avatar_photo
+    {
+        width: 35%;
+        height: 35%;
+        min-width: 80px;
+        min-height: 80px;
+        max-width: 150px;
+        max-height: 150px;
+        margin: auto;
+    }
+}
+@media (max-width: 800px)
+{
+    .box_data
+    {
+        padding: 5%;
+    }
+    #input_button
+    {
+        width: 100%;
+        max-width: none;
+    }
+    .data-account
+    {
+        width: 100%;
+    }
 }
