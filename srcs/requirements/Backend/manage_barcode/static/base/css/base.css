@@ -136,7 +136,7 @@ body
   width: 100%;
   bottom: 0px;
   left: 0px;
-  animation: progress 10s linear forwards;
+  animation: progress 5s linear forwards;
 }
 @keyframes progress {
   100% {

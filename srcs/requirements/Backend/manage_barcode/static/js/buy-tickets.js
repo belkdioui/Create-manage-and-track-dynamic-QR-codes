@@ -80,7 +80,21 @@ function post_data(tick, total) {
         },
         body: JSON.stringify(data)
     })
-    .then(response => response.json())
+    .then(response => {
+        if(!response.ok) {
+            return response.json().then(data => {
+                if(response.status == 400){
+                    createToast('error', data.error);
+                }
+                else{
+                    createToast('error', 'An unexpected error occurred');
+                }
+                hideSpinner();
+                throw new Error(data.error || 'Unknown error');
+            })
+        }
+        return response.json();
+    })
     .then(data => {
         document.querySelector('.budget').innerText = data.balance;
         document.querySelector('.tickets').innerText = data.count_ticket;
@@ -97,52 +111,3 @@ function hideSpinner() {
     spiner = document.getElementById("spinner-overlay").classList.remove('active');
 }
 
-
-
-
-
-
-// const notifications = document.querySelector(".notifications"),
-// buttons = document.querySelectorAll(".buttons .btn");
-// const toastDetails = {
-//     timer: 10000,
-//     success: {
-//         icon: 'fa-circle-check',
-//         text: 'Success: This is a success toast.',
-//     },
-//     error: {
-//         icon: 'fa-circle-xmark',
-//         text: 'Error: This is an error toast.',
-//     },
-//     warning: {
-//         icon: 'fa-triangle-exclamation',
-//         text: 'Warning: This is a warning toast.',
-//     },
-//     info: {
-//         icon: 'fa-circle-info',
-//         text: 'Info: This is an information toast.',
-//     }
-// }
-
-// const removeToast = (toast) => {
-//     toast.classList.add("hide");
-//     if(toast.timeoutId) clearTimeout(toast.timeoutId);
-//     setTimeout(() => toast.remove(), 10000);
-// }
-
-// const createToast = (id) => {
-//     const { icon, text } = toastDetails[id];
-//     const toast = document.createElement("li");
-//     toast.className = `toast_1 ${id}`;
-//     toast.innerHTML = `<div class="column">
-//                          <i class="fa-solid ${icon}"></i>
-//                          <span>${text}</span>
-//                       </div>
-//                       <i class="fa-solid fa-xmark" onclick="removeToast(this.parentElement)"></i>`;
-//     notifications.appendChild(toast);
-//     toast.timeoutId = setTimeout(() => removeToast(toast), toastDetails.timer);
-// }
-
-// buttons.forEach(btn => {
-//     btn.addEventListener("click", () => createToast(btn.id));
-// });

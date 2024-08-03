@@ -25,6 +25,7 @@ def signup(request):
         cpassword = request.POST.get('conf_pass')
         data= {"fname": fname,"lname": lname, "email":email, "tel":tel, "password":password, "cpassword":cpassword}
         ctx['errors'] = utils_1.check_errors("sign_up", data)
+        print(len(ctx['errors']))
         if(len(ctx['errors']) == 0):
             try:
                 user = User.objects.create_user(username=email, email=email, password=password)
@@ -33,7 +34,7 @@ def signup(request):
                 db_user.token = hashlib.sha256((email + (str)(date.today())).encode("utf-8")).hexdigest()
                 db_user.save()
                 EmailVerification.send_email(request, db_user, 'email_verification')
-                return render(request, 'pages/login.html')
+                return render(request, 'pages/signup.html')
             except Exception as e:
                 ctx['errors']['email_error'] = "Error during sending an email"
     return render(request, 'pages/signup.html', context=ctx)

@@ -20,7 +20,7 @@
   <div class="div_form">
     {% for field, field_errors in errors.items %}
       <script>
-        createToast('warning', '{{field_errors}}')
+        createToast('error', '{{field_errors}}')
       </script>
     {%endfor%}
     <form id="dataForm" action="/signup/" method="POST">
