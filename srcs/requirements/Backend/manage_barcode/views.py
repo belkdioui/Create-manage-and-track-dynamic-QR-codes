@@ -33,10 +33,10 @@ def signup(request):
                 db_user.token = hashlib.sha256((email + (str)(date.today())).encode("utf-8")).hexdigest()
                 db_user.save()
                 EmailVerification.send_email(request, db_user, 'email_verification')
-                return render(request, 'auth/login.html')
+                return render(request, 'pages/login.html')
             except Exception as e:
                 ctx['errors']['email_error'] = "Error during sending an email"
-    return render(request, 'auth/signup.html', context=ctx)
+    return render(request, 'pages/signup.html', context=ctx)
 
 def get_data_home(request):
     if not request.user.is_authenticated:
@@ -56,7 +56,7 @@ def get_data_home(request):
         'db_user' : db_user,
         'count_ticket' : number_of_tickets,
     }
-    return render(request, 'home.html', ctx)
+    return render(request, 'pages/home.html', ctx)
 
 
 
@@ -103,7 +103,7 @@ def buy_tickets(request):
             'db_user' : db_user,
             'count_ticket' : db_user.tickets.count()
         }
-    return render(request, 'buy-tickets.html', ctx)
+    return render(request, 'pages/buy-tickets.html', ctx)
 
 
 
@@ -128,7 +128,7 @@ def login_api(request):
         if user:
             if FormData.objects.get(email=email).activated == False:
                 ctx['valide'] = 'false'
-                return render(request, 'auth/login.html', context=ctx)
+                return render(request, 'pages/login.html', context=ctx)
             login(request, user)
             return redirect('/home/')
         try:
@@ -136,7 +136,7 @@ def login_api(request):
             ctx['pass'] = 'Invalide password'
         except FormData.DoesNotExist:
             ctx['email'] = 'Invalide email'
-    return render(request, 'auth/login.html', context=ctx)
+    return render(request, 'pages/login.html', context=ctx)
 
 
 def logout_api(request):
@@ -156,5 +156,5 @@ def profile(request):
             data = {'tel':db_user.tel, 'email':db_user.email, 'fname':db_user.fname.capitalize(), 'lname':db_user.lname.capitalize(), 'ticket':db_user.tickets.count(), 'balance':db_user.balance, 'avatar':profile}
         except Exception as e:
             return JsonResponse({'Error': f"Error sending email: {e}"})
-        return render(request, 'profile.html', {'profile':data})
+        return render(request, 'pages/profile.html', {'profile':data})
     return redirect('/')

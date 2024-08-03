@@ -3,7 +3,7 @@
 
 
 {% block header_content %}
-    <link rel="stylesheet" type="text/css" href="{% static 'auth/css/signup.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '/css/signup.css' %}">
 {% endblock header_content %}
 
 
@@ -19,9 +19,9 @@
 </div>
   <div class="div_form">
     {% for field, field_errors in errors.items %}
-    <div style="color: white">
-      {{field_errors}}
-    </div>
+      <script>
+        createToast('warning', '{{field_errors}}')
+      </script>
     {%endfor%}
     <form id="dataForm" action="/signup/" method="POST">
       {% csrf_token %}
@@ -71,8 +71,8 @@
         </div>
       </div>
       <br>
-      <button type="submit" class="btn btn-primary" onclick="signup_btn_funct()">Sign up</button>
+      <button type="submit" class="btn btn-primary">Sign up</button>
   </form>
   </div>
-  <script src="{% static 'auth/js/signup.js' %}"></script>
+  <script src="{% static '/js/signup.js' %}"></script>
 {% endblock body_content %}

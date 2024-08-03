@@ -1,15 +1,14 @@
-const notifications = document.querySelector(".notifications");
 
 const toastDetails = {
     timer: 10000,
     success: {
-        icon: 'bi bi-check-circle',
+        icon: 'bi-check-circle',
     },
     error: {
         icon: 'bi bi-x-circle',
     },
     warning: {
-        icon: 'bi bi-exclamation-triangle',
+        icon: 'bi-exclamation-triangle',
     },
     info: {
         icon: 'fa-circle-info',
@@ -27,10 +26,14 @@ const createToast = (id, text) => {
     const toast = document.createElement("li");
     toast.className = `toast_1 ${id}`;
     toast.innerHTML = `<div class="column">
-                         <i class="fa-solid ${icon}"></i>
+                         <i class="${icon}"></i>
                          <span>${text}</span>
+                         <i class="" onclick="removeToast(this.parentElement)"></i>
                       </div>
-                      <i class="fa-solid fa-xmark" onclick="removeToast(this.parentElement)"></i>`;
+                        `;
+                
+    const notifications = document.querySelector(".notifications");
+    console.log(notifications)
     notifications.appendChild(toast);
     toast.timeoutId = setTimeout(() => removeToast(toast), toastDetails.timer);
 }

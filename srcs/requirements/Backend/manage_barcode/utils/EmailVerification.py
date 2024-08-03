@@ -35,7 +35,7 @@ def verifie(request, token):
         db_user = FormData.objects.get(token=token)
         
         if request.path.find("reset_password") != -1:
-            return render(request, 'auth/reset_password.html', {'verifie_password':'true', 'token': token})
+            return render(request, 'pages/reset_password.html', {'verifie_password':'true', 'token': token})
 
         db_user.activated = True
         db_user.token = ''
@@ -48,7 +48,7 @@ def verifie(request, token):
     except Exception as e:
             ctx['errors']['sending_mail'] = 'Error sending email'
 
-    return render(request, 'auth/reset_password.html', context=ctx)
+    return render(request, 'pages/reset_password.html', context=ctx)
     
 
 def save_new_password(request, token):
@@ -68,7 +68,7 @@ def save_new_password(request, token):
             
             if(len(ctx['errors']) != 0):
                 ctx['verifie_password'] = 'true'
-                return render(request, 'auth/reset_password.html', context=ctx)
+                return render(request, 'pages/reset_password.html', context=ctx)
 
             user = User.objects.get(username=user_db.email)
             user.set_password(new_password)
@@ -86,7 +86,7 @@ def save_new_password(request, token):
 
         if(len(ctx['errors']) != 0):
             ctx['verifie_password'] = 'true'
-            return render(request, 'auth/reset_password.html', context=ctx)
+            return render(request, 'pages/reset_password.html', context=ctx)
         
     return redirect('/')
 
@@ -109,7 +109,7 @@ def forgot_password(request):
         except Exception:
             ctx['email_error'] = "true"
     ctx['verifie_email'] = 'true'
-    return render(request, 'auth/reset_password.html', context=ctx)
+    return render(request, 'pages/reset_password.html', context=ctx)
 
 
 import uuid

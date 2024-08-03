@@ -171,12 +171,12 @@ input {
 
 
 .incre_decre:nth-last-child(1):active {
-    box-shadow:  0px 0px 10px #EF552D;
+    box-shadow:  0px 0px 10px #282A37;
     color: #fff;
 }
 
 .incre_decre:nth-child(1):active {
-    box-shadow:  0px 0px 10px #EF552D;
+    box-shadow:  0px 0px 10px #282A37;
     color: #fff;
 }
 
@@ -215,7 +215,7 @@ input {
 
 
 
-
+/* 
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 :root {
@@ -357,4 +357,4 @@ input {
     padding: 8px 15px;
   }
 }
-
+ */

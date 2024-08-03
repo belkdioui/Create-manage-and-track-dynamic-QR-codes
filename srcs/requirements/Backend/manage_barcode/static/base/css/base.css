@@ -75,15 +75,17 @@ body
 }
 
 .notifications {
-    z-index: 1050;
+  z-index: 1050;
   position: fixed;
   top: 30px;
   right: 20px;
 }
+
 .notifications :where(.toast_1, .column) {
   display: flex;
   align-items: center;
 }
+
 .notifications .toast_1 {
   width: 400px;
   position: relative;

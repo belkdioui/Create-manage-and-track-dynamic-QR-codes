@@ -2,7 +2,7 @@
 {% load static %}
 {% block header_content %}
     <title>Profile</title>
-    <link rel='stylesheet' href="{% static 'auth/css/profile.css' %}">
+    <link rel='stylesheet' href="{% static '/css/profile.css' %}">
 {% endblock header_content %}
 {% block body_content %}
     <form method="post" class="box_data" action="/update_data/" enctype='multipart/form-data'>
@@ -53,5 +53,5 @@
             </div>
         </div>
     </form>
-    <script src="{% static 'auth/js/profile.js' %}"></script>
+    <script src="{% static '/js/profile.js' %}"></script>
 {% endblock body_content %}
