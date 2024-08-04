@@ -6,6 +6,8 @@ from .utils_1 import check_errors
 import smtplib
 import os
 import hashlib
+import uuid
+from django.conf import settings
 from datetime import date
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login
@@ -111,57 +113,55 @@ def forgot_password(request):
     ctx['verifie_email'] = 'true'
     return render(request, 'pages/reset_password.html', context=ctx)
 
-
-import uuid
-from django.conf import settings
-
-
 def update_data(request):
     if not request.user.is_authenticated:
         return redirect('/')
     ctx = {}
+    data = {}
     if request.method == "POST":
-        if 'photo' in request.FILES:
-            file = request.FILES['photo']
-        else:
-            return redirect('/profile/')
         user = request.user
-        print(file)
-        print("1111111111")
-        print(user.password)
-        print(request.POST.get('pas'))
-        # if file and user:
-        #     db_user = FormData.objects.get(email=user.username)
-        #     fname = request.POST.get('first_name')
-        #     lname = request.POST.get('last_name')
-        #     email = request.POST.get('email')
-        #     password = request.POST.get('pas')
-        #     if authenticate(db_user.email, password) == None:
-        #         ctx["errors"]["password"] = "wrong password"
-        #     new_password = request.POST.get('npas')
-        #     confirm_password = request.POST.get('cpas')
-        #     if new_password != confirm_password:
-        #         ctx["errors"]["confirm_password"] = "password is not the same as the confirmation password"
-        #     filename = file.name  # Use the original filename
-        #     filepath = os.path.join(settings.MEDIA_ROOT, 'manage_barcode/static/media/', filename)
-        #     # Save the uploaded file
-        #     with open(filepath, 'wb+') as destination:
-        #         for chunk in file.chunks():
-        #             destination.write(chunk)
+        if user:
+            db_user = FormData.objects.get(email=user.username)
+            fname = request.POST.get('first_name')
+            lname = request.POST.get('last_name')
+            email = request.POST.get('email')
+            password = request.POST.get('pas')
+            new_password = request.POST.get('npas')
+            confirm_password = request.POST.get('cpas')
+            if password and new_password and confirm_password:
+                if authenticate(username=db_user.email, password=password) == None:
+                    data["password"] = "wrong password"
+                if new_password != confirm_password:
+                    data["confirm_password"] = "password is not the same as the confirmation password"
+            ctx['errors'] = data
+            if(len(ctx['errors']) != 0):
+                return render(request, "profile.html", ctx)
+            if 'photo' in request.FILES:
+                file = request.FILES['photo']
+                filename = file.name  # Use the original filename
+                filepath = os.path.join(settings.MEDIA_ROOT, 'manage_barcode/static/media/', filename)
+                # Save the uploaded file
+                with open(filepath, 'wb+') as destination:
+                    for chunk in file.chunks():
+                        destination.write(chunk)
+                db_user.path_avatar = os.path.join('/static/media/', filename)
 
-        #     # Store the relative path in the database (recommended)
-        #     if (fname != db_user.fname):
-        #         db_user.fname = fname
-        #     if (lname != db_user.lname):
-        #         db_user.lname = lname
-        #     if (email != db_user.email):
-        #         user = User.objects.get(username=db_user.email)
-        #         db_user.email = email
-        #         user.email = email
-        #         user.save()
-        #     # update mot de pass
-        #     db_user.path_avatar = os.path.join('/static/media/', filename)
-        #     db_user.save()
+            if (fname != db_user.fname and fname != None):
+                db_user.fname = fname
+            if (lname != db_user.lname and lname != None):
+                db_user.lname = lname
+            if (email != db_user.email and email != None):
+                user = User.objects.get(username=db_user.email)
+                db_user.email = email
+                user.email = email
+                user.save()
+            # update mot de pass
+            print(fname)
+            print(lname)
+            print(email)
+            print(password)
+            print(new_password)
+            print(confirm_password)
+            print(db_user.path_avatar)
+            db_user.save()
     return redirect('/profile/')
-
-    
