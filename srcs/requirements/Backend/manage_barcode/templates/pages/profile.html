@@ -10,7 +10,7 @@
         <h1>EDIT INFORMATION</h1>
         <div class="photo_info">
             <div class="photo_container">
-                <img src="{% static 'profile.jpg' %}" id="avatar_photo" >
+                <img src="{{ profile.avatar }}" id="avatar_photo" >
                 <div class="photo_button">
                     <button onclick="reclick()" id="Choose_button" type="button" >Choose a file</button>
                     <input type="file" id="file-upload" name="photo">
@@ -37,15 +37,15 @@
             <h1>CHANGE PASSWORD</h1>
             <div class="data-account">
                 <label for="pas">Current Password</label>
-                <input type="password" name="pas" id="input_button" value="password"  disabled="true">
+                <input type="password" name="pas" id="input_button" placeholder="Current Password"  disabled="true">
             </div>
             <div class="data-account">
                 <label for="npas">New Password</label>
-                <input type="password" name="npas" id="input_button" value="password" disabled="true">
+                <input type="password" name="npas" id="input_button" placeholder="New Password" disabled="true">
             </div>
             <div class="data-account">
                 <label for="cpas">Confirm Password</label>
-                <input type="password" name="cpas" id="input_button" value="password" disabled="true">
+                <input type="password" name="cpas" id="input_button" placeholder="Confirm Password" disabled="true">
             </div>
             <div class="save_button">
                 <button id="edit" type="button" onclick="edit_data()">edit</button>
