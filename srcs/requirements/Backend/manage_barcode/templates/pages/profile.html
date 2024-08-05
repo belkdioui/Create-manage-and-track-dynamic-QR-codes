@@ -21,15 +21,15 @@
         <div class="account_info">
             <h1>ACCOUNT INFORMATION</h1>
             <div class="data-account">
-                <label for="first_name">First Name</label>
+                <label for="first_name" class="text">First Name</label>
                 <input type="text" name="first_name" id="input_button" value="{{ profile.fname }}" disabled="true">
             </div>
             <div class="data-account">
-                <label for="last_name">Last Name</label>
+                <label for="last_name" class="text">Last Name</label>
                 <input type="text" name="last_name" id="input_button" value="{{ profile.lname }}" disabled="true">
             </div>
             <div class="data-account">
-                <label for="email">E-mail</label>
+                <label for="email" class="text">E-mail</label>
                 <input type="email" name="email" id="input_button" value="{{ profile.email }}" disabled="true">
             </div>
         </div>
@@ -53,5 +53,10 @@
             </div>
         </div>
     </form>
+    {% for error in errors %}
+			<script> 
+				createToast('error', "{{error}}")
+			</script>
+	{% endfor %}
     <script src="{% static '/js/profile.js' %}"></script>
 {% endblock body_content %}

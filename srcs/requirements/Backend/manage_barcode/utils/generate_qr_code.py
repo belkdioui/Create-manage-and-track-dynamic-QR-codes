@@ -5,7 +5,6 @@ from django.conf import settings
 
 def generate_qr_code_from_id(ticket):
     data_to_encode = ticket.barcode
-    print(data_to_encode)
     qr = qrcode.QRCode(
         version=2,
         error_correction=qrcode.constants.ERROR_CORRECT_L,

@@ -15,7 +15,6 @@ function togglePasswordVisibility() {
 }
 
 
-
 // function signup_btn_funct()
 // {
 //     {% for field, field_errors in errors.items %}
