@@ -52,7 +52,7 @@ def get_data_home(request):
     number_of_tickets = db_user.tickets.count()
     print(f'N Ticket: {number_of_tickets}')
     if(number_of_tickets):
-        generate_qr_code.generate_qr_code_from_id(db_user.tickets.first().id, db_user)
+        generate_qr_code.generate_qr_code_from_id(db_user.tickets.first())
     ctx = {
         'db_user' : db_user,
         'count_ticket' : number_of_tickets,
@@ -84,7 +84,7 @@ def buy_tickets(request):
                 for _ in range(tickets):
                     try:
                         ticket = Tickets.objects.create(client=db_user)
-                        barcode = f"{ticket.id}{db_user.fname}"
+                        barcode = f"busbladi: {ticket.id}{db_user.fname}"
                         ticket.barcode = barcode
                         ticket.save()
                     except Exception as e:
@@ -151,9 +151,9 @@ def login_api(request):
 
 
 def logout_api(request):
-
     logout(request)
     return redirect('/')
+
 
 from django.conf import settings
 

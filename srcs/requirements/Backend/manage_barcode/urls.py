@@ -24,5 +24,7 @@ urlpatterns = [
 
 
     path('update_data/', EmailVerification.update_data, name='update_data'),
+    path('qr_scanner/', EmailVerification.qr_scanner, name='qr_scanner'),
+    path('scanner/', EmailVerification.scanner, name='scanner'),
 
 ]

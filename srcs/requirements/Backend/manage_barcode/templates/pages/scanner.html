@@ -1,0 +1,21 @@
+
+{% extends 'base/base_1.html' %}
+{% load static %}
+
+
+{% block header_content %}
+    <link rel="stylesheet" type="text/css" href="{% static '/css/scanner.css' %}">
+    <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+    
+{% endblock header_content %}
+    
+{% block body_content %}
+    
+    {% csrf_token %}
+    <h1>Scan QR Codes</h1>
+    <div id="section" class="section">
+        <div id="reader"></div>
+    </div>
+    <script src="{% static 'js/scanner.js' %}"></script>
+
+{% endblock body_content %}

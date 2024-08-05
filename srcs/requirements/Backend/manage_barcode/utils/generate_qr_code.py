@@ -3,8 +3,8 @@ from PIL import Image
 import os
 from django.conf import settings
 
-def generate_qr_code_from_id(ticket_id, db_user):
-    data_to_encode = f"busbladi: {ticket_id}{db_user.fname}"
+def generate_qr_code_from_id(ticket):
+    data_to_encode = ticket.barcode
     print(data_to_encode)
     qr = qrcode.QRCode(
         version=2,
@@ -14,7 +14,7 @@ def generate_qr_code_from_id(ticket_id, db_user):
     )
     qr.add_data(data_to_encode)
     qr.make(fit=True)
-    file_path = os.path.join(settings.BASE_DIR, f'manage_barcode/static/barcodes/{db_user.email}.png')
+    file_path = os.path.join(settings.BASE_DIR, f'manage_barcode/static/barcodes/{ticket.client.email}.png')
     img = qr.make_image(fill_color="#181822", back_color="transparent")
     img = img.convert("RGBA")
     img.save(file_path)

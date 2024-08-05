@@ -1,0 +1,28 @@
+h1
+{
+    margin: auto;
+    text-align: center;
+    color: #EF552D;
+}
+.section
+{
+    width: 50%;
+    height: 50%;
+    margin: auto;
+}
+.html5-qrcode-element
+{
+    color: #EF552D;
+}
+#html5-qrcode-button-camera-permission
+{
+    background-color: #EF552D;
+    color: black;
+    border: 2px solid #EF552D;
+}
+#html5-qrcode-button-camera-permission:hover
+{
+    background-color: #a9381c;
+    border: 2px solid #a9381c;
+
+}
