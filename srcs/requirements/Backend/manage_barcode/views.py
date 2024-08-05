@@ -116,10 +116,6 @@ def Schedules_Stops(request):
     return render(request, 'pages/Schedules_Stops.html')
 
 
-
-
-
-
 def index(request):
     ctx= {}
     if request.user.is_authenticated:
@@ -133,20 +129,18 @@ def index(request):
 def login_api(request):
     ctx= {}
     if request.method == "POST":
+        ctx['errors'] = []
         email = request.POST.get('email')
         password = request.POST.get('password')
         user = authenticate(username=email, password=password)
         if user:
-            if FormData.objects.get(email=email).activated == False:
-                ctx['valide'] = 'false'
-                return render(request, 'pages/login.html', context=ctx)
-            login(request, user)
-            return redirect('/home/')
-        try:
-            FormData.objects.get(email=email)
-            ctx['pass'] = 'Invalide password'
-        except FormData.DoesNotExist:
-            ctx['email'] = 'Invalide email'
+            if FormData.objects.get(email=email).activated == True:
+                login(request, user)
+                return redirect('/home/')
+            ctx['errors'].append('Account Disabled, please check your email')
+            ctx['account_disabled'] = 'true'
+        else:
+            ctx['errors'].append('Invalide email or password')
     return render(request, 'pages/login.html', context=ctx)
 
 
