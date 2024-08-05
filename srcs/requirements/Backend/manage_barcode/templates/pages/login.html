@@ -12,6 +12,11 @@
 {% block body_content %}
 	<div class="login-data0">
 		<h1 class='header1'>Login</h1>
+		{% for error in errors %}
+			<script> 
+				createToast('error', "{{error}}")
+			</script>
+		{% endfor %}
 		<form action="/" method="POST" id="motlform">
 			{% csrf_token %}
 			<div class="form1">
@@ -23,19 +28,10 @@
 					<i onclick='show_password()' class="bi bi-eye" id='logo-eyes'></i>
 					<input type="password" placeholder="password" name="password" id="password" required />
 				</div>
-				{% if email %}
+				
+				{% if account_disabled %}
 					<div class="wrong_pass">
-						<p id='pass-text'>We couldn't find an account with that username. Try another</p>
-					</div>
-				{% endif %}
-				{% if pass %}
-					<div class="wrong_pass">
-						<p id='pass-text'>Incorrect password. Try again or click "Forgot password" to reset it.</p>
-					</div>
-				{% endif %}
-				{% if valide %}
-					<div class="wrong_pass">
-						<p id='pass-text'>Please verifie your email <a class='verifie_button' href='/email_verification/'>Resend email verification</button></p>
+						<p id='pass-text'><a class='verifie_button' href='/email_verification/'>Resend email verification ?</button></p>
 					</div>
 				{% endif %}
 				<a href='/reset_password/' class='f-pass'>Forgot password?</a>

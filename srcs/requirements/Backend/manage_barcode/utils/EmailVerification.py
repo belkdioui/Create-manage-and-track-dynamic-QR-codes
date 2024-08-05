@@ -185,10 +185,13 @@ def qr_scanner(request):
             print(f"ticket delete = {ticket.id}")
             print(qr_code_data)
             ticket.delete()
+            return JsonResponse({
+                'success' : 'Ticket used'
+            }, status=200)
+        else:
+            return JsonResponse({
+            'error' : 'Ticket Doesnt Exist'}, status=404)
 
-        return JsonResponse({
-            'sucess' : 'message Recieved'
-        }, status=200)
     return JsonResponse({
             'error' : 'Method Not Allowed'
         }, status=405)

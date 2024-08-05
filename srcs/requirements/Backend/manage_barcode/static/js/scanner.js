@@ -26,12 +26,18 @@ function onScanSuccess(decodedText, decodedResult) {
     })
     .then(response => response.json())
     .then(data => {
-		setTimeout(() => {
-			html5QrcodeScanner.resume();
-			video_container.play();
-		}, 1000);
-
-		createToast('success', 'Your ticket has been consumed');
+      console.log(`this is data = ${data['success']}`)
+      if (data['success'] == 'Ticket used')
+      {
+        createToast('success', 'Your ticket has been consumed');
+		    setTimeout(() => {
+			  html5QrcodeScanner.resume();
+			  video_container.play();
+		    }, 1000);
+      }
+      else
+        createToast('error', data['error']);
+      
 		console.log(data)
 
     })
