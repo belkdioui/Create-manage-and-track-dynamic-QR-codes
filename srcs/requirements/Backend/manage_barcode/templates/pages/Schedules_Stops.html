@@ -8,15 +8,33 @@
 {% endblock header_content %}
 {% block body_content %}
 <div class="form">
-<form action="/Schedules_Stops/" method="post">
-    <label for="lang">City : </label>
-    <select name="languages" id="lang">
-    </select>
-    <label for="lang">Bus Number : </label>
-    <select name="languages" id="lang">
-    </select>
-    <input type="submit" value="Submit" class="submit"/>
-</form>
+    <form action="/Schedules_Stops/" method="post">
+        <label for="lang">City : </label>
+        <select name="languages" id="lang">
+        </select>
+        <label for="lang">Bus Number : </label>
+        <select name="languages" id="lang">
+        </select>
+        <input type="submit" value="Filter" class="submit"/>
+    </form>
+</div>
+<div class="table_info">
+    <table class="table">
+        <thead>
+            <tr>
+                <th></th>
+                <th>First departure</th>
+                <th>Last departure</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>lsll</td>
+                <td>6 dsba7</td>
+                <td>75 ss</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
 
 {% endblock body_content %}

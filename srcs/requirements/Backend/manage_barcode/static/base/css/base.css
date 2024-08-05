@@ -25,9 +25,11 @@ body
   position: relative;
 }
 
+
 .point_1{
   color: #EF552D;
 }
+
 
 .navbar-brand{
   display: flex;

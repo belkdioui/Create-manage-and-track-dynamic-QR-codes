@@ -25,6 +25,11 @@ body {
   position: relative;
 }
 
+div#myNavbar.collapse.navbar-collapse{
+  min-width: fit-content !important;
+  }
+
+
 .point_1 {
   color: #EF552D;
 }
