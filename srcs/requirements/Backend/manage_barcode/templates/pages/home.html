@@ -11,7 +11,7 @@
     <span class="infos-span">Wallet: <span class="budget">{{ db_user.balance }}Dh</span></span>
 </div>
 <div class="card">
-    <img class="card-img-top" src="{% static 'barcodes/' %}{% if count_ticket == 0 %}test.png{% else %}{{ db_user.email }}.png{% endif %}" alt="Card image" style="width:100%">
+    <img class="card-img-top" src="{% static 'barcodes/' %}{% if count_ticket == 0 %}unavailable_ticket.png{% else %}{{ db_user.email }}.png{% endif %}" alt="Card image" style="width:100%">
     <div class="card-body">
       <p class="card-text">Don't have ticket ? <a href="/buy-tickets/" class="buyticket">Buy one</a></p>
       <div class="icon_if_disable"></div>

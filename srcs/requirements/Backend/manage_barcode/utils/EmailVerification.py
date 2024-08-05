@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.http import JsonResponse
-from .. models import FormData
+from .. models import FormData, Tickets
 from email.mime.text import MIMEText
 from .utils_1 import check_errors
 import smtplib
@@ -165,3 +165,34 @@ def update_data(request):
             print(db_user.path_avatar)
             db_user.save()
     return redirect('/profile/')
+
+import json
+
+def qr_scanner(request):
+    if request.method == 'POST':
+        data = json.loads(request.body)
+        qr_code_data = data.get('qr_code_data')
+        try:
+            ticket = Tickets.objects.get(barcode=qr_code_data)
+        except Tickets.DoesNotExist:
+            return JsonResponse({
+            'error' : 'Ticket Doesnt Exist'}, status=404)
+
+        path = os.path.join(settings.BASE_DIR, 'manage_barcode', 'static', "barcodes", f"{ticket.client.email}.png")
+        if os.path.exists(path):
+            os.remove(path)
+            print("image deleted ")
+            print(f"ticket delete = {ticket.id}")
+            print(qr_code_data)
+            ticket.delete()
+
+        return JsonResponse({
+            'sucess' : 'message Recieved'
+        }, status=200)
+    return JsonResponse({
+            'error' : 'Method Not Allowed'
+        }, status=405)
+
+
+def scanner(request):
+    return render(request, 'pages/scanner.html')
