@@ -26,7 +26,7 @@
 .card{
   float:none;
   margin: 3rem auto ;
-  width: 90%;
+  width: 100%;
   max-width: 40rem;
   height: auto;
   background-color: transparent;
@@ -37,6 +37,7 @@
 
 
 .card-img-top{
+  background-color: #EF552D;
   width: 100%;
   height: auto;
   filter: blur(14px);

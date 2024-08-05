@@ -12,8 +12,10 @@ class FormData(models.Model):
     token = models.CharField(max_length=100, blank=True, null=True)
     balance = models.IntegerField(default=500)
     path_avatar = models.TextField(default=f"{settings.STATIC_URL}media/profile.jpg")
+    
     def __str__(self):
         return f'{self.fname} {self.lname}'
+
 
 class Tickets(models.Model):
     client = models.ForeignKey(FormData, on_delete=models.CASCADE, related_name='tickets')
@@ -22,9 +24,31 @@ class Tickets(models.Model):
     def __str__(self):
         return f'{self.id} - {self.barcode}'
 
-class reset_password(models.Model):
-    token = models.CharField(max_length=100)
-    signed_token = models.CharField(max_length=100)
-    time_created = models.DateTimeField(auto_now_add=True)
+
+class City(models.Model):
+    name = models.CharField(max_length=100)
+
     def __str__(self):
-        return f'{self.token}'
+        return f'{self.name}'
+
+
+class Bus(models.Model):
+    number = models.IntegerField()
+    frequency = models.IntegerField()
+    depart_time = models.TimeField()
+    end_time = models.TimeField()
+    travel_time = models.TimeField()
+    number_of_buses = models.IntegerField()
+    city = models.ForeignKey(City, on_delete=models.CASCADE, related_name='bus')
+
+    def __str__(self):
+        return f'{self.number}'
+
+
+class Station(models.Model):
+    location = models.CharField(max_length=100)
+    bus = models.ManyToManyField(Bus)
+    terminus = models.BooleanField()
+
+    def __str__(self):
+        return f'{self.location}'
