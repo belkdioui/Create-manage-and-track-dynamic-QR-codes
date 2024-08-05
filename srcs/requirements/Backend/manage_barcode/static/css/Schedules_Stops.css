@@ -1,0 +1,29 @@
+.form{
+    width: 100%;
+    margin: 1.5rem auto;
+    justify-content: center;
+}
+form{
+    align-items: center;
+    height: 3rem;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+}
+select{
+    height: 40px;
+    width: 13rem;
+    border-radius: 10px;
+    margin-right: 2rem;
+}
+label{
+    display: flex;
+    font-size: 1.1rem;
+    margin-right: 1rem;
+}
+
+.submit{
+    box-shadow: 0 0 10px #EF552D;
+    height: 40px;
+    border-radius: 10px;
+}

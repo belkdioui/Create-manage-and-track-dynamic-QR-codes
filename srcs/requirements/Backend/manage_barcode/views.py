@@ -106,6 +106,16 @@ def buy_tickets(request):
         }
     return render(request, 'pages/buy-tickets.html', ctx)
 
+def Schedules_Stops(request):
+    if not request.user.is_authenticated:
+        return redirect('/')
+
+    if request.user.is_authenticated and request.user.is_superuser:
+        logout_api(request)
+        return redirect('/')
+    return render(request, 'pages/Schedules_Stops.html')
+
+
 
 
 

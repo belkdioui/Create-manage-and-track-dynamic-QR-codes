@@ -1,0 +1,22 @@
+{% extends 'base/base_1.html' %}
+{% load static %}
+
+{% block header_content %}
+    <title>Schedules & Stops</title>
+    <link rel="stylesheet" type="text/css" href="{% static '/css/Schedules_Stops.css' %}">
+    <script src="{% static '/js/Schedules_Stops.js'%}" defer></script>
+{% endblock header_content %}
+{% block body_content %}
+<div class="form">
+<form action="/Schedules_Stops/" method="post">
+    <label for="lang">City : </label>
+    <select name="languages" id="lang">
+    </select>
+    <label for="lang">Bus Number : </label>
+    <select name="languages" id="lang">
+    </select>
+    <input type="submit" value="Submit" class="submit"/>
+</form>
+</div>
+
+{% endblock body_content %}
