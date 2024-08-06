@@ -30,9 +30,7 @@
 				</div>
 				
 				{% if account_disabled %}
-					<div class="wrong_pass">
-						<p id='pass-text'><a class='verifie_button' href='/email_verification/'>Resend email verification ?</button></p>
-					</div>
+					<a class='verifie_button' href='/email_verification/'>Resend email verification ?</a>
 				{% endif %}
 				<a href='/reset_password/' class='f-pass'>Forgot password?</a>
 				<div class="signs">

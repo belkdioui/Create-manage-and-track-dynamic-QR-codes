@@ -25,7 +25,6 @@ def signup(request):
         cpassword = request.POST.get('conf_pass')
         data= {"fname": fname,"lname": lname, "email":email, "tel":tel, "password":password, "cpassword":cpassword}
         ctx['errors'] = utils_1.check_errors("sign_up", data)
-        print(len(ctx['errors']))
         if(len(ctx['errors']) == 0):
             try:
                 user = User.objects.create_user(username=email, email=email, password=password)
@@ -50,7 +49,6 @@ def get_data_home(request):
     ctx={}
     db_user = FormData.objects.get(email=request.user.username)
     number_of_tickets = db_user.tickets.count()
-    print(f'N Ticket: {number_of_tickets}')
     if(number_of_tickets):
         generate_qr_code.generate_qr_code_from_id(db_user.tickets.first())
     ctx = {

@@ -11,7 +11,7 @@ h1
 .box_data
 {
     padding: 5%;
-    padding-top: 20px;
+    padding-top: 10px;
     font-family: monospace;
     background-color: #282a37b1;
     display: flex;
@@ -19,6 +19,7 @@ h1
     width: 50%;
     min-width: 600px;
     margin: auto;
+    margin-top: 4rem;
     border: 2px solid #ef552d;
     border-radius: 15px;
 }
@@ -100,6 +101,7 @@ h1
 }
 .save_button
 {
+    margin: auto;
     margin-top: -10px;
     width: 100%;
     padding-bottom: 0;
@@ -114,6 +116,7 @@ h1
     border: 2px solid #ef552d;
     border-radius: 8px;
     float: right;
+    min-width: 100px;
 }
 #save:hover
 {
@@ -129,6 +132,7 @@ h1
     border: 2px solid #ef552d;
     border-radius: 8px;
     float: left;
+    min-width: 100px;
 }
 #edit:hover
 {
@@ -174,6 +178,8 @@ label
     #save
     {
         color: white;
+
+        height: auto;
         width: auto;
         padding: 10px;
         background-color: #ef552d;
@@ -207,4 +213,18 @@ label
     {
         width: 100%;
     }
+    .data-account
+	{
+		display: flex;
+        flex-direction: column;
+        width: fit-content;
+        width: 80%;
+        margin: auto;
+        position: static;
+	}
+    .save_button
+    {
+        width: 80%;
+    }
+
 }

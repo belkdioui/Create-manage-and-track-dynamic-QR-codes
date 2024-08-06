@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path
 from . import views
-from .utils import EmailVerification
+from .utils import EmailVerification , Profile, Qrscanner
 
 urlpatterns = [
     path('', views.index, name='index'),
@@ -23,8 +23,8 @@ urlpatterns = [
 
 
 
-    path('update_data/', EmailVerification.update_data, name='update_data'),
-    path('qr_scanner/', EmailVerification.qr_scanner, name='qr_scanner'),
-    path('scanner/', EmailVerification.scanner, name='scanner'),
+    path('update_data/', Profile.update_data, name='update_data'),
+    path('qr_scanner/', Qrscanner.qr_scanner, name='qr_scanner'),
+    path('scanner/', Qrscanner.scanner, name='scanner'),
 
 ]
