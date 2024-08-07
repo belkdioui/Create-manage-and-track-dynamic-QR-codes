@@ -87,15 +87,17 @@
                         <th><span id="frequencyTableCaptionsLine">{{bus.name}}</span> schedule &amp; frequencies</th>
                         <th></th>
                         <th></th>
-                        <th></th>  
+                        <th></th>
+                        <th><spna>Number of buses</spna></th>  
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td align="center" valign="middle">From 06H:00</td>
-                        <td align="center" valign="middle">At 21H:10</td>
+                        <td align="center" valign="middle">From {{bus.depart_time}}</td>
+                        <td align="center" valign="middle">At {{bus.end_time}}</td>
                         <td>-</td>
-                        <td align="center" valign="middle">Every 21 min</td>
+                        <td align="center" valign="middle">Every {{bus.frequency}}</td>
+                        <td align="center" valign="middle">{{bus.number_of_buses}}</td>
                     </tr>
                 </tbody>
             </table>
@@ -103,13 +105,26 @@
     </div>
     
 </div>
-<div class="stations ">
-    <div class="input">
-
-    </div>
-    <div class="input">
-        
-    </div>
+<div class="title_st">
+    <span>Stations</span>
+</div>
+<div class="stations">
+    <table id="data-table" class="data-table">
+        <thead>
+            <tr>
+                {% for station in bus.ord_stat.all %}
+                <th class="th">{{station.order}}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                {% for station in bus.ord_stat.all %}
+                <td class="td">{{station.location}}</td>
+                {% endfor %}
+            </tr>
+        </tbody>
+    </table>
 </div>
 
 

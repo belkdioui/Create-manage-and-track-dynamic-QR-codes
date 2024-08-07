@@ -149,23 +149,39 @@ display: inline-block;
 }
 
 .dep_block{
+    font-family: monospace;
     font-size: 20px !important;
 }
 
-.stations{
-    display: block;
-    z-index: -1;
-    top: 49.8%;
-    transform: translateY(-50%);
-    background-color: #d3d4d6;
-    width: 100%;
-    height: 5px;
+.title_st{
+    text-align: center;
+    font-family: monospace;
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+    color: #EF552D;
+    margin-top: 3rem;
+    text-shadow: 0 0 14px #EF552D;
 }
 
-.input{
-    width: 15px;
-    height: 15px;
-    background-color: #EF552D !important;
-    position: relative;
-    border-radius: 50%;
+.stations {
+    width: 100%;
+    overflow-x: auto;
+    font-family: monospace;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-collapse: separate;
+    border-radius: 1rem;
+}
+
+.th, .td {
+    padding: 8px 12px;
+    border: 1px solid #fff;
+    text-align: left;
+}
+
+th {
+    background-color: #EF552D;
 }
