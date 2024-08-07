@@ -34,6 +34,8 @@ select{
     border-radius: 10px;
     margin-right: 2rem;
     padding: 0px 40px;
+    color: #282A37;
+    font-family: monospace;
 }
 
 .submit{
@@ -56,8 +58,15 @@ select{
 
 
 
+.table_info{
+
+    overflow-x: auto;
+}
 
 .table{
+    width: 100%;
+    min-width: 400px;
+    border-collapse: collapse; 
     margin-top: 3rem;
     font-family: monospace;
     font-size: 1.1rem;
@@ -66,8 +75,6 @@ select{
     border-collapse: separate;
     border-radius: 1rem;
     border: 1px solid white;
-    
-    word-break: break-all;
 }
 .table thead{
     background-color: #EF552D;
@@ -163,15 +170,16 @@ display: inline-block;
     text-shadow: 0 0 14px #EF552D;
 }
 
+
 .stations {
     width: 100%;
     overflow-x: auto;
     font-family: monospace;
+    margin-bottom: 10rem;
 }
 
 table {
     width: 100%;
-    border-collapse: collapse;
     border-collapse: separate;
     border-radius: 1rem;
 }
@@ -185,3 +193,29 @@ table {
 th {
     background-color: #EF552D;
 }
+@media (max-width: 850px) {
+    form{
+        height: max-content;
+    }
+    .form-group{
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+    .form-group select{
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    .form{
+        margin-bottom: 0;
+    }
+    .table{
+        margin-top: 1rem;
+    }
+    .direct_btn{
+        margin: 1rem 0;
+    }
+    .title_st{
+        margin-top: 1rem;
+    }
+  }
