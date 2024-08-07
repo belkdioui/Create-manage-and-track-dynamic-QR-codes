@@ -25,19 +25,17 @@ def signup(request):
         password = request.POST.get('Password')
         cpassword = request.POST.get('conf_pass')
         data= {"fname": fname,"lname": lname, "email":email, "tel":tel, "password":password, "cpassword":cpassword}
-        print(data)
         ctx['errors'] = utils_1.check_errors("sign_up", data)
-        print(ctx['errors'])
         if(len(ctx['errors']) == 0):
             try:
-                print("data has been sent")
                 user = User.objects.create_user(username=email, email=email, password=password)
                 user.save()
                 db_user = FormData.objects.create(fname=fname, lname=lname, email=email, tel=tel)
                 db_user.token = hashlib.sha256((email + (str)(date.today())).encode("utf-8")).hexdigest()
                 db_user.save()
                 EmailVerification.send_email(request, db_user, 'email_verification')
-                return render(request, 'pages/login.html')
+                ctx['success'] = 'Check you email for verification link.'
+                return render(request, 'pages/login.html' ,ctx)
             except Exception as e:
                 ctx['errors']['email_error'] = "Error during sending an email"
     return render(request, 'pages/signup.html', context=ctx)
