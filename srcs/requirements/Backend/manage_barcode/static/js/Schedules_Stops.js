@@ -1,6 +1,5 @@
 function change_dir()
 {
-    console.log("here");
 
     terminusX = document.getElementById('terminusX');
     terminusY = document.getElementById('terminusY');

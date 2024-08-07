@@ -10,23 +10,26 @@
 {% block body_content %}
 <div class="form">
     <form action="/Schedules_Stops/" method="post">
+        {% csrf_token %}
         <div class="form-group">
+            {%if err == True%}
+                <script>
+                    createToast('error', "Number of bus doesn't exist in this city")
+                </script>
+            {%endif%}
             <i class="fa-solid fa-city"></i>
-            <select name="languages" id="lang">
-                
-                {% for city in cities %}
-                <option value="{{ city.name }}" {% if forloop.first %}selected{% endif %}>{{ city.name }}</option>
+            <select name="city" id="city">
+                {% for one_city in cities %}
+                <option {% if one_city.name == city.name %}selected{% endif %}>{{ one_city.name }}</option>
                 {% endfor %}
-                <!-- <option value="badre" selected>dfgdf</option> -->
-
             </select>
         </div>
         <div class="form-group">
             <i class="fa-solid fa-bus"></i>
-            <select name="languages" id="lang">
+            <select name="bus" id="bus">
                 {% for city in cities %}
-                    {% for bus in city.bus.all %}
-                    <option value="{{ bus.name }}" {% if forloop.first %}selected{% endif %}>{{ bus.name }}</option>
+                    {% for one_bus in city.bus.all %}
+                    <option {% if one_bus.name == bus.name %}selected{% endif %}>{{ one_bus.name }}</option>
                     {% endfor %}
                 {% endfor %}
             </select>

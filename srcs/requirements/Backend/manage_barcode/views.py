@@ -108,31 +108,45 @@ def buy_tickets(request):
 
 
 def Schedules_Stops(request):
-    
-    # City.objects.all().delete()
-    # Bus.objects.all().delete()
-    # Station.objects.all().delete()
-
-    # utils_1.fill_json_in_db("/Users/bel-kdio/Desktop/Create-manage-and-track-dynamic-QR-codes/srcs/requirements/Backend/manage_barcode/static/data_json/data.json")
-
     if not request.user.is_authenticated:
         return redirect('/')
 
     if request.user.is_authenticated and request.user.is_superuser:
         logout_api(request)
         return redirect('/')
-
+    context=[]
     if request.method == 'GET':
         cities = City.objects.all()
         city = City.objects.first()
         bus = Bus.objects.filter(city=city).first()
         first_one = Station.objects.filter(bus=bus).first()
         last_one = Station.objects.filter(bus=bus).last()
-        context = {'cities': cities, 'city': city, 'bus': bus, 'first_st': first_one, 'last_st':last_one}
-        return render(request, 'pages/Schedules_Stops.html', context)
-    # elif (request.method == 'POST'):
+        context = {'cities': cities, 'city': city, 'bus': bus, 'first_st': first_one, 'last_st':last_one, 'err':False}
+    elif (request.method == 'POST'):
+        city_post = request.POST.get('city')
+        bus_post = request.POST.get('bus')
+        cities = City.objects.all()
+        city = City.objects.get(name=city_post)
+        if (city):
+            bus = Bus.objects.get(city=city, name=bus_post)
+            if(bus):
+                first_one = Station.objects.filter(bus=bus).first()
+                last_one = Station.objects.filter(bus=bus).last()
+                context = {'cities': cities, 'city': city, 'bus': bus, 'first_st': first_one, 'last_st':last_one, 'err':False}
+            else:
+                bus = Bus.objects.filter(city=city).first()
+                first_one = Station.objects.filter(bus=bus).first()
+                last_one = Station.objects.filter(bus=bus).last()
+                context = {'cities': cities, 'city': city, 'bus': bus, 'first_st': first_one, 'last_st':last_one, 'err': True}
 
-    return render(request, 'pages/Schedules_Stops.html')
+        else:
+            city = City.objects.first()
+            bus = Bus.objects.filter(city=city).first()
+            first_one = Station.objects.filter(bus=bus).first()
+            last_one = Station.objects.filter(bus=bus).last()
+            context = {'cities': cities, 'city': city, 'bus': bus, 'first_st': first_one, 'last_st':last_one, 'err':True}
+
+    return render(request, 'pages/Schedules_Stops.html', context)
 
 
 def index(request):
