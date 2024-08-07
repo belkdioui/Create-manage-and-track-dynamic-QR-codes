@@ -64,10 +64,15 @@ class Station(models.Model):
 def formdata_pre_delete_handler(sender, instance, **kwargs):
     User.objects.get(username=instance.email).delete()
     path = os.path.join(settings.BASE_DIR, 'manage_barcode', 'static', "barcodes", f"{instance.email}.png")
-    avatar = instance.path_avatar
+    avatar = os.path.join(settings.BASE_DIR, 'manage_barcode' , instance.path_avatar)
     if os.path.exists(path):
         os.remove(path)
         print(f"qr_code deleted {path}")
+        print(f"qr_code deleted {path}")
+
     if os.path.exists(avatar):
         os.remove(avatar)
         print(f"avatar deketed {avatar}")
+        print(f"avatar deketed {avatar}")
+
+    print(f"this is the path to all {path}   {avatar}")
