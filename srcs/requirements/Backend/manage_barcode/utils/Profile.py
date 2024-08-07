@@ -3,6 +3,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate
 from django.contrib.auth.models import User
 from django.conf import settings
+from django.http import JsonResponse
 
 import os
 
@@ -57,3 +58,18 @@ def update_data(request):
             user.save()
             db_user.save()
     return redirect('/profile/')
+
+def delete_account(request):
+    if request.method == "DELETE":
+        try:
+            user = FormData.objects.get(email=request.user.username)
+            user.delete()
+            print(f"he9 mxa{user.fname}")
+            return JsonResponse({
+                    'success' : 'Account Deleted'
+                }, status=200)
+        except FormData.DoesNotExist:
+            return JsonResponse({
+                'error' : 'Counkd not delete account'}, status=404)
+    return JsonResponse({
+                'error' : 'Method Not Allowed'}, status=405)

@@ -37,6 +37,7 @@ def signup(request):
                 return render(request, 'pages/signup.html')
             except Exception as e:
                 ctx['errors']['email_error'] = "Error during sending an email"
+        return redirect('/')
     return render(request, 'pages/signup.html', context=ctx)
 
 

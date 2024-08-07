@@ -34,8 +34,8 @@ def verifie(request, token):
     try:
         db_user = FormData.objects.get(token=token)
         
-        if request.path.find("reset_password") != -1:
-            return render(request, 'pages/reset_password.html', {'verifie_password':'true', 'token': token})
+        if request.path.find("reset_password") == -1:
+            return render(request, 'pages/reset_password.html', {'verifie_password':'true', 'token': token+'/'})
 
         db_user.activated = True
         db_user.token = ''
@@ -54,8 +54,8 @@ def verifie(request, token):
 def save_new_password(request, token):
     if request.user.is_authenticated:
         return redirect('/')
-
     ctx = {}
+
     if request.method == "POST":
         try:
             user_db = FormData.objects.get(token=token)
@@ -96,18 +96,19 @@ def forgot_password(request):
 
     ctx= {}
     if request.method == "POST":
+        ctx['errors'] = []
         try:
             email = request.POST.get('email')
             db_user = FormData.objects.get(email=email)
             db_user.token = hashlib.sha256((db_user.email + (str)(date.today())).encode("utf-8")).hexdigest()
             db_user.save()
             send_email(request, db_user, 'reset_password')
-            ctx['send'] = 'true'
+            ctx['success'] = 'Email has been sent.'
 
         except FormData.DoesNotExist:
-            ctx['wrong_email'] = "true"
+            ctx['errors'].append("This email is not registred.")
         except Exception:
-            ctx['email_error'] = "true"
+            ctx['errors'].append("Error during sending email")
     ctx['verifie_email'] = 'true'
     return render(request, 'pages/reset_password.html', context=ctx)
 

@@ -10,14 +10,15 @@ h1
 
 .box_data
 {
-    padding: 5%;
-    padding-top: 10px;
+    padding: 2%;
+    height: 100%;
+
     font-family: monospace;
     background-color: #282a37b1;
     display: flex;
     flex-direction: column;
     width: 50%;
-    min-width: 600px;
+
     margin: auto;
     margin-top: 4rem;
     border: 2px solid #ef552d;
@@ -28,7 +29,6 @@ h1
 .photo_info
 {
     margin: 0;
-
 }
 .photo_container
 {
@@ -106,6 +106,23 @@ h1
     width: 100%;
     padding-bottom: 0;
 }
+
+#delete
+{
+    color: white;
+    width: 100%;
+    background-color: #ef552d;
+    border: 2px solid #ef552d;
+    border-radius: 8px;
+    padding: 5px;
+    margin-top: 10px;
+
+}
+#delete:hover
+{
+    box-shadow: 0 0 10px #EF552D;
+    color: black;
+}
 #save
 {
     color: white;
@@ -146,7 +163,7 @@ label
     margin: auto;
 }
 
-@media (max-width: 991px)
+/* @media (max-width: 991px)
 {
 
     .box_data
@@ -161,57 +178,37 @@ label
         max-width: 300px;
         width: 80%;
     }
-    #edit
-    {
-        color: white;
-        width: auto;
-        padding: 10px;
-        background-color: #ef552d;
-        border: 2px solid #ef552d;
-        border-radius: 8px;
-        float: left;
-    }
-    h1
-    {
-        display: none;
-    }
-    #save
-    {
-        color: white;
+    
 
-        height: auto;
-        width: auto;
-        padding: 10px;
-        background-color: #ef552d;
-        border: 2px solid #ef552d;
-        border-radius: 8px;
-        float: right;
-    }
-    #avatar_photo
-    {
-        width: 35%;
-        height: 35%;
-        min-width: 80px;
-        min-height: 80px;
-        max-width: 150px;
-        max-height: 150px;
-        margin: auto;
-    }
-}
-@media (max-width: 800px)
+
+} */
+@media (max-width: 1299px)
 {
+    .photo_container
+    {
+
+    }
     .box_data
     {
+        margin: 0;
         padding: 5%;
+        width: 100%;
+        min-width: 0;
+        gap:30px
     }
     #input_button
     {
         width: 100%;
         max-width: none;
     }
+    
     .data-account
     {
         width: 100%;
+    }
+    .account_info
+    {
+        gap: 0px;
     }
     .data-account
 	{
@@ -226,5 +223,27 @@ label
     {
         width: 80%;
     }
-
+    #avatar_photo
+    {
+        width: 35%;
+        height: 35%;
+        min-width: 80px;
+        min-height: 80px;
+        max-width: 150px;
+        max-height: 150px;
+        margin: auto;
+    }
+    h1
+    {
+        display: none;
+    }
+    #edit,#save
+    {
+        color: white;
+        width: auto;
+        padding: 10px;
+        background-color: #ef552d;
+        border: 2px solid #ef552d;
+        border-radius: 8px;
+    }
 }

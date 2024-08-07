@@ -2,6 +2,10 @@
 from django.db import models
 import os
 from django.conf import settings
+from django.dispatch import receiver
+from django.db.models.signals import pre_delete
+from django.contrib.auth.models import User
+
 
 class FormData(models.Model):
     fname = models.CharField(max_length=100)
@@ -55,3 +59,15 @@ class Station(models.Model):
     def __str__(self):
         return f'{self.station_id}'
 
+
+@receiver(pre_delete, sender=FormData)
+def formdata_pre_delete_handler(sender, instance, **kwargs):
+    User.objects.get(username=instance.email).delete()
+    path = os.path.join(settings.BASE_DIR, 'manage_barcode', 'static', "barcodes", f"{instance.email}.png")
+    avatar = instance.path_avatar
+    if os.path.exists(path):
+        os.remove(path)
+        print(f"qr_code deleted {path}")
+    if os.path.exists(avatar):
+        os.remove(avatar)
+        print(f"avatar deketed {avatar}")

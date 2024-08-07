@@ -24,7 +24,7 @@ load_dotenv(os.path.join(BASE_DIR, '../../.env'))
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = os.getenv('EMAIL_HOST')
 EMAIL_HOST_USER =  os.getenv('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = 'ybqhpcmvkaxexsmy' #os.getenv('EMAIL_HOST_PASSWORD') # https://myaccount.google.com/apppasswords
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD') #os.getenv('EMAIL_HOST_PASSWORD') # https://myaccount.google.com/apppasswords
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False  # Gmail uses TLS, not SSL

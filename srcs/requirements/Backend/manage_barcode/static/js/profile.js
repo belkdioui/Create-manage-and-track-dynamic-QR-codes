@@ -43,3 +43,30 @@ function edit_data()
       inputs.disabled = true;
   }
 }
+
+function delete_account()
+{
+  const csrfToken = document.querySelector('[name="csrfmiddlewaretoken"]').value;
+
+  fetch("/delete_account/",
+  {
+    method: 'DELETE',
+    headers: {
+      'Content-Type': 'application/json',
+      'X-CSRFToken': csrfToken
+  },
+  }).then(response => {
+    if(!response.ok) {
+        return response.json().then(data => {
+            if(response.status == 200){
+                createToast('success', "account has been deleted");
+            }
+            else{
+                createToast('error', 'No user to be deleted');
+            }
+        })
+    }
+    return response.json();
+})
+.catch(error => console.error('Error:', error));
+}
