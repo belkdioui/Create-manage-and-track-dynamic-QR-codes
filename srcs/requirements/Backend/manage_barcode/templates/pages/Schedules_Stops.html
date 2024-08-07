@@ -4,17 +4,33 @@
 {% block header_content %}
     <title>Schedules & Stops</title>
     <link rel="stylesheet" type="text/css" href="{% static '/css/Schedules_Stops.css' %}">
-    <script src="{% static '/js/Schedules_Stops.js'%}" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="{% static 'js/Schedules_Stops.js'%}" defer></script>
 {% endblock header_content %}
 {% block body_content %}
 <div class="form">
     <form action="/Schedules_Stops/" method="post">
-        <label for="lang">City : </label>
-        <select name="languages" id="lang">
-        </select>
-        <label for="lang">Bus Number : </label>
-        <select name="languages" id="lang">
-        </select>
+        <div class="form-group">
+            <i class="fa-solid fa-city"></i>
+            <select name="languages" id="lang">
+                
+                {% for city in cities %}
+                <option value="{{ city.name }}" {% if forloop.first %}selected{% endif %}>{{ city.name }}</option>
+                {% endfor %}
+                <!-- <option value="badre" selected>dfgdf</option> -->
+
+            </select>
+        </div>
+        <div class="form-group">
+            <i class="fa-solid fa-bus"></i>
+            <select name="languages" id="lang">
+                {% for city in cities %}
+                    {% for bus in city.bus.all %}
+                    <option value="{{ bus.name }}" {% if forloop.first %}selected{% endif %}>{{ bus.name }}</option>
+                    {% endfor %}
+                {% endfor %}
+            </select>
+        </div>
         <input type="submit" value="Filter" class="submit"/>
     </form>
 </div>
@@ -29,12 +45,72 @@
         </thead>
         <tbody>
             <tr>
-                <td>lsll</td>
-                <td>6 dsba7</td>
-                <td>75 ss</td>
+                <td id="first_child_of_td">{{first_st.location}}</td>
+                <td>{{bus.depart_time}}</td>
+                <td>{{bus.end_time}}</td>
             </tr>
         </tbody>
     </table>
 </div>
+<div class="text-center mb-2">
+    <button id="switchBusDirection" class="direct_btn" onclick="change_dir()"><i><img src="https://casabus.ma/wp-content/uploads/2021/10/220-arrow-9.gif" alt=""></i> Change direction</button>
+</div>
+<div class="row">
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+        <div class="dep_block">
+            <small>Departure station</small>
+            <br>
+            <span id="terminusX" style="font-size: 24px;">{{first_st.location}}</span>
+        </div>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 align-self-end">
+        <div class="dep_block">
+            <i class="bi bi-arrow-right"></i>
+            <i class="bi bi-arrow-right"></i>
+            <div class="trafic-icon"><i class="bi bi-clock"></i></div> 
+          <span id="travelTime">{{bus.travel_time}}</span> Min
+        </div>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+        <div class="dep_block none">
+            <small>Destination station</small>
+            <br>
+            <span id="terminusY" style="font-size: 24px;">{{last_st.location}}</span>
+        </div>
+    </div>
+    
+    <div class="col-12">
+        <div class="table_info">
+            <table class="table" id="frequencyTableForFrequencyAndSchedule">
+                <thead>
+                    <tr>
+                        <th><span id="frequencyTableCaptionsLine">{{bus.name}}</span> schedule &amp; frequencies</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>  
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td align="center" valign="middle">From 06H:00</td>
+                        <td align="center" valign="middle">At 21H:10</td>
+                        <td>-</td>
+                        <td align="center" valign="middle">Every 21 min</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+</div>
+<div class="stations ">
+    <div class="input">
+
+    </div>
+    <div class="input">
+        
+    </div>
+</div>
+
 
 {% endblock body_content %}

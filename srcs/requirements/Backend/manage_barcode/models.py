@@ -33,22 +33,25 @@ class City(models.Model):
 
 
 class Bus(models.Model):
-    number = models.IntegerField()
+    name = models.CharField(max_length=100)
     frequency = models.IntegerField()
     depart_time = models.TimeField()
     end_time = models.TimeField()
-    travel_time = models.TimeField()
+    travel_time = models.IntegerField()
     number_of_buses = models.IntegerField()
     city = models.ForeignKey(City, on_delete=models.CASCADE, related_name='bus')
 
     def __str__(self):
-        return f'{self.number}'
+        return f'{self.name}'
 
 
 class Station(models.Model):
+    station_id = models.IntegerField()
+    order = models.IntegerField(default = 0)
+    bus = models.ForeignKey(Bus, on_delete=models.CASCADE, related_name='ord_stat')
     location = models.CharField(max_length=100)
-    bus = models.ManyToManyField(Bus)
     terminus = models.BooleanField()
-
+    
     def __str__(self):
-        return f'{self.location}'
+        return f'{self.station_id}'
+

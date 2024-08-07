@@ -1,6 +1,9 @@
 import re
+import json
+from django.core.management.base import BaseCommand
+from django.utils.dateparse import parse_time
 from django.core.exceptions import ObjectDoesNotExist
-from manage_barcode.models import FormData
+from manage_barcode.models import FormData , City, Bus, Station
 
 
 def check_errors(type, data):
@@ -33,3 +36,38 @@ def check_errors(type, data):
             pass
 
     return errors
+
+def fill_json_in_db(file_path):
+    data = load_json_data(file_path)
+    for city_name, buses in data.items():
+        city, created = City.objects.get_or_create(name=city_name)
+        for bus_data in buses:
+            bus, created = Bus.objects.get_or_create(
+                city=city,
+                name=bus_data['Route Name'],
+                defaults={
+                    'frequency': bus_data['Frequency'],
+                    'depart_time': parse_time(bus_data['Departure'][0]),
+                    'end_time': parse_time(bus_data['Departure'][1]),
+                    'travel_time': bus_data['Travel Time'],
+                    'number_of_buses': bus_data['Number Of Buses'],
+                    }
+            )
+            for station_data in bus_data['Stations']:
+                station, created = Station.objects.get_or_create(
+                        station_id=station_data['ID'],
+                        bus = bus,
+                        defaults={
+                            'location': station_data['Name'],
+                            'terminus': station_data['Terminus'],
+                            'order': station_data['Order'],
+                        }
+                    )
+
+
+
+
+def load_json_data(file_path):
+    with open(file_path, 'r') as file:
+        data = json.load(file)
+    return data

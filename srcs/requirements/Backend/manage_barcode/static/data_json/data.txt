@@ -1,0 +1,2287 @@
+City: casa
+	Route Name: L006
+	Frequency: 24
+	Travel Time: 61
+	Number Of Buses: 6
+	Departure: ['6:00', '21:15']
+	Stations:
+		Order: 1, ID: 10298, Name: TERMINUS TAH, Terminus: True
+		Order: 2, ID: 10338, Name: BOULEVARD TAH, Terminus: False
+		Order: 3, ID: 9506, Name: ANGLE BOULEVARD TAH/ MOHAMED 6, Terminus: False
+		Order: 4, ID: 9586, Name: BOULEVARD AMGALA, Terminus: False
+		Order: 5, ID: 10174, Name: RTM AIN CHOC, Terminus: False
+		Order: 6, ID: 10200, Name: SNRT AIN CHOCK, Terminus: False
+		Order: 7, ID: 9637, Name: BOULEVARD SMARA, Terminus: False
+		Order: 8, ID: 9497, Name: ANGLE AVENUE MEKNES, Terminus: False
+		Order: 9, ID: 9844, Name: HAY INARA 2, Terminus: False
+		Order: 10, ID: 9639, Name: BOULEVARD TAZA, Terminus: False
+		Order: 11, ID: 9946, Name: MARCHE AIN CHOC, Terminus: False
+		Order: 12, ID: 9484, Name: AL KHALIL, Terminus: False
+		Order: 13, ID: 9683, Name: CINEMA SAHRA, Terminus: False
+		Order: 14, ID: 9964, Name: MOSQUEE AIN CHOC, Terminus: False
+		Order: 15, ID: 9829, Name: HAY BIN LMDOUN, Terminus: False
+		Order: 16, ID: 10181, Name: RUE FAROUKI ERRAHALI, Terminus: False
+		Order: 17, ID: 9667, Name: CENTRE FEMININ, Terminus: False
+		Order: 18, ID: 9847, Name: HAY LMASJID 2, Terminus: False
+		Order: 19, ID: 10282, Name: TERMINUS PLACE SIDI MAAROUF, Terminus: True
+		Order: 20, ID: 10283, Name: TERMINUS PLACE SRAGHNA, Terminus: True
+		Order: 21, ID: 9573, Name: BENI M'GUILD, Terminus: False
+		Order: 22, ID: 9834, Name: HAY DAKHLA, Terminus: False
+		Order: 23, ID: 10178, Name: RUE DE BELGRADE, Terminus: False
+		Order: 24, ID: 10186, Name: RUE SALONIQUE, Terminus: False
+		Order: 25, ID: 9660, Name: CENTRE DE L'ADDICTOLOGIE, Terminus: False
+		Order: 26, ID: 9797, Name: FACULTE MEDECINE, Terminus: False
+		Order: 27, ID: 10219, Name: TARIQ BNOU ZYAD, Terminus: False
+		Order: 28, ID: 10332, Name: BOULEVARD ABDELMOUMEN, Terminus: False
+		Order: 29, ID: 10332, Name: BOULEVARD ABDELMOUMEN, Terminus: False
+		Order: 30, ID: 10032, Name: PALMIER ABDELMOUMEN, Terminus: False
+		Order: 31, ID: 9536, Name: ARRET HASSAN II, Terminus: False
+		Order: 32, ID: 9881, Name: JARDIN LIGUE ARABE, Terminus: False
+		Order: 33, ID: 10316, Name: WILAYA GRAND CASABLANCA, Terminus: False
+		Order: 34, ID: 9819, Name: GRANDE POSTE, Terminus: False
+		Order: 35, ID: 10279, Name: TERMINUS PLACE DES NATIONS UNIES, Terminus: True
+
+	Route Name: L005
+	Frequency: 21
+	Travel Time: 60
+	Number Of Buses: 12
+	Departure: ['6:00', '21:10']
+	Stations:
+		Order: 1, ID: 11207, Name: TERMINUS ABOUAB AL OULFA, Terminus: True
+		Order: 2, ID: 10290, Name: TERMINUS RIAD AL OULFA III, Terminus: True
+		Order: 3, ID: 9487, Name: AL WATTASSINE, Terminus: False
+		Order: 4, ID: 10289, Name: TERMINUS RIAD AL OULFA, Terminus: True
+		Order: 5, ID: 10129, Name: RESIDENCE RIAD AL OULFA, Terminus: False
+		Order: 6, ID: 11208, Name: COMMISSARIAT RIAD AL OULFA, Terminus: False
+		Order: 7, ID: 11209, Name: LOTISSEMENT SAKLIA, Terminus: False
+		Order: 8, ID: 11210, Name: HAMAM SKOURA, Terminus: False
+		Order: 9, ID: 11211, Name: ROUTE DE SIDI ABDERRAHMANE, Terminus: False
+		Order: 10, ID: 11212, Name: MOROCCO MALL, Terminus: False
+		Order: 11, ID: 11213, Name: SINDIBAD, Terminus: False
+		Order: 12, ID: 11214, Name: ACCES PLAGE N13, Terminus: False
+		Order: 13, ID: 11215, Name: BOULEVARD DE L'OCEAN ATLANTIQUE, Terminus: False
+		Order: 14, ID: 11216, Name: AIN DIAB, Terminus: False
+		Order: 15, ID: 11217, Name: CINEMA MEGARAMA, Terminus: False
+		Order: 16, ID: 11218, Name: PLAGE LALLA MERIEM, Terminus: False
+		Order: 17, ID: 11219, Name: PHARE EL HANK, Terminus: False
+		Order: 18, ID: 11220, Name: PROMENADE MARITIME, Terminus: False
+		Order: 19, ID: 11221, Name: DERB LOUBILA, Terminus: False
+		Order: 20, ID: 9984, Name: MOSQUEE HASSAN II, Terminus: False
+		Order: 21, ID: 11222, Name: MARINA CASA, Terminus: False
+		Order: 22, ID: 9995, Name: MOSQUEE OULD EL HAMRA, Terminus: False
+		Order: 23, ID: 11223, Name: TERMINUS CASA PORT 2, Terminus: True
+
+	Route Name: L055
+	Frequency: 18
+	Travel Time: 70
+	Number Of Buses: 10
+	Departure: ['6:00', '21:34']
+	Stations:
+		Order: 1, ID: 10262, Name: TERMINUS LAHRAOUIYINE 1, Terminus: True
+		Order: 2, ID: 9923, Name: LYCEE ABDELLAH IBRAHIM, Terminus: False
+		Order: 3, ID: 9965, Name: MOSQUEE AL ANSAR, Terminus: False
+		Order: 4, ID: 9728, Name: DAR LMIMA, Terminus: False
+		Order: 5, ID: 10057, Name: PONT AUTOROUTE A1, Terminus: False
+		Order: 6, ID: 9677, Name: CHICHANE 1, Terminus: False
+		Order: 7, ID: 9839, Name: HAY EL WAHDA, Terminus: False
+		Order: 8, ID: 9799, Name: FARRAN LHALWA, Terminus: False
+		Order: 9, ID: 9466, Name: ABATOIRS MUNICIPAUX, Terminus: False
+		Order: 10, ID: 10366, Name: RESIDENCE IDMAJ, Terminus: False
+		Order: 11, ID: 10250, Name: TERMINUS HAY EL FALAH, Terminus: True
+		Order: 12, ID: 9681, Name: CINEMA EL FALAH, Terminus: False
+		Order: 13, ID: 10307, Name: THEATRE MY RACHID, Terminus: False
+		Order: 14, ID: 10357, Name: HAY SALAMA, Terminus: False
+		Order: 15, ID: 9826, Name: HAMMAM LHAJJA, Terminus: False
+		Order: 16, ID: 9850, Name: HAY MOURAD, Terminus: False
+		Order: 17, ID: 10022, Name: OULED HARRES, Terminus: False
+		Order: 18, ID: 9827, Name: HAY ADIL, Terminus: False
+		Order: 19, ID: 9618, Name: BOULEVARD IBN TACHFINE, Terminus: False
+		Order: 20, ID: 9528, Name: ARRET BATA, Terminus: False
+		Order: 21, ID: 10098, Name: RESIDENCE ASSALAM, Terminus: False
+		Order: 22, ID: 9785, Name: ECOLE LE NID, Terminus: False
+		Order: 23, ID: 9653, Name: CASERNE AIN BORJA, Terminus: False
+		Order: 24, ID: 9843, Name: HAY HAKAM, Terminus: False
+		Order: 25, ID: 9729, Name: DAR LMOAMIN, Terminus: False
+		Order: 26, ID: 9730, Name: DAR LMOHAMI, Terminus: False
+		Order: 27, ID: 9721, Name: COUR D'APPEL, Terminus: False
+		Order: 28, ID: 10343, Name: COLIS POSTAUX, Terminus: False
+		Order: 29, ID: 9557, Name: AVENUE DES FAR, Terminus: False
+		Order: 30, ID: 10377, Name: TERMINUS PLACE LA CONCORDE, Terminus: True
+		Order: 31, ID: 9684, Name: CINEMA VERDIN, Terminus: False
+		Order: 32, ID: 9588, Name: BOULEVARD BORDEAUX, Terminus: False
+		Order: 33, ID: 10272, Name: TERMINUS MOULAY YOUSSEF, Terminus: True
+
+	Route Name: L009E
+	Frequency: 18
+	Travel Time: 60
+	Number Of Buses: 10
+	Departure: ['6:00', '21:40']
+	Stations:
+		Order: 1, ID: 10275, Name: TERMINUS NASSIM, Terminus: True
+		Order: 2, ID: 9711, Name: COMMISSARIAT NASSIM, Terminus: False
+		Order: 3, ID: 9991, Name: MOSQUEE NASSIM, Terminus: False
+		Order: 4, ID: 10020, Name: OUED NASSIM, Terminus: False
+		Order: 5, ID: 10039, Name: PENETRATION AZBANE, Terminus: False
+		Order: 6, ID: 10349, Name: ECOLE CAMELIA, Terminus: False
+		Order: 7, ID: 10354, Name: GROUPE SCOLAIRE ALAMJAD, Terminus: False
+		Order: 8, ID: 9602, Name: BOULEVARD DES FACULTES, Terminus: False
+		Order: 9, ID: 10327, Name: ATLANTA SPORT, Terminus: False
+		Order: 10, ID: 10305, Name: TERMINUS ZOUBIR, Terminus: True
+		Order: 11, ID: 9825, Name: HAJ FATEH, Terminus: False
+		Order: 12, ID: 9704, Name: COLLEGE IBNO ABBAD, Terminus: False
+		Order: 13, ID: 9610, Name: BOULEVARD HAJ FATEH OULFA, Terminus: False
+		Order: 14, ID: 10046, Name: PHARMACIE AL ATFAL, Terminus: False
+		Order: 15, ID: 10247, Name: TERMINUS FERARA, Terminus: True
+		Order: 16, ID: 9630, Name: BOULEVARD OUED DRAA, Terminus: False
+		Order: 17, ID: 9861, Name: HOPITAL AL HASSANI, Terminus: False
+		Order: 18, ID: 9687, Name: CITE DE POLICE IBN SINA, Terminus: False
+		Order: 19, ID: 10207, Name: SOUK OULD MINA, Terminus: False
+		Order: 20, ID: 10237, Name: TERMINUS DAR LHAMRA, Terminus: True
+		Order: 21, ID: 9619, Name: BOULEVARD IBNOU SINA, Terminus: False
+		Order: 22, ID: 9620, Name: BOULEVARD IBNOU SINA N¯43, Terminus: False
+		Order: 23, ID: 9784, Name: ECOLE LA PRAIRIE, Terminus: False
+		Order: 24, ID: 9515, Name: ANGLE RUE BEN LARBI, Terminus: False
+		Order: 25, ID: 10340, Name: CLINIQUE NORMANDIE, Terminus: False
+		Order: 26, ID: 9928, Name: LYCEE EL WALLADA, Terminus: False
+		Order: 27, ID: 9907, Name: LES ARENES, Terminus: False
+		Order: 28, ID: 9464, Name: 112 BOULEVARD D'ANFA, Terminus: False
+		Order: 29, ID: 10187, Name: RUE WASHINGTON, Terminus: False
+		Order: 30, ID: 10235, Name: TERMINUS COMMUNE SIDI BELYOUT, Terminus: True
+		Order: 31, ID: 10377, Name: TERMINUS PLACE LA CONCORDE, Terminus: True
+		Order: 32, ID: 10257, Name: TERMINUS HOUPHEIT BOIGNY, Terminus: True
+
+	Route Name: L032D
+	Frequency: 42
+	Travel Time: 62
+	Number Of Buses: 3
+	Departure: ['7:00', '18:49']
+	Stations:
+		Order: 1, ID: 10221, Name: TERMINUS  FACULTE BEN M'SIK, Terminus: True
+		Order: 2, ID: 10353, Name: GROUPE 4 MOULAY RACHID, Terminus: False
+		Order: 3, ID: 9807, Name: FORET VERTE, Terminus: False
+		Order: 4, ID: 9835, Name: HAY EL BARAKA, Terminus: False
+		Order: 5, ID: 9623, Name: BOULEVARD LALA ASMA, Terminus: False
+		Order: 6, ID: 9494, Name: ANAPEC SIDI MOUMEN, Terminus: False
+		Order: 7, ID: 9744, Name: DOUAR CHRIF, Terminus: False
+		Order: 8, ID: 9745, Name: DOUAR EL WAHDA, Terminus: False
+		Order: 9, ID: 10070, Name: PROTECTION CIVIL MOHAMMEDIA, Terminus: False
+		Order: 10, ID: 9523, Name: ANGLE RUE TIZNIT, Terminus: False
+		Order: 11, ID: 9615, Name: BOULEVARD HASSAN II MOH, Terminus: False
+		Order: 12, ID: 9613, Name: BOULEVARD HASSAN 2 MOHAMMEDIA, Terminus: False
+		Order: 13, ID: 9612, Name: BOULEVARD HASSAN 2, Terminus: False
+		Order: 14, ID: 10370, Name: TERMINUS GARE ONCF MOHAMMEDIA, Terminus: True
+		Order: 15, ID: 9866, Name: HOPITAL MY ABDELLAH, Terminus: False
+		Order: 16, ID: 9859, Name: HAY SALAMA ( MOHAMMEDIA ), Terminus: False
+		Order: 17, ID: 10244, Name: TERMINUS FACULTE DES LETTRES, Terminus: True
+		Order: 18, ID: 10121, Name: RESIDENCE FLEURS DE LYS, Terminus: False
+		Order: 19, ID: 9936, Name: LYCEE TECHNIQUE MOHAMMEDIA, Terminus: False
+		Order: 20, ID: 10222, Name: TERMINUS  ISTAHTM (MOH), Terminus: True
+
+	Route Name: L097B
+	Frequency: 21
+	Travel Time: 106
+	Number Of Buses: 12
+	Departure: ['6:00', '20:40']
+	Stations:
+		Order: 1, ID: 10221, Name: TERMINUS  FACULTE BEN M'SIK, Terminus: True
+		Order: 2, ID: 9838, Name: HAY EL MASSIRA, Terminus: False
+		Order: 3, ID: 9575, Name: BLOC 33 LALLA MERIEM, Terminus: False
+		Order: 4, ID: 9880, Name: JARDIN LALLA MERIEM, Terminus: False
+		Order: 5, ID: 10308, Name: TRIBUNAL ADMINISTRATIF, Terminus: False
+		Order: 6, ID: 9604, Name: BOULEVARD DU NIL, Terminus: False
+		Order: 7, ID: 9716, Name: COMPLEXE KAMAL ZEBDI, Terminus: False
+		Order: 8, ID: 10329, Name: AVENUE REDA GUEDIRA, Terminus: False
+		Order: 9, ID: 9496, Name: ANGLE AVENUE LAHRAOUINE, Terminus: False
+		Order: 10, ID: 10177, Name: RUE BEN KACEM ADDAHMANI, Terminus: False
+		Order: 11, ID: 9883, Name: JAWADI, Terminus: False
+		Order: 12, ID: 9556, Name: AVENUE 6 NOVEMBRE 1975, Terminus: False
+		Order: 13, ID: 10002, Name: MOSQUEE YACOUT, Terminus: False
+		Order: 14, ID: 10017, Name: ORPHELINAT DE AIN CHOC, Terminus: False
+		Order: 15, ID: 9683, Name: CINEMA SAHRA, Terminus: False
+		Order: 16, ID: 9964, Name: MOSQUEE AIN CHOC, Terminus: False
+		Order: 17, ID: 10364, Name: QUARTIER POLO, Terminus: False
+		Order: 18, ID: 9862, Name: HOPITAL BOUAFI, Terminus: False
+		Order: 19, ID: 9999, Name: MOSQUEE SONNA, Terminus: False
+		Order: 20, ID: 10081, Name: RACHAD, Terminus: False
+		Order: 21, ID: 10362, Name: MOSQUEE EL HODA, Terminus: False
+		Order: 22, ID: 9817, Name: GENDARMERIE MY IDRISS I, Terminus: False
+		Order: 23, ID: 9931, Name: LYCEE LAHLOU, Terminus: False
+		Order: 24, ID: 10336, Name: BOULEVARD ANOUAL, Terminus: False
+		Order: 25, ID: 10011, Name: OFPPT DERB GHALLEF, Terminus: False
+		Order: 26, ID: 10117, Name: RESIDENCE EL MAJD, Terminus: False
+		Order: 27, ID: 10042, Name: PEPINIERE DERB GHALLEF, Terminus: False
+		Order: 28, ID: 10376, Name: TERMINUS MUSEE ALSA, Terminus: True
+		Order: 29, ID: 10072, Name: PTT BIR ANZARAN, Terminus: False
+		Order: 30, ID: 10265, Name: TERMINUS MAARIF, Terminus: True
+		Order: 31, ID: 9717, Name: COMPLEXE MOHAMED 5, Terminus: False
+		Order: 32, ID: 10340, Name: CLINIQUE NORMANDIE, Terminus: False
+		Order: 33, ID: 9515, Name: ANGLE RUE BEN LARBI, Terminus: False
+		Order: 34, ID: 9784, Name: ECOLE LA PRAIRIE, Terminus: False
+		Order: 35, ID: 9522, Name: ANGLE RUE TAMASKIN, Terminus: False
+		Order: 36, ID: 9619, Name: BOULEVARD IBNOU SINA, Terminus: False
+		Order: 37, ID: 9469, Name: ACADEMIE D'EDUCATION, Terminus: False
+		Order: 38, ID: 9652, Name: CARRIERE SCHNEIDER, Terminus: False
+		Order: 39, ID: 9802, Name: FIRDAOUS II, Terminus: False
+		Order: 40, ID: 10090, Name: RESIDENCE AL FIRDAOUS, Terminus: False
+		Order: 41, ID: 10380, Name: TRIBUNAL DE 1ER INSTANCE, Terminus: False
+		Order: 42, ID: 10356, Name: HAY SALAM 1, Terminus: False
+		Order: 43, ID: 10254, Name: TERMINUS HAY SALAM, Terminus: True
+		Order: 44, ID: 10349, Name: ECOLE CAMELIA, Terminus: False
+		Order: 45, ID: 9987, Name: MOSQUEE LISSASFA, Terminus: False
+		Order: 46, ID: 10374, Name: TERMINUS LISSASFA, Terminus: True
+
+	Route Name: L039
+	Frequency: 25
+	Travel Time: 74
+	Number Of Buses: 8
+	Departure: ['6:00', '20:40']
+	Stations:
+		Order: 1, ID: 10264, Name: TERMINUS LMZABIENNE, Terminus: True
+		Order: 2, ID: 9607, Name: BOULEVARD FATIMA ZAROUAL, Terminus: False
+		Order: 3, ID: 9988, Name: MOSQUEE LMZABIENNE, Terminus: False
+		Order: 4, ID: 9831, Name: HAY CHRIFA, Terminus: False
+		Order: 5, ID: 9832, Name: HAY CHRIFA II, Terminus: False
+		Order: 6, ID: 9591, Name: BOULEVARD DAKHLA, Terminus: False
+		Order: 7, ID: 10203, Name: SOUK CHRIFA, Terminus: False
+		Order: 8, ID: 9796, Name: FACULTE AIN CHOC, Terminus: False
+		Order: 9, ID: 9990, Name: MOSQUEE MSALLA, Terminus: False
+		Order: 10, ID: 9937, Name: M'SALLA AIN CHOK, Terminus: False
+		Order: 11, ID: 10017, Name: ORPHELINAT DE AIN CHOC, Terminus: False
+		Order: 12, ID: 10002, Name: MOSQUEE YACOUT, Terminus: False
+		Order: 13, ID: 9556, Name: AVENUE 6 NOVEMBRE 1975, Terminus: False
+		Order: 14, ID: 9883, Name: JAWADI, Terminus: False
+		Order: 15, ID: 10177, Name: RUE BEN KACEM ADDAHMANI, Terminus: False
+		Order: 16, ID: 9496, Name: ANGLE AVENUE LAHRAOUINE, Terminus: False
+		Order: 17, ID: 10329, Name: AVENUE REDA GUEDIRA, Terminus: False
+		Order: 18, ID: 9716, Name: COMPLEXE KAMAL ZEBDI, Terminus: False
+		Order: 19, ID: 9604, Name: BOULEVARD DU NIL, Terminus: False
+		Order: 20, ID: 10308, Name: TRIBUNAL ADMINISTRATIF, Terminus: False
+		Order: 21, ID: 10342, Name: CLINIQUE SIDI OTHMANE, Terminus: False
+		Order: 22, ID: 9561, Name: AVENUE MOHAMED BOUZIANE, Terminus: False
+		Order: 23, ID: 9826, Name: HAMMAM LHAJJA, Terminus: False
+		Order: 24, ID: 9850, Name: HAY MOURAD, Terminus: False
+		Order: 25, ID: 10022, Name: OULED HARRES, Terminus: False
+		Order: 26, ID: 9542, Name: ARRET MDAKRA, Terminus: False
+		Order: 27, ID: 9890, Name: KISARIAT HAY MOHAMMADI, Terminus: False
+		Order: 28, ID: 10080, Name: QUARTIER TAKADOUM, Terminus: False
+		Order: 29, ID: 9618, Name: BOULEVARD IBN TACHFINE, Terminus: False
+		Order: 30, ID: 9528, Name: ARRET BATA, Terminus: False
+		Order: 31, ID: 9897, Name: LA FERAILLE, Terminus: False
+		Order: 32, ID: 9614, Name: BOULEVARD HASSAN EL ALLAOUI, Terminus: False
+		Order: 33, ID: 10248, Name: TERMINUS GARE OULED ZIANE, Terminus: True
+
+	Route Name: L120
+	Frequency: 16
+	Travel Time: 85
+	Number Of Buses: 13
+	Departure: ['6:00', '21:55']
+	Stations:
+		Order: 1, ID: 10375, Name: TERMINUS MEDIOUNA, Terminus: True
+		Order: 2, ID: 9572, Name: BEN HAMOU, Terminus: False
+		Order: 3, ID: 9769, Name: ECOLE AJIAL SALAM, Terminus: False
+		Order: 4, ID: 10155, Name: ROUTE N9, Terminus: False
+		Order: 5, ID: 10156, Name: ROUTE N9 AL MAJJATIA, Terminus: False
+		Order: 6, ID: 10197, Name: SIDI GHANEM, Terminus: False
+		Order: 7, ID: 9672, Name: CHARCOMEM, Terminus: False
+		Order: 8, ID: 9510, Name: ANGLE N9 / P3015, Terminus: False
+		Order: 9, ID: 9511, Name: ANGLE N9 / P3016, Terminus: False
+		Order: 10, ID: 10157, Name: ROUTE N9 TIT MELLIL, Terminus: False
+		Order: 11, ID: 10078, Name: QUARTIER INDUSTRIEL MEDIOUNA, Terminus: False
+		Order: 12, ID: 10299, Name: TERMINUS TIT MELLIL, Terminus: True
+		Order: 13, ID: 9628, Name: BOULEVARD NAKHIL, Terminus: False
+		Order: 14, ID: 9901, Name: LA POSTE TIT MELLIL, Terminus: False
+		Order: 15, ID: 10062, Name: PREFECTURE MEDIOUNA, Terminus: False
+		Order: 16, ID: 9851, Name: HAY NAIM, Terminus: False
+		Order: 17, ID: 10028, Name: PALAIS ATLAS, Terminus: False
+		Order: 18, ID: 10132, Name: RESIDENCE SAFA, Terminus: False
+		Order: 19, ID: 10297, Name: TERMINUS TACHAROUK, Terminus: True
+		Order: 20, ID: 9973, Name: MOSQUEE BAB TAOUBA, Terminus: False
+		Order: 21, ID: 10271, Name: TERMINUS MOULAY RACHID, Terminus: True
+		Order: 22, ID: 9767, Name: ECOLE ABDELKRIM EL KHATTABI, Terminus: False
+		Order: 23, ID: 9849, Name: HAY MOULAY RACHID, Terminus: False
+		Order: 24, ID: 9835, Name: HAY EL BARAKA, Terminus: False
+		Order: 25, ID: 9828, Name: HAY BARAKA, Terminus: False
+		Order: 26, ID: 9643, Name: BOUZIANE, Terminus: False
+		Order: 27, ID: 9701, Name: COLLEGE BNO TOUMART, Terminus: False
+		Order: 28, ID: 9888, Name: KHAYRIAT SIDI OTHMAN, Terminus: False
+		Order: 29, ID: 9561, Name: AVENUE MOHAMED BOUZIANE, Terminus: False
+		Order: 30, ID: 10342, Name: CLINIQUE SIDI OTHMANE, Terminus: False
+		Order: 31, ID: 9772, Name: ECOLE EL AKHAWAIN, Terminus: False
+		Order: 32, ID: 9678, Name: CHTAIBA, Terminus: False
+		Order: 33, ID: 10056, Name: PONT ANOUAL, Terminus: False
+		Order: 34, ID: 9898, Name: LA GARE ROUTIERE, Terminus: False
+		Order: 35, ID: 10008, Name: OFPPT AIN BORJA, Terminus: False
+		Order: 36, ID: 10161, Name: ROUTE OULED ZIANE, Terminus: False
+		Order: 37, ID: 9502, Name: ANGLE BOULEVARD IFNI, Terminus: False
+		Order: 38, ID: 9729, Name: DAR LMOAMIN, Terminus: False
+		Order: 39, ID: 9730, Name: DAR LMOHAMI, Terminus: False
+		Order: 40, ID: 9721, Name: COUR D'APPEL, Terminus: False
+		Order: 41, ID: 10343, Name: COLIS POSTAUX, Terminus: False
+		Order: 42, ID: 9557, Name: AVENUE DES FAR, Terminus: False
+		Order: 43, ID: 10232, Name: TERMINUS BOULEVARD PARIS, Terminus: True
+
+	Route Name: L301
+	Frequency: 30
+	Travel Time: 50
+	Number Of Buses: 6
+	Departure: ['6:30', '18:40']
+	Stations:
+		Order: 1, ID: 10229, Name: TERMINUS BEN ABID, Terminus: True
+		Order: 2, ID: 9808, Name: FOUALA, Terminus: False
+		Order: 3, ID: 9758, Name: DOUAR SEBT, Terminus: False
+		Order: 4, ID: 9755, Name: DOUAR OULD LHAJ JILALI, Terminus: False
+		Order: 5, ID: 9649, Name: CARRIERE BEN ABID, Terminus: False
+		Order: 6, ID: 10001, Name: MOSQUEE TAMARIS, Terminus: False
+		Order: 7, ID: 10169, Name: ROUTE R320 /P3012, Terminus: False
+		Order: 8, ID: 9727, Name: DAR LKBIRA, Terminus: False
+		Order: 9, ID: 9724, Name: DAR BOUAAZZA, Terminus: False
+		Order: 10, ID: 9713, Name: COMMUNE DAR BOUAAZZA, Terminus: False
+		Order: 11, ID: 10041, Name: PEPINIERE DAR BOUAZZA, Terminus: False
+		Order: 12, ID: 9734, Name: DAR ZWAQ, Terminus: False
+		Order: 13, ID: 9526, Name: AQUAPARC A, Terminus: False
+		Order: 14, ID: 10138, Name: ROND POINT LOMO, Terminus: False
+		Order: 15, ID: 9914, Name: LOMOU, Terminus: False
+		Order: 16, ID: 10147, Name: ROUTE DAR BOUAZZA, Terminus: False
+		Order: 17, ID: 10135, Name: RESTAURANT MRISSA, Terminus: False
+		Order: 18, ID: 9475, Name: AIN GUEDDID, Terminus: False
+		Order: 19, ID: 10030, Name: PALAIS ROYAL AIN GUEDDID, Terminus: False
+		Order: 20, ID: 9920, Name: LOTISSEMENT SEQUIA, Terminus: False
+		Order: 21, ID: 9941, Name: MADAME CHOUAL, Terminus: False
+		Order: 22, ID: 9942, Name: MADAME LOULA, Terminus: False
+		Order: 23, ID: 10144, Name: ROND-POINT MOROCCO MALL, Terminus: False
+		Order: 24, ID: 10190, Name: SALLE DE SPORT LA CORNICHE, Terminus: False
+		Order: 25, ID: 10294, Name: TERMINUS SIDI LKHADIR, Terminus: True
+		Order: 26, ID: 10211, Name: STADE HAY HASSANI, Terminus: False
+		Order: 27, ID: 10252, Name: TERMINUS HAY HASSANI, Terminus: True
+
+	Route Name: L800
+	Frequency: 9
+	Travel Time: 51
+	Number Of Buses: 14
+	Departure: ['6:00', '21:10']
+	Stations:
+		Order: 1, ID: 10270, Name: TERMINUS MOSQUEE TARIQ, Terminus: True
+		Order: 2, ID: 10379, Name: TERMINUS TRAM 2 BERNOUSSI, Terminus: True
+		Order: 3, ID: 10230, Name: TERMINUS BERNOUSSI, Terminus: True
+		Order: 4, ID: 10195, Name: SIDI BERNOUSSI, Terminus: False
+		Order: 5, ID: 9552, Name: ASSOCIATION BAYTI, Terminus: False
+		Order: 6, ID: 10069, Name: PROTECTION CIVIL EL QODS, Terminus: False
+		Order: 7, ID: 9938, Name: M'SALLA QODS, Terminus: False
+		Order: 8, ID: 9791, Name: ECOLE ROYALE DES GENDARMES, Terminus: False
+		Order: 9, ID: 9538, Name: ARRET KM15, Terminus: False
+		Order: 10, ID: 10153, Name: ROUTE N1 AIN HARROUDA, Terminus: False
+		Order: 11, ID: 9714, Name: COMPLEXE CULTUREL, Terminus: False
+		Order: 12, ID: 9476, Name: AIN HARROUDA CENTRE, Terminus: False
+		Order: 13, ID: 9816, Name: GENDARMERIE AIN HARROUDA, Terminus: False
+		Order: 14, ID: 10058, Name: PONT ONCF, Terminus: False
+		Order: 15, ID: 10322, Name: ZONE INDUSTRIEL ZENATA, Terminus: False
+		Order: 16, ID: 9540, Name: ARRET LAARJA, Terminus: False
+		Order: 17, ID: 9789, Name: ECOLE OULAD HMIMOUN 1, Terminus: False
+		Order: 18, ID: 9749, Name: DOUAR LACHHAB, Terminus: False
+		Order: 19, ID: 10192, Name: SAMIR (MOH), Terminus: False
+		Order: 20, ID: 10070, Name: PROTECTION CIVIL MOHAMMEDIA, Terminus: False
+		Order: 21, ID: 9523, Name: ANGLE RUE TIZNIT, Terminus: False
+		Order: 22, ID: 9615, Name: BOULEVARD HASSAN II MOH, Terminus: False
+		Order: 23, ID: 9612, Name: BOULEVARD HASSAN 2, Terminus: False
+		Order: 24, ID: 10370, Name: TERMINUS GARE ONCF MOHAMMEDIA, Terminus: True
+		Order: 25, ID: 9866, Name: HOPITAL MY ABDELLAH, Terminus: False
+		Order: 26, ID: 9859, Name: HAY SALAMA ( MOHAMMEDIA ), Terminus: False
+		Order: 27, ID: 10244, Name: TERMINUS FACULTE DES LETTRES, Terminus: True
+		Order: 28, ID: 10121, Name: RESIDENCE FLEURS DE LYS, Terminus: False
+		Order: 29, ID: 9936, Name: LYCEE TECHNIQUE MOHAMMEDIA, Terminus: False
+		Order: 30, ID: 10245, Name: TERMINUS FACULTES MOHAMMEDIA, Terminus: True
+
+	Route Name: L007
+	Frequency: 7
+	Travel Time: 48
+	Number Of Buses: 15
+	Departure: ['6:00', '21:45']
+	Stations:
+		Order: 1, ID: 10295, Name: TERMINUS SIDI MAAROUF, Terminus: True
+		Order: 2, ID: 9782, Name: ECOLE IBNO KATIR, Terminus: False
+		Order: 3, ID: 9527, Name: ARCHIVE I, Terminus: False
+		Order: 4, ID: 10108, Name: RESIDENCE EL AHALI, Terminus: False
+		Order: 5, ID: 9712, Name: COMMISSARIAT SIDI MAAROUF, Terminus: False
+		Order: 6, ID: 9877, Name: JARDIN AL MOSTAKBAL, Terminus: False
+		Order: 7, ID: 9658, Name: CENTRE CULTUREL, Terminus: False
+		Order: 8, ID: 10119, Name: RESIDENCE EL MOSTAKBAL, Terminus: False
+		Order: 9, ID: 10100, Name: RESIDENCE BACHKOU, Terminus: False
+		Order: 10, ID: 9956, Name: METRO, Terminus: False
+		Order: 11, ID: 10154, Name: ROUTE N11 SIDI MAAROUF, Terminus: False
+		Order: 12, ID: 9518, Name: ANGLE RUE ENNAKHIL, Terminus: False
+		Order: 13, ID: 10146, Name: ROUTE D'EL JADIDA, Terminus: False
+		Order: 14, ID: 10210, Name: STADE COC, Terminus: False
+		Order: 15, ID: 9978, Name: MOSQUEE EL BATHA, Terminus: False
+		Order: 16, ID: 10074, Name: PTT ROUDANI, Terminus: False
+		Order: 17, ID: 10176, Name: RUE AL MAROUNI, Terminus: False
+		Order: 18, ID: 9903, Name: LAAOUINA MAARIF, Terminus: False
+		Order: 19, ID: 9869, Name: IMMEUBLE 400, Terminus: False
+		Order: 20, ID: 10105, Name: RESIDENCE CHIFAE, Terminus: False
+		Order: 21, ID: 9636, Name: BOULEVARD ROUDANI, Terminus: False
+		Order: 22, ID: 9534, Name: ARRET CMC, Terminus: False
+		Order: 23, ID: 9719, Name: CONSULAT D'ESPAGNE, Terminus: False
+		Order: 24, ID: 9611, Name: BOULEVARD HASSAN 1, Terminus: False
+		Order: 25, ID: 10279, Name: TERMINUS PLACE DES NATIONS UNIES, Terminus: True
+
+	Route Name: L011
+	Frequency: 16
+	Travel Time: 70
+	Number Of Buses: 10
+	Departure: ['6:00', '21:15']
+	Stations:
+		Order: 1, ID: 10269, Name: TERMINUS MOSQUEE SALMIA, Terminus: True
+		Order: 2, ID: 9867, Name: HOPITAL SALMIA, Terminus: False
+		Order: 3, ID: 10213, Name: STADE TISSIMA, Terminus: False
+		Order: 4, ID: 9679, Name: CIMETIERE SBATA, Terminus: False
+		Order: 5, ID: 10358, Name: JARDIN ALESCO, Terminus: False
+		Order: 6, ID: 9737, Name: DERB LAHJAR, Terminus: False
+		Order: 7, ID: 9603, Name: BOULEVARD DRISS EL HARTI, Terminus: False
+		Order: 8, ID: 9924, Name: LYCEE ALAKHYAR, Terminus: False
+		Order: 9, ID: 9605, Name: BOULEVARD EL HARTI, Terminus: False
+		Order: 10, ID: 10268, Name: TERMINUS MOSQUEE EL HOSNA, Terminus: True
+		Order: 11, ID: 10258, Name: TERMINUS JAMILA II, Terminus: True
+		Order: 12, ID: 9845, Name: HAY JAMILA 2, Terminus: False
+		Order: 13, ID: 10324, Name: ZONE URBAINE 16 BEN M'SIK, Terminus: False
+		Order: 14, ID: 9715, Name: COMPLEXE EDUCATIF HASSAN II, Terminus: False
+		Order: 15, ID: 9708, Name: COLLEGE ZINEB NEFZAOUIA, Terminus: False
+		Order: 16, ID: 10073, Name: PTT HAY ALAMAL, Terminus: False
+		Order: 17, ID: 9981, Name: MOSQUEE EL KAOUTAR, Terminus: False
+		Order: 18, ID: 10248, Name: TERMINUS GARE OULED ZIANE, Terminus: True
+		Order: 19, ID: 10008, Name: OFPPT AIN BORJA, Terminus: False
+		Order: 20, ID: 10161, Name: ROUTE OULED ZIANE, Terminus: False
+		Order: 21, ID: 9729, Name: DAR LMOAMIN, Terminus: False
+		Order: 22, ID: 9730, Name: DAR LMOHAMI, Terminus: False
+		Order: 23, ID: 9721, Name: COUR D'APPEL, Terminus: False
+		Order: 24, ID: 10343, Name: COLIS POSTAUX, Terminus: False
+		Order: 25, ID: 9557, Name: AVENUE DES FAR, Terminus: False
+		Order: 26, ID: 10377, Name: TERMINUS PLACE LA CONCORDE, Terminus: True
+		Order: 27, ID: 9684, Name: CINEMA VERDIN, Terminus: False
+		Order: 28, ID: 9588, Name: BOULEVARD BORDEAUX, Terminus: False
+		Order: 29, ID: 10272, Name: TERMINUS MOULAY YOUSSEF, Terminus: True
+		Order: 30, ID: 10103, Name: RESIDENCE BOUAARFA, Terminus: False
+		Order: 31, ID: 9902, Name: LAAOUINA LHARRA, Terminus: False
+		Order: 32, ID: 10202, Name: SOUK BOURGOGNE, Terminus: False
+		Order: 33, ID: 9662, Name: CENTRE DE SANTE OUHOUDE, Terminus: False
+		Order: 34, ID: 10205, Name: SOUK LHJAJMA, Terminus: False
+		Order: 35, ID: 9593, Name: BOULEVARD DE BOURGOGNE, Terminus: False
+		Order: 36, ID: 9692, Name: CLINIQUE ANDALOUS, Terminus: False
+		Order: 37, ID: 10236, Name: TERMINUS DAOULIZ, Terminus: True
+
+	Route Name: L013
+	Frequency: 18
+	Travel Time: 50
+	Number Of Buses: 10
+	Departure: ['6:00', '21:19']
+	Stations:
+		Order: 1, ID: 10259, Name: TERMINUS KASBAT LAMINE, Terminus: True
+		Order: 2, ID: 9886, Name: JNANE OULFA, Terminus: False
+		Order: 3, ID: 10374, Name: TERMINUS LISSASFA, Terminus: True
+		Order: 4, ID: 9987, Name: MOSQUEE LISSASFA, Terminus: False
+		Order: 5, ID: 10349, Name: ECOLE CAMELIA, Terminus: False
+		Order: 6, ID: 9722, Name: CRECHE JEUNE AGE, Terminus: False
+		Order: 7, ID: 10356, Name: HAY SALAM 1, Terminus: False
+		Order: 8, ID: 9864, Name: HOPITAL CHEIKH KHALIFA, Terminus: False
+		Order: 9, ID: 10380, Name: TRIBUNAL DE 1ER INSTANCE, Terminus: False
+		Order: 10, ID: 10090, Name: RESIDENCE AL FIRDAOUS, Terminus: False
+		Order: 11, ID: 9802, Name: FIRDAOUS II, Terminus: False
+		Order: 12, ID: 9652, Name: CARRIERE SCHNEIDER, Terminus: False
+		Order: 13, ID: 9469, Name: ACADEMIE D'EDUCATION, Terminus: False
+		Order: 14, ID: 9619, Name: BOULEVARD IBNOU SINA, Terminus: False
+		Order: 15, ID: 9620, Name: BOULEVARD IBNOU SINA N¯43, Terminus: False
+		Order: 16, ID: 9784, Name: ECOLE LA PRAIRIE, Terminus: False
+		Order: 17, ID: 9515, Name: ANGLE RUE BEN LARBI, Terminus: False
+		Order: 18, ID: 10340, Name: CLINIQUE NORMANDIE, Terminus: False
+		Order: 19, ID: 9695, Name: CLINIQUE DENTAIRE, Terminus: False
+		Order: 20, ID: 9928, Name: LYCEE EL WALLADA, Terminus: False
+		Order: 21, ID: 9907, Name: LES ARENES, Terminus: False
+		Order: 22, ID: 9464, Name: 112 BOULEVARD D'ANFA, Terminus: False
+		Order: 23, ID: 10187, Name: RUE WASHINGTON, Terminus: False
+		Order: 24, ID: 10235, Name: TERMINUS COMMUNE SIDI BELYOUT, Terminus: True
+
+	Route Name: L019
+	Frequency: 12
+	Travel Time: 57
+	Number Of Buses: 12
+	Departure: ['6:00', '21:15']
+	Stations:
+		Order: 1, ID: 10290, Name: TERMINUS RIAD AL OULFA III, Terminus: True
+		Order: 2, ID: 9487, Name: AL WATTASSINE, Terminus: False
+		Order: 3, ID: 10289, Name: TERMINUS RIAD AL OULFA, Terminus: True
+		Order: 4, ID: 10129, Name: RESIDENCE RIAD AL OULFA, Terminus: False
+		Order: 5, ID: 10175, Name: RUE 41 RIAD OULFA, Terminus: False
+		Order: 6, ID: 10242, Name: TERMINUS EL OULFA, Terminus: True
+		Order: 7, ID: 9861, Name: HOPITAL AL HASSANI, Terminus: False
+		Order: 8, ID: 10253, Name: TERMINUS HAY HASSANI II, Terminus: True
+		Order: 9, ID: 10294, Name: TERMINUS SIDI LKHADIR, Terminus: True
+		Order: 10, ID: 10211, Name: STADE HAY HASSANI, Terminus: False
+		Order: 11, ID: 10252, Name: TERMINUS HAY HASSANI, Terminus: True
+		Order: 12, ID: 10335, Name: BOULEVARD AFGHANISTAN, Terminus: False
+		Order: 13, ID: 9962, Name: MOSQUEE AFGHANISTAN, Terminus: False
+		Order: 14, ID: 9837, Name: HAY EL HANA, Terminus: False
+		Order: 15, ID: 9619, Name: BOULEVARD IBNOU SINA, Terminus: False
+		Order: 16, ID: 9620, Name: BOULEVARD IBNOU SINA N¯43, Terminus: False
+		Order: 17, ID: 9784, Name: ECOLE LA PRAIRIE, Terminus: False
+		Order: 18, ID: 10351, Name: ECOLE GEORGES BIZET, Terminus: False
+		Order: 19, ID: 9550, Name: ARRONDISSEMENT GHANDI, Terminus: False
+		Order: 20, ID: 10118, Name: RESIDENCE EL MANSOUR, Terminus: False
+		Order: 21, ID: 10185, Name: RUE OUALILI, Terminus: False
+		Order: 22, ID: 10115, Name: RESIDENCE EL HOSSAINI, Terminus: False
+		Order: 23, ID: 10376, Name: TERMINUS MUSEE ALSA, Terminus: True
+		Order: 24, ID: 9720, Name: CONSULAT DE LA  RUSSIE, Terminus: False
+		Order: 25, ID: 10332, Name: BOULEVARD ABDELMOUMEN, Terminus: False
+		Order: 26, ID: 10032, Name: PALMIER ABDELMOUMEN, Terminus: False
+		Order: 27, ID: 9881, Name: JARDIN LIGUE ARABE, Terminus: False
+		Order: 28, ID: 9819, Name: GRANDE POSTE, Terminus: False
+		Order: 29, ID: 10279, Name: TERMINUS PLACE DES NATIONS UNIES, Terminus: True
+
+	Route Name: L020
+	Frequency: 11
+	Travel Time: 54
+	Number Of Buses: 12
+	Departure: ['6:00', '21:19']
+	Stations:
+		Order: 1, ID: 10289, Name: TERMINUS RIAD AL OULFA, Terminus: True
+		Order: 2, ID: 10129, Name: RESIDENCE RIAD AL OULFA, Terminus: False
+		Order: 3, ID: 10175, Name: RUE 41 RIAD OULFA, Terminus: False
+		Order: 4, ID: 10242, Name: TERMINUS EL OULFA, Terminus: True
+		Order: 5, ID: 9861, Name: HOPITAL AL HASSANI, Terminus: False
+		Order: 6, ID: 10253, Name: TERMINUS HAY HASSANI II, Terminus: True
+		Order: 7, ID: 10294, Name: TERMINUS SIDI LKHADIR, Terminus: True
+		Order: 8, ID: 10211, Name: STADE HAY HASSANI, Terminus: False
+		Order: 9, ID: 10252, Name: TERMINUS HAY HASSANI, Terminus: True
+		Order: 10, ID: 10335, Name: BOULEVARD AFGHANISTAN, Terminus: False
+		Order: 11, ID: 9962, Name: MOSQUEE AFGHANISTAN, Terminus: False
+		Order: 12, ID: 9837, Name: HAY EL HANA, Terminus: False
+		Order: 13, ID: 9619, Name: BOULEVARD IBNOU SINA, Terminus: False
+		Order: 14, ID: 9620, Name: BOULEVARD IBNOU SINA N¯43, Terminus: False
+		Order: 15, ID: 9784, Name: ECOLE LA PRAIRIE, Terminus: False
+		Order: 16, ID: 10351, Name: ECOLE GEORGES BIZET, Terminus: False
+		Order: 17, ID: 9550, Name: ARRONDISSEMENT GHANDI, Terminus: False
+		Order: 18, ID: 10118, Name: RESIDENCE EL MANSOUR, Terminus: False
+		Order: 19, ID: 10341, Name: CLINIQUE RIVIERA, Terminus: False
+		Order: 20, ID: 9779, Name: ECOLE EL OUADGHIRI, Terminus: False
+		Order: 21, ID: 9940, Name: MAARIF EXTENTION, Terminus: False
+		Order: 22, ID: 10367, Name: ROND-POINT BACHKOU, Terminus: False
+		Order: 23, ID: 10339, Name: CLINIQUE DAR SALAM, Terminus: False
+		Order: 24, ID: 9935, Name: LYCEE MOULAY ABDELLAH, Terminus: False
+		Order: 25, ID: 10345, Name: DERB FOUKARA, Terminus: False
+		Order: 26, ID: 10344, Name: DERB BOUCHENTOUF, Terminus: False
+		Order: 27, ID: 10231, Name: TERMINUS BOUCHENTOUF, Terminus: True
+		Order: 28, ID: 10346, Name: DERB KABIR, Terminus: False
+		Order: 29, ID: 10060, Name: POSTE DE POLICE LA GARE ROUTIERE, Terminus: False
+		Order: 30, ID: 10261, Name: TERMINUS LA GARE ROUTIERE, Terminus: True
+
+	Route Name: L022
+	Frequency: 13
+	Travel Time: 52
+	Number Of Buses: 8
+	Departure: ['6:00', '21:10']
+	Stations:
+		Order: 1, ID: 10267, Name: TERMINUS MANDAROUNA, Terminus: True
+		Order: 2, ID: 9504, Name: ANGLE BOULEVARD RAMALLAH, Terminus: False
+		Order: 3, ID: 9833, Name: HAY CHRIFA SANIA, Terminus: False
+		Order: 4, ID: 9770, Name: ECOLE BAB ANDALOUS, Terminus: False
+		Order: 5, ID: 10055, Name: POLYCLINIQUE CNSS INARA, Terminus: False
+		Order: 6, ID: 9844, Name: HAY INARA 2, Terminus: False
+		Order: 7, ID: 9639, Name: BOULEVARD TAZA, Terminus: False
+		Order: 8, ID: 9946, Name: MARCHE AIN CHOC, Terminus: False
+		Order: 9, ID: 9937, Name: M'SALLA AIN CHOK, Terminus: False
+		Order: 10, ID: 9683, Name: CINEMA SAHRA, Terminus: False
+		Order: 11, ID: 9964, Name: MOSQUEE AIN CHOC, Terminus: False
+		Order: 12, ID: 9829, Name: HAY BIN LMDOUN, Terminus: False
+		Order: 13, ID: 9667, Name: CENTRE FEMININ, Terminus: False
+		Order: 14, ID: 10372, Name: TERMINUS HAY LMASJID, Terminus: True
+		Order: 15, ID: 10081, Name: RACHAD, Terminus: False
+		Order: 16, ID: 10362, Name: MOSQUEE EL HODA, Terminus: False
+		Order: 17, ID: 9934, Name: LYCEE MOHAMED V, Terminus: False
+		Order: 18, ID: 9896, Name: L'EGLISE (ZERKTOUNI), Terminus: False
+		Order: 19, ID: 9951, Name: MARCHE DES FLEURS, Terminus: False
+		Order: 20, ID: 9881, Name: JARDIN LIGUE ARABE, Terminus: False
+		Order: 21, ID: 9819, Name: GRANDE POSTE, Terminus: False
+		Order: 22, ID: 10279, Name: TERMINUS PLACE DES NATIONS UNIES, Terminus: True
+
+	Route Name: L023
+	Frequency: 11
+	Travel Time: 59
+	Number Of Buses: 14
+	Departure: ['6:00', '21:40']
+	Stations:
+		Order: 1, ID: 10241, Name: TERMINUS EL MANSOURIA, Terminus: True
+		Order: 2, ID: 10099, Name: RESIDENCE BAB EL BAIDA 1, Terminus: False
+		Order: 3, ID: 10087, Name: RESIDENCE AL BAIDA EL QODS, Terminus: False
+		Order: 4, ID: 10226, Name: TERMINUS AL QODS, Terminus: True
+		Order: 5, ID: 9967, Name: MOSQUEE AL FALAH, Terminus: False
+		Order: 6, ID: 9996, Name: MOSQUEE QODS, Terminus: False
+		Order: 7, ID: 9673, Name: CHATEAU EL QODS, Terminus: False
+		Order: 8, ID: 9865, Name: HOPITAL EL MANSOUR, Terminus: False
+		Order: 9, ID: 10379, Name: TERMINUS TRAM 2 BERNOUSSI, Terminus: True
+		Order: 10, ID: 10230, Name: TERMINUS BERNOUSSI, Terminus: True
+		Order: 11, ID: 9939, Name: MAAGUIZ, Terminus: False
+		Order: 12, ID: 9969, Name: MOSQUEE AL MAGHFIRA, Terminus: False
+		Order: 13, ID: 9811, Name: GARE AIN SEBAA, Terminus: False
+		Order: 14, ID: 9491, Name: ALLEE DES MIMOSAS, Terminus: False
+		Order: 15, ID: 9954, Name: MARCHE VERT, Terminus: False
+		Order: 16, ID: 10083, Name: RESIDENCE AIN SEBAA, Terminus: False
+		Order: 17, ID: 9777, Name: ECOLE EL JAZIRA, Terminus: False
+		Order: 18, ID: 9957, Name: MIMOSAS, Terminus: False
+		Order: 19, ID: 10280, Name: TERMINUS PLACE MEKOUAR, Terminus: True
+		Order: 20, ID: 9490, Name: ALLEE DES EUCALYBTUS, Terminus: False
+		Order: 21, ID: 9982, Name: MOSQUEE EL WAHDA, Terminus: False
+		Order: 22, ID: 10067, Name: PROTECTION CIVIL AIN SEBAA, Terminus: False
+		Order: 23, ID: 9927, Name: LYCEE EL BAROUDI, Terminus: False
+		Order: 24, ID: 10065, Name: PRISON OKACHA, Terminus: False
+		Order: 25, ID: 10180, Name: RUE EL HAOUZA, Terminus: False
+		Order: 26, ID: 10137, Name: ROCHES NOIRES, Terminus: False
+		Order: 27, ID: 10170, Name: ROUTE R322 ROCHES NOIRES, Terminus: False
+		Order: 28, ID: 9519, Name: ANGLE RUE MAAMOURA, Terminus: False
+		Order: 29, ID: 9500, Name: ANGLE BOULEVARD BALTI BEN MEKKI, Terminus: False
+		Order: 30, ID: 10326, Name: ANGLE RUE DE LA VICTOIRE, Terminus: False
+		Order: 31, ID: 9516, Name: ANGLE RUE DE DAX, Terminus: False
+		Order: 32, ID: 10061, Name: POSTE MAROC (ZOLA), Terminus: False
+		Order: 33, ID: 9657, Name: CENTRE COMMERCIAL EMILE ZOLA, Terminus: False
+		Order: 34, ID: 9562, Name: AVENUE PASTEUR, Terminus: False
+		Order: 35, ID: 9557, Name: AVENUE DES FAR, Terminus: False
+		Order: 36, ID: 10234, Name: TERMINUS CINEMA RIF, Terminus: True
+
+	Route Name: L031
+	Frequency: 28
+	Travel Time: 70
+	Number Of Buses: 10
+	Departure: ['6:00', '20:30']
+	Stations:
+		Order: 1, ID: 10295, Name: TERMINUS SIDI MAAROUF, Terminus: True
+		Order: 2, ID: 9782, Name: ECOLE IBNO KATIR, Terminus: False
+		Order: 3, ID: 9527, Name: ARCHIVE I, Terminus: False
+		Order: 4, ID: 9852, Name: HAY NAJAH, Terminus: False
+		Order: 5, ID: 10106, Name: RESIDENCE DANDOUN, Terminus: False
+		Order: 6, ID: 9961, Name: MOSQUEE ADARISSA, Terminus: False
+		Order: 7, ID: 10044, Name: PEPINIERE ORIKA, Terminus: False
+		Order: 8, ID: 9617, Name: BOULEVARD IBN ROCHD, Terminus: False
+		Order: 9, ID: 9885, Name: JNANE CALIFORNIE, Terminus: False
+		Order: 10, ID: 9525, Name: ANWAR CALIFORNIE, Terminus: False
+		Order: 11, ID: 10015, Name: OMARIA, Terminus: False
+		Order: 12, ID: 9640, Name: BOULEVARD TICHKA, Terminus: False
+		Order: 13, ID: 9560, Name: AVENUE MAMAR TICHKA, Terminus: False
+		Order: 14, ID: 9488, Name: ALFATH, Terminus: False
+		Order: 15, ID: 10338, Name: BOULEVARD TAH, Terminus: False
+		Order: 16, ID: 10298, Name: TERMINUS TAH, Terminus: True
+		Order: 17, ID: 9506, Name: ANGLE BOULEVARD TAH/ MOHAMED 6, Terminus: False
+		Order: 18, ID: 9586, Name: BOULEVARD AMGALA, Terminus: False
+		Order: 19, ID: 10268, Name: TERMINUS MOSQUEE EL HOSNA, Terminus: True
+		Order: 20, ID: 10258, Name: TERMINUS JAMILA II, Terminus: True
+		Order: 21, ID: 9845, Name: HAY JAMILA 2, Terminus: False
+		Order: 22, ID: 9733, Name: DAR TOUZANI, Terminus: False
+		Order: 23, ID: 9899, Name: LA MORGUE AIN CHOK, Terminus: False
+		Order: 24, ID: 9947, Name: MARCHE DE BOIS, Terminus: False
+		Order: 25, ID: 10204, Name: SOUK LAAYOUNE, Terminus: False
+		Order: 26, ID: 9700, Name: COLLEGE AL JAHID, Terminus: False
+		Order: 27, ID: 10283, Name: TERMINUS PLACE SRAGHNA, Terminus: True
+
+	Route Name: L033
+	Frequency: 8
+	Travel Time: 44
+	Number Of Buses: 15
+	Departure: ['6:00', '21:45']
+	Stations:
+		Order: 1, ID: 10227, Name: TERMINUS ANASSI, Terminus: True
+		Order: 2, ID: 9878, Name: JARDIN ANASSI, Terminus: False
+		Order: 3, ID: 10300, Name: TERMINUS TRAM 1 SIDI MOUMEN, Terminus: True
+		Order: 4, ID: 10110, Name: RESIDENCE EL BAIDA, Terminus: False
+		Order: 5, ID: 9581, Name: BOULEVARD AHL LOGHLAM, Terminus: False
+		Order: 6, ID: 9955, Name: MASJID FIRDAOUSS, Terminus: False
+		Order: 7, ID: 9606, Name: BOULEVARD EL YAZIDI, Terminus: False
+		Order: 8, ID: 10127, Name: RESIDENCE OUDAYA, Terminus: False
+		Order: 9, ID: 9529, Name: ARRET BEAULIEU, Terminus: False
+		Order: 10, ID: 9495, Name: ANGLE ALLEE DES CYPRES, Terminus: False
+		Order: 11, ID: 10150, Name: ROUTE DE RABAT, Terminus: False
+		Order: 12, ID: 9685, Name: CITE CHEMINOT, Terminus: False
+		Order: 13, ID: 10201, Name: SOCIETE COSUMAR, Terminus: False
+		Order: 14, ID: 9627, Name: BOULEVARD MOULAY SMAIL, Terminus: False
+		Order: 15, ID: 9521, Name: ANGLE RUE SOURZAC, Terminus: False
+		Order: 16, ID: 10140, Name: ROND-POINT AICHA, Terminus: False
+		Order: 17, ID: 10061, Name: POSTE MAROC (ZOLA), Terminus: False
+		Order: 18, ID: 9657, Name: CENTRE COMMERCIAL EMILE ZOLA, Terminus: False
+		Order: 19, ID: 9562, Name: AVENUE PASTEUR, Terminus: False
+		Order: 20, ID: 10343, Name: COLIS POSTAUX, Terminus: False
+		Order: 21, ID: 9557, Name: AVENUE DES FAR, Terminus: False
+		Order: 22, ID: 10377, Name: TERMINUS PLACE LA CONCORDE, Terminus: True
+
+	Route Name: L035
+	Frequency: 50
+	Travel Time: 50
+	Number Of Buses: 2
+	Departure: ['5:30', '21:00']
+	Stations:
+		Order: 1, ID: 10369, Name: TERMINUS  AL OULFA 1, Terminus: True
+		Order: 2, ID: 9634, Name: BOULEVARD OUED TENSIFT, Terminus: False
+		Order: 3, ID: 10352, Name: ECOLE LAARBI ELBENNAY, Terminus: False
+		Order: 4, ID: 9775, Name: ECOLE EL IBRAHIMI, Terminus: False
+		Order: 5, ID: 10348, Name: ECOLE AL AJIAL, Terminus: False
+		Order: 6, ID: 10360, Name: LYCEE FECHTALI, Terminus: False
+		Order: 7, ID: 10365, Name: RESIDENCE ABOUAB OUM RABIA, Terminus: False
+		Order: 8, ID: 9553, Name: AUDA ANFA, Terminus: False
+		Order: 9, ID: 9652, Name: CARRIERE SCHNEIDER, Terminus: False
+		Order: 10, ID: 9469, Name: ACADEMIE D'EDUCATION, Terminus: False
+		Order: 11, ID: 9689, Name: CLINIQUE ABBADI, Terminus: False
+		Order: 12, ID: 10331, Name: BEAUSEJOUR, Terminus: False
+		Order: 13, ID: 9978, Name: MOSQUEE EL BATHA, Terminus: False
+		Order: 14, ID: 10074, Name: PTT ROUDANI, Terminus: False
+		Order: 15, ID: 10176, Name: RUE AL MAROUNI, Terminus: False
+		Order: 16, ID: 9668, Name: CENTRE MAARIF, Terminus: False
+		Order: 17, ID: 9720, Name: CONSULAT DE LA  RUSSIE, Terminus: False
+		Order: 18, ID: 10332, Name: BOULEVARD ABDELMOUMEN, Terminus: False
+		Order: 19, ID: 10332, Name: BOULEVARD ABDELMOUMEN, Terminus: False
+		Order: 20, ID: 10032, Name: PALMIER ABDELMOUMEN, Terminus: False
+		Order: 21, ID: 9536, Name: ARRET HASSAN II, Terminus: False
+		Order: 22, ID: 9881, Name: JARDIN LIGUE ARABE, Terminus: False
+		Order: 23, ID: 10316, Name: WILAYA GRAND CASABLANCA, Terminus: False
+		Order: 24, ID: 9819, Name: GRANDE POSTE, Terminus: False
+		Order: 25, ID: 10279, Name: TERMINUS PLACE DES NATIONS UNIES, Terminus: True
+
+	Route Name: L038
+	Frequency: 14
+	Travel Time: 70
+	Number Of Buses: 15
+	Departure: ['6:00', '21:19']
+	Stations:
+		Order: 1, ID: 10250, Name: TERMINUS HAY EL FALAH, Terminus: True
+		Order: 2, ID: 9681, Name: CINEMA EL FALAH, Terminus: False
+		Order: 3, ID: 10307, Name: THEATRE MY RACHID, Terminus: False
+		Order: 4, ID: 10357, Name: HAY SALAMA, Terminus: False
+		Order: 5, ID: 9826, Name: HAMMAM LHAJJA, Terminus: False
+		Order: 6, ID: 9850, Name: HAY MOURAD, Terminus: False
+		Order: 7, ID: 9608, Name: BOULEVARD FOUARATE, Terminus: False
+		Order: 8, ID: 9665, Name: CENTRE DPK (ALSA), Terminus: False
+		Order: 9, ID: 9860, Name: HAY TISSIR, Terminus: False
+		Order: 10, ID: 9739, Name: DERB MILA, Terminus: False
+		Order: 11, ID: 9595, Name: BOULEVARD DE GAZA, Terminus: False
+		Order: 12, ID: 10371, Name: TERMINUS HAY EL FARAH, Terminus: True
+		Order: 13, ID: 10073, Name: PTT HAY ALAMAL, Terminus: False
+		Order: 14, ID: 9981, Name: MOSQUEE EL KAOUTAR, Terminus: False
+		Order: 15, ID: 10346, Name: DERB KABIR, Terminus: False
+		Order: 16, ID: 10231, Name: TERMINUS BOUCHENTOUF, Terminus: True
+		Order: 17, ID: 10344, Name: DERB BOUCHENTOUF, Terminus: False
+		Order: 18, ID: 10345, Name: DERB FOUKARA, Terminus: False
+		Order: 19, ID: 10081, Name: RACHAD, Terminus: False
+		Order: 20, ID: 10362, Name: MOSQUEE EL HODA, Terminus: False
+		Order: 21, ID: 9817, Name: GENDARMERIE MY IDRISS I, Terminus: False
+		Order: 22, ID: 9931, Name: LYCEE LAHLOU, Terminus: False
+		Order: 23, ID: 9871, Name: INSTITUT PASTEUR, Terminus: False
+		Order: 24, ID: 10332, Name: BOULEVARD ABDELMOUMEN, Terminus: False
+		Order: 25, ID: 10032, Name: PALMIER ABDELMOUMEN, Terminus: False
+		Order: 26, ID: 9926, Name: LYCEE CHAOUKI, Terminus: False
+		Order: 27, ID: 10310, Name: TWIN CENTER, Terminus: False
+		Order: 28, ID: 9641, Name: BOULEVARDS ZERKTOUNI, Terminus: False
+		Order: 29, ID: 9975, Name: MOSQUEE BADR, Terminus: False
+		Order: 30, ID: 9902, Name: LAAOUINA LHARRA, Terminus: False
+		Order: 31, ID: 10012, Name: OFPPT EL HANK, Terminus: False
+		Order: 32, ID: 9587, Name: BOULEVARD BEN BARKA, Terminus: False
+		Order: 33, ID: 10240, Name: TERMINUS EL HANK, Terminus: True
+
+	Route Name: L040
+	Frequency: 41
+	Travel Time: 59
+	Number Of Buses: 4
+	Departure: ['6:00', '18:30']
+	Stations:
+		Order: 1, ID: 10297, Name: TERMINUS TACHAROUK, Terminus: True
+		Order: 2, ID: 9973, Name: MOSQUEE BAB TAOUBA, Terminus: False
+		Order: 3, ID: 10271, Name: TERMINUS MOULAY RACHID, Terminus: True
+		Order: 4, ID: 9916, Name: LOTISSEMENT EL BAIDA II, Terminus: False
+		Order: 5, ID: 10359, Name: LOTISSEMENT EL MANZAH, Terminus: False
+		Order: 6, ID: 10113, Name: RESIDENCE EL HAMD, Terminus: False
+		Order: 7, ID: 10250, Name: TERMINUS HAY EL FALAH, Terminus: True
+		Order: 8, ID: 9681, Name: CINEMA EL FALAH, Terminus: False
+		Order: 9, ID: 10307, Name: THEATRE MY RACHID, Terminus: False
+		Order: 10, ID: 10357, Name: HAY SALAMA, Terminus: False
+		Order: 11, ID: 9826, Name: HAMMAM LHAJJA, Terminus: False
+		Order: 12, ID: 9850, Name: HAY MOURAD, Terminus: False
+		Order: 13, ID: 9608, Name: BOULEVARD FOUARATE, Terminus: False
+		Order: 14, ID: 9665, Name: CENTRE DPK (ALSA), Terminus: False
+		Order: 15, ID: 9860, Name: HAY TISSIR, Terminus: False
+		Order: 16, ID: 9830, Name: HAY CHIFA, Terminus: False
+		Order: 17, ID: 9985, Name: MOSQUEE HAY EL FARAH, Terminus: False
+		Order: 18, ID: 10346, Name: DERB KABIR, Terminus: False
+		Order: 19, ID: 9891, Name: KISSARIAT AKHMASSI, Terminus: False
+		Order: 20, ID: 9815, Name: GAREAGE ALLAL, Terminus: False
+		Order: 21, ID: 10111, Name: RESIDENCE EL BAIDA(MVI), Terminus: False
+		Order: 22, ID: 10047, Name: PLACE LA VECTOIRE, Terminus: False
+		Order: 23, ID: 9599, Name: BOULEVARD DE PARIS, Terminus: False
+		Order: 24, ID: 9819, Name: GRANDE POSTE, Terminus: False
+		Order: 25, ID: 10281, Name: TERMINUS PLACE OUAD LMAKHAZIN, Terminus: True
+
+	Route Name: L043
+	Frequency: 15
+	Travel Time: 55
+	Number Of Buses: 11
+	Departure: ['6:00', '21:45']
+	Stations:
+		Order: 1, ID: 10238, Name: TERMINUS DOHA, Terminus: True
+		Order: 2, ID: 9651, Name: CARRIERE RHAMNA, Terminus: False
+		Order: 3, ID: 10131, Name: RESIDENCE SAADA, Terminus: False
+		Order: 4, ID: 10104, Name: RESIDENCE CHARAF, Terminus: False
+		Order: 5, ID: 9616, Name: BOULEVARD HOUCINE SOUSSI, Terminus: False
+		Order: 6, ID: 9648, Name: CARRIERE ARAIB, Terminus: False
+		Order: 7, ID: 9960, Name: MOSQUEE ABIR, Terminus: False
+		Order: 8, ID: 9477, Name: AL ADARISSA, Terminus: False
+		Order: 9, ID: 9494, Name: ANAPEC SIDI MOUMEN, Terminus: False
+		Order: 10, ID: 10120, Name: RESIDENCE ELMOUAHIDINE, Terminus: False
+		Order: 11, ID: 10208, Name: SOUK SALAM, Terminus: False
+		Order: 12, ID: 9892, Name: KISSARIAT AZIZA, Terminus: False
+		Order: 13, ID: 9542, Name: ARRET MDAKRA, Terminus: False
+		Order: 14, ID: 9618, Name: BOULEVARD IBN TACHFINE, Terminus: False
+		Order: 15, ID: 9528, Name: ARRET BATA, Terminus: False
+		Order: 16, ID: 10098, Name: RESIDENCE ASSALAM, Terminus: False
+		Order: 17, ID: 9785, Name: ECOLE LE NID, Terminus: False
+		Order: 18, ID: 9653, Name: CASERNE AIN BORJA, Terminus: False
+		Order: 19, ID: 9843, Name: HAY HAKAM, Terminus: False
+		Order: 20, ID: 9729, Name: DAR LMOAMIN, Terminus: False
+		Order: 21, ID: 9721, Name: COUR D'APPEL, Terminus: False
+		Order: 22, ID: 9557, Name: AVENUE DES FAR, Terminus: False
+		Order: 23, ID: 10377, Name: TERMINUS PLACE LA CONCORDE, Terminus: True
+		Order: 24, ID: 9684, Name: CINEMA VERDIN, Terminus: False
+		Order: 25, ID: 9588, Name: BOULEVARD BORDEAUX, Terminus: False
+		Order: 26, ID: 10272, Name: TERMINUS MOULAY YOUSSEF, Terminus: True
+		Order: 27, ID: 10256, Name: TERMINUS HOPITAL SOFI, Terminus: True
+
+	Route Name: L050
+	Frequency: 4
+	Travel Time: 55
+	Number Of Buses: 32
+	Departure: ['6:00', '22:00']
+	Stations:
+		Order: 1, ID: 10288, Name: TERMINUS RAHMA, Terminus: True
+		Order: 2, ID: 9900, Name: LA MORGUE RAHMA, Terminus: False
+		Order: 3, ID: 10152, Name: ROUTE MOULAY THAMI, Terminus: False
+		Order: 4, ID: 9909, Name: LFARFARA, Terminus: False
+		Order: 5, ID: 9467, Name: ABOUAB AL OULFA, Terminus: False
+		Order: 6, ID: 10101, Name: RESIDENCE BASSATIN ALOULFA, Terminus: False
+		Order: 7, ID: 9570, Name: BASSATINE AL OULFA, Terminus: False
+		Order: 8, ID: 9670, Name: CENTRE OFPPT ESSAFA, Terminus: False
+		Order: 9, ID: 10247, Name: TERMINUS FERARA, Terminus: True
+		Order: 10, ID: 10348, Name: ECOLE AL AJIAL, Terminus: False
+		Order: 11, ID: 10360, Name: LYCEE FECHTALI, Terminus: False
+		Order: 12, ID: 9632, Name: BOULEVARD OUED LAOU, Terminus: False
+		Order: 13, ID: 10325, Name: ANGLE BOULEVARD ABOU REGREG, Terminus: False
+		Order: 14, ID: 10207, Name: SOUK OULD MINA, Terminus: False
+		Order: 15, ID: 10237, Name: TERMINUS DAR LHAMRA, Terminus: True
+		Order: 16, ID: 9619, Name: BOULEVARD IBNOU SINA, Terminus: False
+		Order: 17, ID: 9620, Name: BOULEVARD IBNOU SINA N¯43, Terminus: False
+		Order: 18, ID: 9784, Name: ECOLE LA PRAIRIE, Terminus: False
+		Order: 19, ID: 9515, Name: ANGLE RUE BEN LARBI, Terminus: False
+		Order: 20, ID: 10340, Name: CLINIQUE NORMANDIE, Terminus: False
+		Order: 21, ID: 9718, Name: COMPLEXE MOHAMED V, Terminus: False
+		Order: 22, ID: 10183, Name: RUE KAID AL ACHTAR, Terminus: False
+		Order: 23, ID: 10184, Name: RUE NORMANDIE, Terminus: False
+		Order: 24, ID: 9907, Name: LES ARENES, Terminus: False
+		Order: 25, ID: 9464, Name: 112 BOULEVARD D'ANFA, Terminus: False
+		Order: 26, ID: 10187, Name: RUE WASHINGTON, Terminus: False
+		Order: 27, ID: 10235, Name: TERMINUS COMMUNE SIDI BELYOUT, Terminus: True
+
+	Route Name: L051
+	Frequency: 11
+	Travel Time: 70
+	Number Of Buses: 14
+	Departure: ['6:00', '22:06']
+	Stations:
+		Order: 1, ID: 10288, Name: TERMINUS RAHMA, Terminus: True
+		Order: 2, ID: 9900, Name: LA MORGUE RAHMA, Terminus: False
+		Order: 3, ID: 10152, Name: ROUTE MOULAY THAMI, Terminus: False
+		Order: 4, ID: 9909, Name: LFARFARA, Terminus: False
+		Order: 5, ID: 9467, Name: ABOUAB AL OULFA, Terminus: False
+		Order: 6, ID: 10101, Name: RESIDENCE BASSATIN ALOULFA, Terminus: False
+		Order: 7, ID: 10102, Name: RESIDENCE BASSATIN ALOULFA_ 2, Terminus: False
+		Order: 8, ID: 9972, Name: MOSQUEE AZHAR, Terminus: False
+		Order: 9, ID: 9564, Name: AZHAR OULFA, Terminus: False
+		Order: 10, ID: 9825, Name: HAJ FATEH, Terminus: False
+		Order: 11, ID: 10305, Name: TERMINUS ZOUBIR, Terminus: True
+		Order: 12, ID: 9609, Name: BOULEVARD HAJ FATEH, Terminus: False
+		Order: 13, ID: 10259, Name: TERMINUS KASBAT LAMINE, Terminus: True
+		Order: 14, ID: 9886, Name: JNANE OULFA, Terminus: False
+		Order: 15, ID: 10374, Name: TERMINUS LISSASFA, Terminus: True
+		Order: 16, ID: 9912, Name: LISSASFA 1, Terminus: False
+		Order: 17, ID: 10330, Name: AZBANE 1, Terminus: False
+		Order: 18, ID: 9788, Name: ECOLE NORMALE SUPERIEURE, Terminus: False
+		Order: 19, ID: 9798, Name: FACULTE ROUTE D'EL JADIDA, Terminus: False
+		Order: 20, ID: 10212, Name: STADE PERE JEGO, Terminus: False
+		Order: 21, ID: 9594, Name: BOULEVARD DE BOUSKOURA, Terminus: False
+		Order: 22, ID: 9505, Name: ANGLE BOULEVARD STENDAL / GHANDI, Terminus: False
+		Order: 23, ID: 9688, Name: CITE PLATEAU, Terminus: False
+		Order: 24, ID: 10117, Name: RESIDENCE EL MAJD, Terminus: False
+		Order: 25, ID: 10011, Name: OFPPT DERB GHALLEF, Terminus: False
+		Order: 26, ID: 10336, Name: BOULEVARD ANOUAL, Terminus: False
+		Order: 27, ID: 9931, Name: LYCEE LAHLOU, Terminus: False
+		Order: 28, ID: 9817, Name: GENDARMERIE MY IDRISS I, Terminus: False
+		Order: 29, ID: 10362, Name: MOSQUEE EL HODA, Terminus: False
+		Order: 30, ID: 9546, Name: ARRET RACHAD, Terminus: False
+		Order: 31, ID: 10344, Name: DERB BOUCHENTOUF, Terminus: False
+		Order: 32, ID: 10231, Name: TERMINUS BOUCHENTOUF, Terminus: True
+		Order: 33, ID: 10346, Name: DERB KABIR, Terminus: False
+		Order: 34, ID: 10261, Name: TERMINUS LA GARE ROUTIERE, Terminus: True
+
+	Route Name: L056
+	Frequency: 30
+	Travel Time: 86
+	Number Of Buses: 9
+	Departure: ['6:00', '21:10']
+	Stations:
+		Order: 1, ID: 10297, Name: TERMINUS TACHAROUK, Terminus: True
+		Order: 2, ID: 9973, Name: MOSQUEE BAB TAOUBA, Terminus: False
+		Order: 3, ID: 10271, Name: TERMINUS MOULAY RACHID, Terminus: True
+		Order: 4, ID: 9916, Name: LOTISSEMENT EL BAIDA II, Terminus: False
+		Order: 5, ID: 10359, Name: LOTISSEMENT EL MANZAH, Terminus: False
+		Order: 6, ID: 10113, Name: RESIDENCE EL HAMD, Terminus: False
+		Order: 7, ID: 9842, Name: HAY ENNOUR, Terminus: False
+		Order: 8, ID: 9555, Name: AVENUE 10 MARS, Terminus: False
+		Order: 9, ID: 9906, Name: LALLA MERYEM, Terminus: False
+		Order: 10, ID: 9772, Name: ECOLE EL AKHAWAIN, Terminus: False
+		Order: 11, ID: 10334, Name: BOULEVARD ABOU HOURAIRA, Terminus: False
+		Order: 12, ID: 10334, Name: BOULEVARD ABOU HOURAIRA, Terminus: False
+		Order: 13, ID: 9682, Name: CINEMA EL OTHMANIA, Terminus: False
+		Order: 14, ID: 9929, Name: LYCEE IBNO HAZM, Terminus: False
+		Order: 15, ID: 9810, Name: FOURRIERE BEN M'SIK, Terminus: False
+		Order: 16, ID: 9950, Name: MARCHE DES DATTES, Terminus: False
+		Order: 17, ID: 9763, Name: DRISSIA 2, Terminus: False
+		Order: 18, ID: 10077, Name: QUARTIER DRISSIA, Terminus: False
+		Order: 19, ID: 10204, Name: SOUK LAAYOUNE, Terminus: False
+		Order: 20, ID: 10097, Name: RESIDENCE ANNACER, Terminus: False
+		Order: 21, ID: 9891, Name: KISSARIAT AKHMASSI, Terminus: False
+		Order: 22, ID: 9815, Name: GAREAGE ALLAL, Terminus: False
+		Order: 23, ID: 10111, Name: RESIDENCE EL BAIDA(MVI), Terminus: False
+		Order: 24, ID: 10047, Name: PLACE LA VECTOIRE, Terminus: False
+		Order: 25, ID: 9599, Name: BOULEVARD DE PARIS, Terminus: False
+		Order: 26, ID: 9819, Name: GRANDE POSTE, Terminus: False
+		Order: 27, ID: 10281, Name: TERMINUS PLACE OUAD LMAKHAZIN, Terminus: True
+		Order: 28, ID: 10377, Name: TERMINUS PLACE LA CONCORDE, Terminus: True
+		Order: 29, ID: 10257, Name: TERMINUS HOUPHEIT BOIGNY, Terminus: True
+		Order: 30, ID: 9995, Name: MOSQUEE OULD EL HAMRA, Terminus: False
+		Order: 31, ID: 9638, Name: BOULEVARD SOUR JDID, Terminus: False
+		Order: 32, ID: 9984, Name: MOSQUEE HASSAN II, Terminus: False
+		Order: 33, ID: 10363, Name: PARC LE LAC, Terminus: False
+		Order: 34, ID: 9902, Name: LAAOUINA LHARRA, Terminus: False
+		Order: 35, ID: 10202, Name: SOUK BOURGOGNE, Terminus: False
+		Order: 36, ID: 9662, Name: CENTRE DE SANTE OUHOUDE, Terminus: False
+		Order: 37, ID: 9911, Name: LHJAJMA, Terminus: False
+		Order: 38, ID: 10184, Name: RUE NORMANDIE, Terminus: False
+		Order: 38, ID: 9624, Name: BOULEVARD MOHAMED SIJILMASSI, Terminus: False
+		Order: 40, ID: 10266, Name: TERMINUS MAARIF 2, Terminus: True
+
+	Route Name: L060
+	Frequency: 24
+	Travel Time: 57
+	Number Of Buses: 5
+	Departure: ['6:00', '21:04']
+	Stations:
+		Order: 1, ID: 10373, Name: TERMINUS JAMILA, Terminus: True
+		Order: 2, ID: 10268, Name: TERMINUS MOSQUEE EL HOSNA, Terminus: True
+		Order: 3, ID: 9980, Name: MOSQUEE EL HOSNA B, Terminus: False
+		Order: 4, ID: 9585, Name: BOULEVARD AL QODS, Terminus: False
+		Order: 5, ID: 10055, Name: POLYCLINIQUE CNSS INARA, Terminus: False
+		Order: 6, ID: 9796, Name: FACULTE AIN CHOC, Terminus: False
+		Order: 7, ID: 9990, Name: MOSQUEE MSALLA, Terminus: False
+		Order: 8, ID: 9691, Name: CLINIQUE AIN CHOC, Terminus: False
+		Order: 9, ID: 9659, Name: CENTRE D'HEMODIALYSE 2 MARS, Terminus: False
+		Order: 10, ID: 10364, Name: QUARTIER POLO, Terminus: False
+		Order: 11, ID: 9829, Name: HAY BIN LMDOUN, Terminus: False
+		Order: 12, ID: 10181, Name: RUE FAROUKI ERRAHALI, Terminus: False
+		Order: 13, ID: 9667, Name: CENTRE FEMININ, Terminus: False
+		Order: 14, ID: 10372, Name: TERMINUS HAY LMASJID, Terminus: True
+		Order: 15, ID: 10081, Name: RACHAD, Terminus: False
+		Order: 16, ID: 10362, Name: MOSQUEE EL HODA, Terminus: False
+		Order: 17, ID: 9934, Name: LYCEE MOHAMED V, Terminus: False
+		Order: 18, ID: 9896, Name: L'EGLISE (ZERKTOUNI), Terminus: False
+		Order: 19, ID: 9951, Name: MARCHE DES FLEURS, Terminus: False
+		Order: 20, ID: 9926, Name: LYCEE CHAOUKI, Terminus: False
+		Order: 21, ID: 10310, Name: TWIN CENTER, Terminus: False
+		Order: 22, ID: 9641, Name: BOULEVARDS ZERKTOUNI, Terminus: False
+		Order: 23, ID: 9975, Name: MOSQUEE BADR, Terminus: False
+		Order: 24, ID: 10179, Name: RUE DE L'ALMA, Terminus: False
+		Order: 25, ID: 9943, Name: MAISON DES JEUNES ZERKTOUNI, Terminus: False
+		Order: 26, ID: 10363, Name: PARC LE LAC, Terminus: False
+		Order: 27, ID: 10256, Name: TERMINUS HOPITAL SOFI, Terminus: True
+
+	Route Name: L062
+	Frequency: 14
+	Travel Time: 58
+	Number Of Buses: 11
+	Departure: ['6:00', '21:30']
+	Stations:
+		Order: 1, ID: 10243, Name: TERMINUS ELFADL, Terminus: True
+		Order: 2, ID: 9966, Name: MOSQUEE AL FADL, Terminus: False
+		Order: 3, ID: 10088, Name: RESIDENCE AL FADL, Terminus: False
+		Order: 4, ID: 9905, Name: LAHRAOUIYINE, Terminus: False
+		Order: 5, ID: 9709, Name: COMMISARIAT LAHRAOUIEN, Terminus: False
+		Order: 6, ID: 9703, Name: COLLEGE EL HASSAN ELYOUSSI, Terminus: False
+		Order: 7, ID: 10359, Name: LOTISSEMENT EL MANZAH, Terminus: False
+		Order: 8, ID: 9589, Name: BOULEVARD BOUALAM, Terminus: False
+		Order: 9, ID: 9822, Name: GROUPE 3 MOULAY RACHID, Terminus: False
+		Order: 10, ID: 9838, Name: HAY EL MASSIRA, Terminus: False
+		Order: 11, ID: 9575, Name: BLOC 33 LALLA MERIEM, Terminus: False
+		Order: 12, ID: 9880, Name: JARDIN LALLA MERIEM, Terminus: False
+		Order: 13, ID: 9772, Name: ECOLE EL AKHAWAIN, Terminus: False
+		Order: 14, ID: 9678, Name: CHTAIBA, Terminus: False
+		Order: 15, ID: 10056, Name: PONT ANOUAL, Terminus: False
+		Order: 16, ID: 9898, Name: LA GARE ROUTIERE, Terminus: False
+		Order: 17, ID: 10008, Name: OFPPT AIN BORJA, Terminus: False
+		Order: 18, ID: 10161, Name: ROUTE OULED ZIANE, Terminus: False
+		Order: 19, ID: 9502, Name: ANGLE BOULEVARD IFNI, Terminus: False
+		Order: 20, ID: 9729, Name: DAR LMOAMIN, Terminus: False
+		Order: 21, ID: 9721, Name: COUR D'APPEL, Terminus: False
+		Order: 22, ID: 9557, Name: AVENUE DES FAR, Terminus: False
+		Order: 23, ID: 10377, Name: TERMINUS PLACE LA CONCORDE, Terminus: True
+		Order: 24, ID: 9684, Name: CINEMA VERDIN, Terminus: False
+		Order: 25, ID: 10272, Name: TERMINUS MOULAY YOUSSEF, Terminus: True
+
+	Route Name: L063
+	Frequency: 22
+	Travel Time: 75
+	Number Of Buses: 9
+	Departure: ['6:00', '21:00']
+	Stations:
+		Order: 1, ID: 10292, Name: TERMINUS SALMIA, Terminus: True
+		Order: 2, ID: 10269, Name: TERMINUS MOSQUEE SALMIA, Terminus: True
+		Order: 3, ID: 9867, Name: HOPITAL SALMIA, Terminus: False
+		Order: 4, ID: 10213, Name: STADE TISSIMA, Terminus: False
+		Order: 5, ID: 9512, Name: ANGLE OUED DAHAB / AL JOULANE, Terminus: False
+		Order: 6, ID: 9629, Name: BOULEVARD OUED DAHAB, Terminus: False
+		Order: 7, ID: 10276, Name: TERMINUS OUAD DAHAB, Terminus: True
+		Order: 8, ID: 9875, Name: JAMAL DORA, Terminus: False
+		Order: 9, ID: 10373, Name: TERMINUS JAMILA, Terminus: True
+		Order: 10, ID: 10268, Name: TERMINUS MOSQUEE EL HOSNA, Terminus: True
+		Order: 11, ID: 9980, Name: MOSQUEE EL HOSNA B, Terminus: False
+		Order: 12, ID: 9585, Name: BOULEVARD AL QODS, Terminus: False
+		Order: 13, ID: 10055, Name: POLYCLINIQUE CNSS INARA, Terminus: False
+		Order: 14, ID: 9796, Name: FACULTE AIN CHOC, Terminus: False
+		Order: 15, ID: 9990, Name: MOSQUEE MSALLA, Terminus: False
+		Order: 16, ID: 9691, Name: CLINIQUE AIN CHOC, Terminus: False
+		Order: 17, ID: 9659, Name: CENTRE D'HEMODIALYSE 2 MARS, Terminus: False
+		Order: 18, ID: 9862, Name: HOPITAL BOUAFI, Terminus: False
+		Order: 19, ID: 9999, Name: MOSQUEE SONNA, Terminus: False
+		Order: 20, ID: 10081, Name: RACHAD, Terminus: False
+		Order: 21, ID: 10362, Name: MOSQUEE EL HODA, Terminus: False
+		Order: 22, ID: 9817, Name: GENDARMERIE MY IDRISS I, Terminus: False
+		Order: 23, ID: 9931, Name: LYCEE LAHLOU, Terminus: False
+		Order: 24, ID: 10336, Name: BOULEVARD ANOUAL, Terminus: False
+		Order: 25, ID: 10011, Name: OFPPT DERB GHALLEF, Terminus: False
+		Order: 26, ID: 10117, Name: RESIDENCE EL MAJD, Terminus: False
+		Order: 27, ID: 9977, Name: MOSQUEE DOHA, Terminus: False
+		Order: 28, ID: 9688, Name: CITE PLATEAU, Terminus: False
+		Order: 29, ID: 9505, Name: ANGLE BOULEVARD STENDAL / GHANDI, Terminus: False
+		Order: 30, ID: 10341, Name: CLINIQUE RIVIERA, Terminus: False
+		Order: 31, ID: 10118, Name: RESIDENCE EL MANSOUR, Terminus: False
+		Order: 32, ID: 9550, Name: ARRONDISSEMENT GHANDI, Terminus: False
+		Order: 33, ID: 10351, Name: ECOLE GEORGES BIZET, Terminus: False
+		Order: 34, ID: 9784, Name: ECOLE LA PRAIRIE, Terminus: False
+		Order: 35, ID: 9522, Name: ANGLE RUE TAMASKIN, Terminus: False
+		Order: 36, ID: 9837, Name: HAY EL HANA, Terminus: False
+		Order: 37, ID: 9962, Name: MOSQUEE AFGHANISTAN, Terminus: False
+		Order: 38, ID: 10335, Name: BOULEVARD AFGHANISTAN, Terminus: False
+		Order: 39, ID: 10035, Name: PARC HAY HASSANI, Terminus: False
+		Order: 40, ID: 9873, Name: ISTA BOULEVARD AFGHANISTAN, Terminus: False
+		Order: 41, ID: 9836, Name: HAY EL BARAKA GH6, Terminus: False
+		Order: 42, ID: 10294, Name: TERMINUS SIDI LKHADIR, Terminus: True
+
+	Route Name: L064
+	Frequency: 12
+	Travel Time: 54
+	Number Of Buses: 11
+	Departure: ['6:00', '21:45']
+	Stations:
+		Order: 1, ID: 10276, Name: TERMINUS OUAD DAHAB, Terminus: True
+		Order: 2, ID: 9629, Name: BOULEVARD OUED DAHAB, Terminus: False
+		Order: 3, ID: 9512, Name: ANGLE OUED DAHAB / AL JOULANE, Terminus: False
+		Order: 4, ID: 10358, Name: JARDIN ALESCO, Terminus: False
+		Order: 5, ID: 9895, Name: KOREA SEBATA, Terminus: False
+		Order: 6, ID: 9716, Name: COMPLEXE KAMAL ZEBDI, Terminus: False
+		Order: 7, ID: 9604, Name: BOULEVARD DU NIL, Terminus: False
+		Order: 8, ID: 10308, Name: TRIBUNAL ADMINISTRATIF, Terminus: False
+		Order: 9, ID: 9732, Name: DAR TALIBA, Terminus: False
+		Order: 10, ID: 10357, Name: HAY SALAMA, Terminus: False
+		Order: 11, ID: 10355, Name: HAY BOURNAZIL, Terminus: False
+		Order: 12, ID: 9858, Name: HAY SADRI, Terminus: False
+		Order: 13, ID: 9856, Name: HAY RAJA, Terminus: False
+		Order: 14, ID: 10337, Name: BOULEVARD NASSIBA BENT KAAB, Terminus: False
+		Order: 15, ID: 9823, Name: GROUPE 3 SIDI MOUMEN JDID, Terminus: False
+		Order: 16, ID: 9477, Name: AL ADARISSA, Terminus: False
+		Order: 17, ID: 9960, Name: MOSQUEE ABIR, Terminus: False
+		Order: 18, ID: 9648, Name: CARRIERE ARAIB, Terminus: False
+		Order: 19, ID: 9616, Name: BOULEVARD HOUCINE SOUSSI, Terminus: False
+		Order: 20, ID: 10104, Name: RESIDENCE CHARAF, Terminus: False
+		Order: 21, ID: 10131, Name: RESIDENCE SAADA, Terminus: False
+		Order: 22, ID: 9651, Name: CARRIERE RHAMNA, Terminus: False
+		Order: 23, ID: 10238, Name: TERMINUS DOHA, Terminus: True
+		Order: 24, ID: 9621, Name: BOULEVARD IMAM ALI, Terminus: False
+		Order: 25, ID: 9686, Name: CITE DE POLICE (BERNOUSSI), Terminus: False
+		Order: 26, ID: 10270, Name: TERMINUS MOSQUEE TARIQ, Terminus: True
+		Order: 27, ID: 10379, Name: TERMINUS TRAM 2 BERNOUSSI, Terminus: True
+		Order: 28, ID: 10230, Name: TERMINUS BERNOUSSI, Terminus: True
+
+	Route Name: L065
+	Frequency: 26
+	Travel Time: 64
+	Number Of Buses: 8
+	Departure: ['6:00', '21:10']
+	Stations:
+		Order: 1, ID: 10243, Name: TERMINUS ELFADL, Terminus: True
+		Order: 2, ID: 9966, Name: MOSQUEE AL FADL, Terminus: False
+		Order: 3, ID: 10088, Name: RESIDENCE AL FADL, Terminus: False
+		Order: 4, ID: 9905, Name: LAHRAOUIYINE, Terminus: False
+		Order: 5, ID: 9709, Name: COMMISARIAT LAHRAOUIEN, Terminus: False
+		Order: 6, ID: 9485, Name: AL MADINA LJADIDA1, Terminus: False
+		Order: 7, ID: 9884, Name: JAWHARAT AL MADINA, Terminus: False
+		Order: 8, ID: 9559, Name: AVENUE JOUDAR, Terminus: False
+		Order: 9, ID: 9767, Name: ECOLE ABDELKRIM EL KHATTABI, Terminus: False
+		Order: 10, ID: 9849, Name: HAY MOULAY RACHID, Terminus: False
+		Order: 11, ID: 9835, Name: HAY EL BARAKA, Terminus: False
+		Order: 12, ID: 9623, Name: BOULEVARD LALA ASMA, Terminus: False
+		Order: 13, ID: 9494, Name: ANAPEC SIDI MOUMEN, Terminus: False
+		Order: 14, ID: 9508, Name: ANGLE CHEMIN DES PIVOINES, Terminus: False
+		Order: 15, ID: 10085, Name: RESIDENCE AL AMANE 2, Terminus: False
+		Order: 16, ID: 9478, Name: AL AMANE, Terminus: False
+		Order: 17, ID: 9794, Name: ENCG AIN SEBAA, Terminus: False
+		Order: 18, ID: 9598, Name: BOULEVARD DE MAKRO, Terminus: False
+		Order: 19, ID: 9621, Name: BOULEVARD IMAM ALI, Terminus: False
+		Order: 20, ID: 9686, Name: CITE DE POLICE (BERNOUSSI), Terminus: False
+		Order: 21, ID: 10270, Name: TERMINUS MOSQUEE TARIQ, Terminus: True
+		Order: 22, ID: 10379, Name: TERMINUS TRAM 2 BERNOUSSI, Terminus: True
+		Order: 23, ID: 10230, Name: TERMINUS BERNOUSSI, Terminus: True
+		Order: 24, ID: 9493, Name: AMGALA 1, Terminus: False
+		Order: 25, ID: 9498, Name: ANGLE BOULEVARD AL BINA, Terminus: False
+		Order: 26, ID: 9590, Name: BOULEVARD CHEFCHAOUNI, Terminus: False
+		Order: 27, ID: 9997, Name: MOSQUEE QUARTIER INDUSTRIEL, Terminus: False
+		Order: 28, ID: 10249, Name: TERMINUS HARBILI, Terminus: True
+
+	Route Name: L067
+	Frequency: 7
+	Travel Time: 54
+	Number Of Buses: 17
+	Departure: ['6:00', '21:00']
+	Stations:
+		Order: 1, ID: 10276, Name: TERMINUS OUAD DAHAB, Terminus: True
+		Order: 2, ID: 9629, Name: BOULEVARD OUED DAHAB, Terminus: False
+		Order: 3, ID: 9512, Name: ANGLE OUED DAHAB / AL JOULANE, Terminus: False
+		Order: 4, ID: 10358, Name: JARDIN ALESCO, Terminus: False
+		Order: 5, ID: 9895, Name: KOREA SEBATA, Terminus: False
+		Order: 6, ID: 9465, Name: 4EME ARRONDISSEMENT, Terminus: False
+		Order: 7, ID: 9929, Name: LYCEE IBNO HAZM, Terminus: False
+		Order: 8, ID: 9810, Name: FOURRIERE BEN M'SIK, Terminus: False
+		Order: 9, ID: 9740, Name: DERB MILAN, Terminus: False
+		Order: 10, ID: 9830, Name: HAY CHIFA, Terminus: False
+		Order: 11, ID: 9985, Name: MOSQUEE HAY EL FARAH, Terminus: False
+		Order: 12, ID: 10346, Name: DERB KABIR, Terminus: False
+		Order: 13, ID: 10231, Name: TERMINUS BOUCHENTOUF, Terminus: True
+		Order: 14, ID: 10344, Name: DERB BOUCHENTOUF, Terminus: False
+		Order: 15, ID: 10345, Name: DERB FOUKARA, Terminus: False
+		Order: 16, ID: 10081, Name: RACHAD, Terminus: False
+		Order: 17, ID: 10362, Name: MOSQUEE EL HODA, Terminus: False
+		Order: 18, ID: 9660, Name: CENTRE DE L'ADDICTOLOGIE, Terminus: False
+		Order: 19, ID: 9797, Name: FACULTE MEDECINE, Terminus: False
+		Order: 20, ID: 10219, Name: TARIQ BNOU ZYAD, Terminus: False
+		Order: 21, ID: 10332, Name: BOULEVARD ABDELMOUMEN, Terminus: False
+		Order: 22, ID: 10032, Name: PALMIER ABDELMOUMEN, Terminus: False
+		Order: 23, ID: 9926, Name: LYCEE CHAOUKI, Terminus: False
+		Order: 24, ID: 10310, Name: TWIN CENTER, Terminus: False
+		Order: 25, ID: 9641, Name: BOULEVARDS ZERKTOUNI, Terminus: False
+		Order: 26, ID: 9933, Name: LYCEE LYAUTEY, Terminus: False
+		Order: 27, ID: 9588, Name: BOULEVARD BORDEAUX, Terminus: False
+		Order: 28, ID: 10272, Name: TERMINUS MOULAY YOUSSEF, Terminus: True
+		Order: 29, ID: 10256, Name: TERMINUS HOPITAL SOFI, Terminus: True
+
+	Route Name: L068
+	Frequency: 24
+	Travel Time: 108
+	Number Of Buses: 8
+	Departure: ['6:00', '21:09']
+	Stations:
+		Order: 1, ID: 10262, Name: TERMINUS LAHRAOUIYINE 1, Terminus: True
+		Order: 2, ID: 9923, Name: LYCEE ABDELLAH IBRAHIM, Terminus: False
+		Order: 3, ID: 9965, Name: MOSQUEE AL ANSAR, Terminus: False
+		Order: 4, ID: 9728, Name: DAR LMIMA, Terminus: False
+		Order: 5, ID: 10057, Name: PONT AUTOROUTE A1, Terminus: False
+		Order: 6, ID: 9677, Name: CHICHANE 1, Terminus: False
+		Order: 7, ID: 9839, Name: HAY EL WAHDA, Terminus: False
+		Order: 8, ID: 9799, Name: FARRAN LHALWA, Terminus: False
+		Order: 9, ID: 9466, Name: ABATOIRS MUNICIPAUX, Terminus: False
+		Order: 10, ID: 10366, Name: RESIDENCE IDMAJ, Terminus: False
+		Order: 11, ID: 10250, Name: TERMINUS HAY EL FALAH, Terminus: True
+		Order: 12, ID: 9681, Name: CINEMA EL FALAH, Terminus: False
+		Order: 13, ID: 9575, Name: BLOC 33 LALLA MERIEM, Terminus: False
+		Order: 14, ID: 9880, Name: JARDIN LALLA MERIEM, Terminus: False
+		Order: 15, ID: 9948, Name: MARCHE DE GROS, Terminus: False
+		Order: 16, ID: 10358, Name: JARDIN ALESCO, Terminus: False
+		Order: 17, ID: 9846, Name: HAY JAMILA 4, Terminus: False
+		Order: 18, ID: 9592, Name: BOULEVARD DAKHLA 2, Terminus: False
+		Order: 19, ID: 10373, Name: TERMINUS JAMILA, Terminus: True
+		Order: 20, ID: 10174, Name: RTM AIN CHOC, Terminus: False
+		Order: 21, ID: 10200, Name: SNRT AIN CHOCK, Terminus: False
+		Order: 22, ID: 9637, Name: BOULEVARD SMARA, Terminus: False
+		Order: 23, ID: 9497, Name: ANGLE AVENUE MEKNES, Terminus: False
+		Order: 24, ID: 10055, Name: POLYCLINIQUE CNSS INARA, Terminus: False
+		Order: 25, ID: 9796, Name: FACULTE AIN CHOC, Terminus: False
+		Order: 26, ID: 9990, Name: MOSQUEE MSALLA, Terminus: False
+		Order: 27, ID: 9937, Name: M'SALLA AIN CHOK, Terminus: False
+		Order: 28, ID: 9601, Name: BOULEVARD DE TEMARA, Terminus: False
+		Order: 29, ID: 9683, Name: CINEMA SAHRA, Terminus: False
+		Order: 30, ID: 9964, Name: MOSQUEE AIN CHOC, Terminus: False
+		Order: 31, ID: 10364, Name: QUARTIER POLO, Terminus: False
+		Order: 32, ID: 9862, Name: HOPITAL BOUAFI, Terminus: False
+		Order: 33, ID: 9999, Name: MOSQUEE SONNA, Terminus: False
+		Order: 34, ID: 9935, Name: LYCEE MOULAY ABDELLAH, Terminus: False
+		Order: 35, ID: 10339, Name: CLINIQUE DAR SALAM, Terminus: False
+		Order: 36, ID: 10367, Name: ROND-POINT BACHKOU, Terminus: False
+		Order: 37, ID: 9940, Name: MAARIF EXTENTION, Terminus: False
+		Order: 38, ID: 9779, Name: ECOLE EL OUADGHIRI, Terminus: False
+		Order: 39, ID: 10341, Name: CLINIQUE RIVIERA, Terminus: False
+		Order: 40, ID: 10118, Name: RESIDENCE EL MANSOUR, Terminus: False
+		Order: 41, ID: 9550, Name: ARRONDISSEMENT GHANDI, Terminus: False
+		Order: 42, ID: 10351, Name: ECOLE GEORGES BIZET, Terminus: False
+		Order: 43, ID: 9784, Name: ECOLE LA PRAIRIE, Terminus: False
+		Order: 44, ID: 9522, Name: ANGLE RUE TAMASKIN, Terminus: False
+		Order: 45, ID: 9619, Name: BOULEVARD IBNOU SINA, Terminus: False
+		Order: 46, ID: 9469, Name: ACADEMIE D'EDUCATION, Terminus: False
+		Order: 47, ID: 9652, Name: CARRIERE SCHNEIDER, Terminus: False
+		Order: 48, ID: 10365, Name: RESIDENCE ABOUAB OUM RABIA, Terminus: False
+		Order: 49, ID: 10360, Name: LYCEE FECHTALI, Terminus: False
+		Order: 50, ID: 10348, Name: ECOLE AL AJIAL, Terminus: False
+		Order: 51, ID: 10352, Name: ECOLE LAARBI ELBENNAY, Terminus: False
+		Order: 52, ID: 9634, Name: BOULEVARD OUED TENSIFT, Terminus: False
+		Order: 53, ID: 10369, Name: TERMINUS  AL OULFA 1, Terminus: True
+		Order: 54, ID: 10142, Name: ROND-POINT CHAHDIA, Terminus: False
+		Order: 55, ID: 9979, Name: MOSQUEE EL FATH, Terminus: False
+		Order: 56, ID: 9631, Name: BOULEVARD OUED EDAOURA 1, Terminus: False
+		Order: 57, ID: 9602, Name: BOULEVARD DES FACULTES, Terminus: False
+		Order: 58, ID: 10354, Name: GROUPE SCOLAIRE ALAMJAD, Terminus: False
+		Order: 59, ID: 10254, Name: TERMINUS HAY SALAM, Terminus: True
+
+	Route Name: L072
+	Frequency: 25
+	Travel Time: 71
+	Number Of Buses: 6
+	Departure: ['6:00', '20:55']
+	Stations:
+		Order: 1, ID: 10292, Name: TERMINUS SALMIA, Terminus: True
+		Order: 2, ID: 10269, Name: TERMINUS MOSQUEE SALMIA, Terminus: True
+		Order: 3, ID: 9867, Name: HOPITAL SALMIA, Terminus: False
+		Order: 4, ID: 10213, Name: STADE TISSIMA, Terminus: False
+		Order: 5, ID: 9679, Name: CIMETIERE SBATA, Terminus: False
+		Order: 6, ID: 10358, Name: JARDIN ALESCO, Terminus: False
+		Order: 7, ID: 9895, Name: KOREA SEBATA, Terminus: False
+		Order: 8, ID: 9465, Name: 4EME ARRONDISSEMENT, Terminus: False
+		Order: 9, ID: 9929, Name: LYCEE IBNO HAZM, Terminus: False
+		Order: 10, ID: 9810, Name: FOURRIERE BEN M'SIK, Terminus: False
+		Order: 11, ID: 9740, Name: DERB MILAN, Terminus: False
+		Order: 12, ID: 9830, Name: HAY CHIFA, Terminus: False
+		Order: 13, ID: 9985, Name: MOSQUEE HAY EL FARAH, Terminus: False
+		Order: 14, ID: 10346, Name: DERB KABIR, Terminus: False
+		Order: 15, ID: 10231, Name: TERMINUS BOUCHENTOUF, Terminus: True
+		Order: 16, ID: 10344, Name: DERB BOUCHENTOUF, Terminus: False
+		Order: 17, ID: 10345, Name: DERB FOUKARA, Terminus: False
+		Order: 18, ID: 9935, Name: LYCEE MOULAY ABDELLAH, Terminus: False
+		Order: 19, ID: 10339, Name: CLINIQUE DAR SALAM, Terminus: False
+		Order: 20, ID: 10367, Name: ROND-POINT BACHKOU, Terminus: False
+		Order: 21, ID: 10043, Name: PEPINIERE OASIS, Terminus: False
+		Order: 22, ID: 10148, Name: ROUTE DE L'OASIS, Terminus: False
+		Order: 23, ID: 9953, Name: MARCHE OASIS, Terminus: False
+		Order: 24, ID: 9944, Name: MAISON DES S?URS, Terminus: False
+		Order: 25, ID: 10350, Name: ECOLE EL KHALIL, Terminus: False
+		Order: 26, ID: 9778, Name: ECOLE EL KHALIL A, Terminus: False
+		Order: 27, ID: 10333, Name: BOULEVARD ABDERRAHIM BOUABID, Terminus: False
+		Order: 28, ID: 10331, Name: BEAUSEJOUR, Terminus: False
+		Order: 29, ID: 9470, Name: AEROPORT ANFA, Terminus: False
+		Order: 30, ID: 9694, Name: CLINIQUE CIL, Terminus: False
+		Order: 31, ID: 9689, Name: CLINIQUE ABBADI, Terminus: False
+		Order: 32, ID: 9697, Name: CLINIQUE SARA, Terminus: False
+		Order: 33, ID: 9837, Name: HAY EL HANA, Terminus: False
+		Order: 34, ID: 9962, Name: MOSQUEE AFGHANISTAN, Terminus: False
+		Order: 35, ID: 10335, Name: BOULEVARD AFGHANISTAN, Terminus: False
+		Order: 36, ID: 10035, Name: PARC HAY HASSANI, Terminus: False
+		Order: 37, ID: 9873, Name: ISTA BOULEVARD AFGHANISTAN, Terminus: False
+		Order: 38, ID: 9836, Name: HAY EL BARAKA GH6, Terminus: False
+		Order: 39, ID: 10294, Name: TERMINUS SIDI LKHADIR, Terminus: True
+
+	Route Name: L079
+	Frequency: 22
+	Travel Time: 62
+	Number Of Buses: 10
+	Departure: ['6:00', '21:25']
+	Stations:
+		Order: 1, ID: 10300, Name: TERMINUS TRAM 1 SIDI MOUMEN, Terminus: True
+		Order: 2, ID: 10095, Name: RESIDENCE ALKIMA, Terminus: False
+		Order: 3, ID: 9922, Name: LYCEE ABDELKHALEK TORRES, Terminus: False
+		Order: 4, ID: 10116, Name: RESIDENCE EL KAWTAR, Terminus: False
+		Order: 5, ID: 10238, Name: TERMINUS DOHA, Terminus: True
+		Order: 6, ID: 9651, Name: CARRIERE RHAMNA, Terminus: False
+		Order: 7, ID: 10131, Name: RESIDENCE SAADA, Terminus: False
+		Order: 8, ID: 10104, Name: RESIDENCE CHARAF, Terminus: False
+		Order: 9, ID: 9616, Name: BOULEVARD HOUCINE SOUSSI, Terminus: False
+		Order: 10, ID: 9648, Name: CARRIERE ARAIB, Terminus: False
+		Order: 11, ID: 9960, Name: MOSQUEE ABIR, Terminus: False
+		Order: 12, ID: 9477, Name: AL ADARISSA, Terminus: False
+		Order: 13, ID: 9671, Name: CENTRE SIDI MOUMEN, Terminus: False
+		Order: 14, ID: 10337, Name: BOULEVARD NASSIBA BENT KAAB, Terminus: False
+		Order: 15, ID: 9856, Name: HAY RAJA, Terminus: False
+		Order: 16, ID: 9858, Name: HAY SADRI, Terminus: False
+		Order: 17, ID: 10355, Name: HAY BOURNAZIL, Terminus: False
+		Order: 18, ID: 10357, Name: HAY SALAMA, Terminus: False
+		Order: 19, ID: 9561, Name: AVENUE MOHAMED BOUZIANE, Terminus: False
+		Order: 20, ID: 10342, Name: CLINIQUE SIDI OTHMANE, Terminus: False
+		Order: 21, ID: 9772, Name: ECOLE EL AKHAWAIN, Terminus: False
+		Order: 22, ID: 10334, Name: BOULEVARD ABOU HOURAIRA, Terminus: False
+		Order: 23, ID: 9682, Name: CINEMA EL OTHMANIA, Terminus: False
+		Order: 24, ID: 9650, Name: CARRIERE BEN M'SIK, Terminus: False
+		Order: 25, ID: 9986, Name: MOSQUEE LALLA AICHA, Terminus: False
+		Order: 26, ID: 9893, Name: KISSARIAT PANORAMIQUE, Terminus: False
+		Order: 27, ID: 9857, Name: HAY RMILA, Terminus: False
+		Order: 28, ID: 9829, Name: HAY BIN LMDOUN, Terminus: False
+		Order: 29, ID: 9667, Name: CENTRE FEMININ, Terminus: False
+		Order: 30, ID: 9847, Name: HAY LMASJID 2, Terminus: False
+		Order: 31, ID: 10282, Name: TERMINUS PLACE SIDI MAAROUF, Terminus: True
+		Order: 32, ID: 10283, Name: TERMINUS PLACE SRAGHNA, Terminus: True
+
+	Route Name: L082
+	Frequency: 10
+	Travel Time: 51
+	Number Of Buses: 11
+	Departure: ['6:00', '21:40']
+	Stations:
+		Order: 1, ID: 10291, Name: TERMINUS SAKANI, Terminus: True
+		Order: 2, ID: 9473, Name: AGENCE BANQUAIRE AZHAR, Terminus: False
+		Order: 3, ID: 9584, Name: BOULEVARD AL MAGHRIB AL ARABI, Terminus: False
+		Order: 4, ID: 9567, Name: BACHAOUIAT AL AZHAR, Terminus: False
+		Order: 5, ID: 9710, Name: COMMISSARIAT AL AZHAR, Terminus: False
+		Order: 6, ID: 10218, Name: TARIK EL KHIR, Terminus: False
+		Order: 7, ID: 9996, Name: MOSQUEE QODS, Terminus: False
+		Order: 8, ID: 10054, Name: POLYCLINIQUE CNSS BERNOUSSI, Terminus: False
+		Order: 9, ID: 10230, Name: TERMINUS BERNOUSSI, Terminus: True
+		Order: 10, ID: 10379, Name: TERMINUS TRAM 2 BERNOUSSI, Terminus: True
+		Order: 11, ID: 10270, Name: TERMINUS MOSQUEE TARIQ, Terminus: True
+		Order: 12, ID: 9686, Name: CITE DE POLICE (BERNOUSSI), Terminus: False
+		Order: 13, ID: 10127, Name: RESIDENCE OUDAYA, Terminus: False
+		Order: 14, ID: 10112, Name: RESIDENCE EL HADIKA, Terminus: False
+		Order: 15, ID: 9529, Name: ARRET BEAULIEU, Terminus: False
+		Order: 16, ID: 9495, Name: ANGLE ALLEE DES CYPRES, Terminus: False
+		Order: 17, ID: 10150, Name: ROUTE DE RABAT, Terminus: False
+		Order: 18, ID: 9685, Name: CITE CHEMINOT, Terminus: False
+		Order: 19, ID: 9627, Name: BOULEVARD MOULAY SMAIL, Terminus: False
+		Order: 20, ID: 9521, Name: ANGLE RUE SOURZAC, Terminus: False
+		Order: 21, ID: 10140, Name: ROND-POINT AICHA, Terminus: False
+		Order: 22, ID: 10061, Name: POSTE MAROC (ZOLA), Terminus: False
+		Order: 23, ID: 9657, Name: CENTRE COMMERCIAL EMILE ZOLA, Terminus: False
+		Order: 24, ID: 9562, Name: AVENUE PASTEUR, Terminus: False
+		Order: 25, ID: 9557, Name: AVENUE DES FAR, Terminus: False
+		Order: 26, ID: 10377, Name: TERMINUS PLACE LA CONCORDE, Terminus: True
+
+	Route Name: L084
+	Frequency: 11
+	Travel Time: 55
+	Number Of Buses: 12
+	Departure: ['6:00', '21:25']
+	Stations:
+		Order: 1, ID: 10246, Name: TERMINUS FARAH SALAM, Terminus: True
+		Order: 2, ID: 9917, Name: LOTISSEMENT FARAH ESSALAM 1, Terminus: False
+		Order: 3, ID: 9915, Name: LOTISEMENT FARAH ESSALAM, Terminus: False
+		Order: 4, ID: 9524, Name: ANNEXE FARAH SALAM, Terminus: False
+		Order: 5, ID: 9742, Name: DIRECTION  TECHNIQUE REGIONALE DE CASABLANCA, Terminus: False
+		Order: 6, ID: 9564, Name: AZHAR OULFA, Terminus: False
+		Order: 7, ID: 9704, Name: COLLEGE IBNO ABBAD, Terminus: False
+		Order: 8, ID: 9610, Name: BOULEVARD HAJ FATEH OULFA, Terminus: False
+		Order: 9, ID: 10046, Name: PHARMACIE AL ATFAL, Terminus: False
+		Order: 10, ID: 10247, Name: TERMINUS FERARA, Terminus: True
+		Order: 11, ID: 9630, Name: BOULEVARD OUED DRAA, Terminus: False
+		Order: 12, ID: 9861, Name: HOPITAL AL HASSANI, Terminus: False
+		Order: 13, ID: 10253, Name: TERMINUS HAY HASSANI II, Terminus: True
+		Order: 14, ID: 10294, Name: TERMINUS SIDI LKHADIR, Terminus: True
+		Order: 15, ID: 9874, Name: ISTA HAY HASSANI, Terminus: False
+		Order: 16, ID: 9736, Name: DERB JAMILA, Terminus: False
+		Order: 17, ID: 10059, Name: POSTE DE POLICE BOUTALEB, Terminus: False
+		Order: 18, ID: 9783, Name: ECOLE KAOUKABI, Terminus: False
+		Order: 19, ID: 9579, Name: BOULEVARD ABDELHADI BOUTALEB, Terminus: False
+		Order: 20, ID: 10145, Name: ROUTE AZEMMOUR, Terminus: False
+		Order: 21, ID: 9580, Name: BOULEVARD ABDELKRIM KHATTABI, Terminus: False
+		Order: 22, ID: 10173, Name: ROYAL GOLF ANFA, Terminus: False
+		Order: 23, ID: 9693, Name: CLINIQUE BEN SOUDA, Terminus: False
+		Order: 24, ID: 9695, Name: CLINIQUE DENTAIRE, Terminus: False
+		Order: 25, ID: 9928, Name: LYCEE EL WALLADA, Terminus: False
+		Order: 26, ID: 9907, Name: LES ARENES, Terminus: False
+		Order: 27, ID: 9464, Name: 112 BOULEVARD D'ANFA, Terminus: False
+		Order: 28, ID: 10187, Name: RUE WASHINGTON, Terminus: False
+		Order: 29, ID: 10235, Name: TERMINUS COMMUNE SIDI BELYOUT, Terminus: True
+		Order: 30, ID: 10377, Name: TERMINUS PLACE LA CONCORDE, Terminus: True
+		Order: 31, ID: 10257, Name: TERMINUS HOUPHEIT BOIGNY, Terminus: True
+
+	Route Name: L090
+	Frequency: 36
+	Travel Time: 69
+	Number Of Buses: 5
+	Departure: ['6:00', '18:49']
+	Stations:
+		Order: 1, ID: 10230, Name: TERMINUS BERNOUSSI, Terminus: True
+		Order: 2, ID: 10379, Name: TERMINUS TRAM 2 BERNOUSSI, Terminus: True
+		Order: 3, ID: 10270, Name: TERMINUS MOSQUEE TARIQ, Terminus: True
+		Order: 4, ID: 9686, Name: CITE DE POLICE (BERNOUSSI), Terminus: False
+		Order: 5, ID: 9621, Name: BOULEVARD IMAM ALI, Terminus: False
+		Order: 6, ID: 10223, Name: TERMINUS AIN SEBAA, Terminus: True
+		Order: 7, ID: 10309, Name: TRIBUNAL AIN SEBAA, Terminus: False
+		Order: 8, ID: 10086, Name: RESIDENCE AL BADR, Terminus: False
+		Order: 9, ID: 10093, Name: RESIDENCE AL WIFAK, Terminus: False
+		Order: 10, ID: 10084, Name: RESIDENCE AL AMANE, Terminus: False
+		Order: 11, ID: 10085, Name: RESIDENCE AL AMANE 2, Terminus: False
+		Order: 12, ID: 9726, Name: DAR LAMANE, Terminus: False
+		Order: 13, ID: 9699, Name: CNSS DAR LAMANE, Terminus: False
+		Order: 14, ID: 10094, Name: RESIDENCE ALASSIL, Terminus: False
+		Order: 15, ID: 9647, Name: CARIERRE CENTRALE, Terminus: False
+		Order: 16, ID: 9809, Name: FOUM LAHCEN, Terminus: False
+		Order: 17, ID: 10182, Name: RUE IBNOU ADRAA, Terminus: False
+		Order: 18, ID: 9618, Name: BOULEVARD IBN TACHFINE, Terminus: False
+		Order: 19, ID: 9528, Name: ARRET BATA, Terminus: False
+		Order: 20, ID: 10098, Name: RESIDENCE ASSALAM, Terminus: False
+		Order: 21, ID: 9785, Name: ECOLE LE NID, Terminus: False
+		Order: 22, ID: 9653, Name: CASERNE AIN BORJA, Terminus: False
+		Order: 23, ID: 10010, Name: OFPPT BOULEVARD BAHMAD, Terminus: False
+		Order: 24, ID: 9813, Name: GARE DE CASA VOYAGEURS, Terminus: False
+		Order: 25, ID: 9949, Name: MARCHE DE GROS 1, Terminus: False
+		Order: 26, ID: 9597, Name: BOULEVARD DE LA RESISTANCE, Terminus: False
+		Order: 27, ID: 9930, Name: LYCEE JABER BNOU HAYAN, Terminus: False
+		Order: 28, ID: 9574, Name: BENJDIA, Terminus: False
+		Order: 29, ID: 9517, Name: ANGLE RUE DE FLORENCE, Terminus: False
+		Order: 30, ID: 9896, Name: L'EGLISE (ZERKTOUNI), Terminus: False
+		Order: 31, ID: 9951, Name: MARCHE DES FLEURS, Terminus: False
+		Order: 32, ID: 9795, Name: ESPACE LES PALMIERS, Terminus: False
+		Order: 33, ID: 9578, Name: BOULEVARD 9 AVRIL, Terminus: False
+		Order: 34, ID: 10031, Name: PALMIER, Terminus: False
+		Order: 35, ID: 9868, Name: IBNO CHAHID, Terminus: False
+		Order: 36, ID: 10376, Name: TERMINUS MUSEE ALSA, Terminus: True
+
+	Route Name: L097
+	Frequency: 15
+	Travel Time: 87
+	Number Of Buses: 14
+	Departure: ['6:00', '21:45']
+	Stations:
+		Order: 1, ID: 10227, Name: TERMINUS ANASSI, Terminus: True
+		Order: 2, ID: 9878, Name: JARDIN ANASSI, Terminus: False
+		Order: 3, ID: 10141, Name: ROND-POINT ANASSI, Terminus: False
+		Order: 4, ID: 10107, Name: RESIDENCE DES OLIVIERS, Terminus: False
+		Order: 5, ID: 10006, Name: NEJMET SIDI MOUMEN, Terminus: False
+		Order: 6, ID: 10134, Name: RESIDENCE WALILI, Terminus: False
+		Order: 7, ID: 9661, Name: CENTRE DE MAINTENANCE TRAMWAY, Terminus: False
+		Order: 8, ID: 10014, Name: OFPPT SIDI MOUMEN, Terminus: False
+		Order: 9, ID: 9959, Name: MOSQUEE AB HORAIRA, Terminus: False
+		Order: 10, ID: 9824, Name: GROUPE 5 MOULAY RACHID, Terminus: False
+		Order: 11, ID: 9807, Name: FORET VERTE, Terminus: False
+		Order: 12, ID: 10353, Name: GROUPE 4 MOULAY RACHID, Terminus: False
+		Order: 13, ID: 10221, Name: TERMINUS  FACULTE BEN M'SIK, Terminus: True
+		Order: 14, ID: 9838, Name: HAY EL MASSIRA, Terminus: False
+		Order: 15, ID: 9575, Name: BLOC 33 LALLA MERIEM, Terminus: False
+		Order: 16, ID: 9880, Name: JARDIN LALLA MERIEM, Terminus: False
+		Order: 17, ID: 10308, Name: TRIBUNAL ADMINISTRATIF, Terminus: False
+		Order: 18, ID: 9604, Name: BOULEVARD DU NIL, Terminus: False
+		Order: 19, ID: 9716, Name: COMPLEXE KAMAL ZEBDI, Terminus: False
+		Order: 20, ID: 10329, Name: AVENUE REDA GUEDIRA, Terminus: False
+		Order: 21, ID: 9496, Name: ANGLE AVENUE LAHRAOUINE, Terminus: False
+		Order: 22, ID: 10177, Name: RUE BEN KACEM ADDAHMANI, Terminus: False
+		Order: 23, ID: 9883, Name: JAWADI, Terminus: False
+		Order: 24, ID: 9556, Name: AVENUE 6 NOVEMBRE 1975, Terminus: False
+		Order: 25, ID: 10002, Name: MOSQUEE YACOUT, Terminus: False
+		Order: 26, ID: 10017, Name: ORPHELINAT DE AIN CHOC, Terminus: False
+		Order: 27, ID: 9683, Name: CINEMA SAHRA, Terminus: False
+		Order: 28, ID: 9964, Name: MOSQUEE AIN CHOC, Terminus: False
+		Order: 29, ID: 10364, Name: QUARTIER POLO, Terminus: False
+		Order: 30, ID: 9862, Name: HOPITAL BOUAFI, Terminus: False
+		Order: 31, ID: 9999, Name: MOSQUEE SONNA, Terminus: False
+		Order: 32, ID: 10081, Name: RACHAD, Terminus: False
+		Order: 33, ID: 10362, Name: MOSQUEE EL HODA, Terminus: False
+		Order: 34, ID: 9817, Name: GENDARMERIE MY IDRISS I, Terminus: False
+		Order: 35, ID: 9931, Name: LYCEE LAHLOU, Terminus: False
+		Order: 36, ID: 10336, Name: BOULEVARD ANOUAL, Terminus: False
+		Order: 37, ID: 10011, Name: OFPPT DERB GHALLEF, Terminus: False
+		Order: 38, ID: 10117, Name: RESIDENCE EL MAJD, Terminus: False
+		Order: 39, ID: 10042, Name: PEPINIERE DERB GHALLEF, Terminus: False
+		Order: 40, ID: 10376, Name: TERMINUS MUSEE ALSA, Terminus: True
+		Order: 41, ID: 10072, Name: PTT BIR ANZARAN, Terminus: False
+		Order: 42, ID: 10265, Name: TERMINUS MAARIF, Terminus: True
+
+	Route Name: L107
+	Frequency: 18
+	Travel Time: 74
+	Number Of Buses: 10
+	Departure: ['6:00', '21:40']
+	Stations:
+		Order: 1, ID: 10297, Name: TERMINUS TACHAROUK, Terminus: True
+		Order: 2, ID: 9973, Name: MOSQUEE BAB TAOUBA, Terminus: False
+		Order: 3, ID: 10271, Name: TERMINUS MOULAY RACHID, Terminus: True
+		Order: 4, ID: 9916, Name: LOTISSEMENT EL BAIDA II, Terminus: False
+		Order: 5, ID: 10359, Name: LOTISSEMENT EL MANZAH, Terminus: False
+		Order: 6, ID: 10113, Name: RESIDENCE EL HAMD, Terminus: False
+		Order: 7, ID: 10366, Name: RESIDENCE IDMAJ, Terminus: False
+		Order: 8, ID: 10133, Name: RESIDENCE SALMA, Terminus: False
+		Order: 9, ID: 10213, Name: STADE TISSIMA, Terminus: False
+		Order: 10, ID: 9679, Name: CIMETIERE SBATA, Terminus: False
+		Order: 11, ID: 10358, Name: JARDIN ALESCO, Terminus: False
+		Order: 12, ID: 9737, Name: DERB LAHJAR, Terminus: False
+		Order: 13, ID: 9603, Name: BOULEVARD DRISS EL HARTI, Terminus: False
+		Order: 14, ID: 9924, Name: LYCEE ALAKHYAR, Terminus: False
+		Order: 15, ID: 9605, Name: BOULEVARD EL HARTI, Terminus: False
+		Order: 16, ID: 10268, Name: TERMINUS MOSQUEE EL HOSNA, Terminus: True
+		Order: 17, ID: 10258, Name: TERMINUS JAMILA II, Terminus: True
+		Order: 18, ID: 9845, Name: HAY JAMILA 2, Terminus: False
+		Order: 19, ID: 10002, Name: MOSQUEE YACOUT, Terminus: False
+		Order: 20, ID: 10017, Name: ORPHELINAT DE AIN CHOC, Terminus: False
+		Order: 21, ID: 9683, Name: CINEMA SAHRA, Terminus: False
+		Order: 22, ID: 9964, Name: MOSQUEE AIN CHOC, Terminus: False
+		Order: 23, ID: 10364, Name: QUARTIER POLO, Terminus: False
+		Order: 24, ID: 10033, Name: PANORAMIQUE, Terminus: False
+		Order: 25, ID: 10000, Name: MOSQUEE TAHA, Terminus: False
+		Order: 26, ID: 9499, Name: ANGLE BOULEVARD AL HOUCEIMA, Terminus: False
+		Order: 27, ID: 9513, Name: ANGLE POMME D'OR, Terminus: False
+		Order: 28, ID: 9786, Name: ECOLE LE PONT, Terminus: False
+		Order: 29, ID: 9596, Name: BOULEVARD DE LA MECQUE, Terminus: False
+		Order: 30, ID: 10347, Name: DOUAR KHOUADRA, Terminus: False
+		Order: 31, ID: 10368, Name: TECHNOPARC, Terminus: False
+		Order: 32, ID: 9543, Name: ARRET METRO, Terminus: False
+		Order: 33, ID: 10100, Name: RESIDENCE BACHKOU, Terminus: False
+		Order: 34, ID: 10119, Name: RESIDENCE EL MOSTAKBAL, Terminus: False
+		Order: 35, ID: 10328, Name: AVENUE ABOU BAKR EL KADIRI, Terminus: False
+		Order: 36, ID: 9658, Name: CENTRE CULTUREL, Terminus: False
+		Order: 37, ID: 10126, Name: RESIDENCE NARJIS, Terminus: False
+		Order: 38, ID: 9706, Name: COLLEGE TABARI, Terminus: False
+		Order: 39, ID: 9773, Name: ECOLE EL ANOUAR, Terminus: False
+		Order: 40, ID: 10020, Name: OUED NASSIM, Terminus: False
+		Order: 41, ID: 10039, Name: PENETRATION AZBANE, Terminus: False
+		Order: 42, ID: 10330, Name: AZBANE 1, Terminus: False
+		Order: 43, ID: 9912, Name: LISSASFA 1, Terminus: False
+		Order: 44, ID: 10374, Name: TERMINUS LISSASFA, Terminus: True
+
+	Route Name: L109
+	Frequency: 14
+	Travel Time: 62
+	Number Of Buses: 11
+	Departure: ['6:00', '21:10']
+	Stations:
+		Order: 1, ID: 10305, Name: TERMINUS ZOUBIR, Terminus: True
+		Order: 2, ID: 10327, Name: ATLANTA SPORT, Terminus: False
+		Order: 3, ID: 9631, Name: BOULEVARD OUED EDAOURA 1, Terminus: False
+		Order: 4, ID: 9979, Name: MOSQUEE EL FATH, Terminus: False
+		Order: 5, ID: 10142, Name: ROND-POINT CHAHDIA, Terminus: False
+		Order: 6, ID: 9481, Name: AL AZHARI II, Terminus: False
+		Order: 7, ID: 10369, Name: TERMINUS  AL OULFA 1, Terminus: True
+		Order: 8, ID: 9634, Name: BOULEVARD OUED TENSIFT, Terminus: False
+		Order: 9, ID: 10352, Name: ECOLE LAARBI ELBENNAY, Terminus: False
+		Order: 10, ID: 9775, Name: ECOLE EL IBRAHIMI, Terminus: False
+		Order: 11, ID: 10348, Name: ECOLE AL AJIAL, Terminus: False
+		Order: 12, ID: 10360, Name: LYCEE FECHTALI, Terminus: False
+		Order: 13, ID: 10365, Name: RESIDENCE ABOUAB OUM RABIA, Terminus: False
+		Order: 14, ID: 10193, Name: SCHNEIDER, Terminus: False
+		Order: 15, ID: 9652, Name: CARRIERE SCHNEIDER, Terminus: False
+		Order: 16, ID: 9469, Name: ACADEMIE D'EDUCATION, Terminus: False
+		Order: 17, ID: 9697, Name: CLINIQUE SARA, Terminus: False
+		Order: 18, ID: 9689, Name: CLINIQUE ABBADI, Terminus: False
+		Order: 19, ID: 10331, Name: BEAUSEJOUR, Terminus: False
+		Order: 20, ID: 10333, Name: BOULEVARD ABDERRAHIM BOUABID, Terminus: False
+		Order: 21, ID: 10350, Name: ECOLE EL KHALIL, Terminus: False
+		Order: 24, ID: 9779, Name: ECOLE EL OUADGHIRI, Terminus: False
+		Order: 25, ID: 9940, Name: MAARIF EXTENTION, Terminus: False
+		Order: 26, ID: 10367, Name: ROND-POINT BACHKOU, Terminus: False
+		Order: 27, ID: 10339, Name: CLINIQUE DAR SALAM, Terminus: False
+		Order: 28, ID: 9935, Name: LYCEE MOULAY ABDELLAH, Terminus: False
+		Order: 29, ID: 10372, Name: TERMINUS HAY LMASJID, Terminus: True
+		Order: 30, ID: 9847, Name: HAY LMASJID 2, Terminus: False
+		Order: 31, ID: 9667, Name: CENTRE FEMININ, Terminus: False
+		Order: 32, ID: 9894, Name: KOREA, Terminus: False
+		Order: 33, ID: 10077, Name: QUARTIER DRISSIA, Terminus: False
+		Order: 34, ID: 10371, Name: TERMINUS HAY EL FARAH, Terminus: True
+		Order: 35, ID: 9595, Name: BOULEVARD DE GAZA, Terminus: False
+		Order: 36, ID: 9739, Name: DERB MILA, Terminus: False
+		Order: 37, ID: 9830, Name: HAY CHIFA, Terminus: False
+		Order: 38, ID: 9985, Name: MOSQUEE HAY EL FARAH, Terminus: False
+		Order: 39, ID: 10060, Name: POSTE DE POLICE LA GARE ROUTIERE, Terminus: False
+		Order: 40, ID: 10261, Name: TERMINUS LA GARE ROUTIERE, Terminus: True
+
+	Route Name: L139
+	Frequency: 13
+	Travel Time: 45
+	Number Of Buses: 7
+	Departure: ['6:00', '21:10']
+	Stations:
+		Order: 1, ID: 10223, Name: TERMINUS AIN SEBAA, Terminus: True
+		Order: 2, ID: 10309, Name: TRIBUNAL AIN SEBAA, Terminus: False
+		Order: 3, ID: 10122, Name: RESIDENCE HLIWA, Terminus: False
+		Order: 4, ID: 10306, Name: TERRAIN LAARBI  ZAOULI, Terminus: False
+		Order: 5, ID: 9726, Name: DAR LAMANE, Terminus: False
+		Order: 6, ID: 9699, Name: CNSS DAR LAMANE, Terminus: False
+		Order: 7, ID: 10094, Name: RESIDENCE ALASSIL, Terminus: False
+		Order: 8, ID: 9647, Name: CARIERRE CENTRALE, Terminus: False
+		Order: 9, ID: 9741, Name: DERB MOULAY CHRIF, Terminus: False
+		Order: 10, ID: 9952, Name: MARCHE DES POULETS, Terminus: False
+		Order: 11, ID: 9627, Name: BOULEVARD MOULAY SMAIL, Terminus: False
+		Order: 12, ID: 9521, Name: ANGLE RUE SOURZAC, Terminus: False
+		Order: 13, ID: 10140, Name: ROND-POINT AICHA, Terminus: False
+		Order: 14, ID: 10061, Name: POSTE MAROC (ZOLA), Terminus: False
+		Order: 15, ID: 9657, Name: CENTRE COMMERCIAL EMILE ZOLA, Terminus: False
+		Order: 16, ID: 9562, Name: AVENUE PASTEUR, Terminus: False
+		Order: 17, ID: 10343, Name: COLIS POSTAUX, Terminus: False
+		Order: 18, ID: 9557, Name: AVENUE DES FAR, Terminus: False
+		Order: 19, ID: 10377, Name: TERMINUS PLACE LA CONCORDE, Terminus: True
+		Order: 20, ID: 9684, Name: CINEMA VERDIN, Terminus: False
+		Order: 21, ID: 9588, Name: BOULEVARD BORDEAUX, Terminus: False
+		Order: 22, ID: 10272, Name: TERMINUS MOULAY YOUSSEF, Terminus: True
+		Order: 23, ID: 10256, Name: TERMINUS HOPITAL SOFI, Terminus: True
+
+	Route Name: L143
+	Frequency: 21
+	Travel Time: 104
+	Number Of Buses: 13
+	Departure: ['6:00', '21:00']
+	Stations:
+		Order: 1, ID: 10297, Name: TERMINUS TACHAROUK, Terminus: True
+		Order: 2, ID: 9973, Name: MOSQUEE BAB TAOUBA, Terminus: False
+		Order: 3, ID: 10271, Name: TERMINUS MOULAY RACHID, Terminus: True
+		Order: 4, ID: 9767, Name: ECOLE ABDELKRIM EL KHATTABI, Terminus: False
+		Order: 5, ID: 9849, Name: HAY MOULAY RACHID, Terminus: False
+		Order: 6, ID: 9807, Name: FORET VERTE, Terminus: False
+		Order: 7, ID: 10353, Name: GROUPE 4 MOULAY RACHID, Terminus: False
+		Order: 8, ID: 10221, Name: TERMINUS  FACULTE BEN M'SIK, Terminus: True
+		Order: 9, ID: 9838, Name: HAY EL MASSIRA, Terminus: False
+		Order: 10, ID: 9575, Name: BLOC 33 LALLA MERIEM, Terminus: False
+		Order: 11, ID: 9880, Name: JARDIN LALLA MERIEM, Terminus: False
+		Order: 12, ID: 9948, Name: MARCHE DE GROS, Terminus: False
+		Order: 13, ID: 9737, Name: DERB LAHJAR, Terminus: False
+		Order: 14, ID: 9603, Name: BOULEVARD DRISS EL HARTI, Terminus: False
+		Order: 15, ID: 9924, Name: LYCEE ALAKHYAR, Terminus: False
+		Order: 16, ID: 9605, Name: BOULEVARD EL HARTI, Terminus: False
+		Order: 17, ID: 10268, Name: TERMINUS MOSQUEE EL HOSNA, Terminus: True
+		Order: 18, ID: 9980, Name: MOSQUEE EL HOSNA B, Terminus: False
+		Order: 19, ID: 9585, Name: BOULEVARD AL QODS, Terminus: False
+		Order: 20, ID: 10055, Name: POLYCLINIQUE CNSS INARA, Terminus: False
+		Order: 21, ID: 9796, Name: FACULTE AIN CHOC, Terminus: False
+		Order: 22, ID: 9990, Name: MOSQUEE MSALLA, Terminus: False
+		Order: 23, ID: 9691, Name: CLINIQUE AIN CHOC, Terminus: False
+		Order: 24, ID: 9659, Name: CENTRE D'HEMODIALYSE 2 MARS, Terminus: False
+		Order: 25, ID: 9862, Name: HOPITAL BOUAFI, Terminus: False
+		Order: 26, ID: 9999, Name: MOSQUEE SONNA, Terminus: False
+		Order: 27, ID: 10081, Name: RACHAD, Terminus: False
+		Order: 28, ID: 10362, Name: MOSQUEE EL HODA, Terminus: False
+		Order: 29, ID: 9817, Name: GENDARMERIE MY IDRISS I, Terminus: False
+		Order: 30, ID: 9931, Name: LYCEE LAHLOU, Terminus: False
+		Order: 31, ID: 10214, Name: STATION ANOUAL, Terminus: False
+		Order: 32, ID: 9690, Name: CLINIQUE ABDELMOUMEN, Terminus: False
+		Order: 33, ID: 9940, Name: MAARIF EXTENTION, Terminus: False
+		Order: 34, ID: 9779, Name: ECOLE EL OUADGHIRI, Terminus: False
+		Order: 35, ID: 10341, Name: CLINIQUE RIVIERA, Terminus: False
+		Order: 36, ID: 10118, Name: RESIDENCE EL MANSOUR, Terminus: False
+		Order: 37, ID: 9550, Name: ARRONDISSEMENT GHANDI, Terminus: False
+		Order: 38, ID: 10351, Name: ECOLE GEORGES BIZET, Terminus: False
+		Order: 39, ID: 9784, Name: ECOLE LA PRAIRIE, Terminus: False
+		Order: 40, ID: 9522, Name: ANGLE RUE TAMASKIN, Terminus: False
+		Order: 41, ID: 9619, Name: BOULEVARD IBNOU SINA, Terminus: False
+		Order: 42, ID: 10237, Name: TERMINUS DAR LHAMRA, Terminus: True
+		Order: 43, ID: 10207, Name: SOUK OULD MINA, Terminus: False
+		Order: 44, ID: 10325, Name: ANGLE BOULEVARD ABOU REGREG, Terminus: False
+		Order: 45, ID: 9632, Name: BOULEVARD OUED LAOU, Terminus: False
+		Order: 46, ID: 10360, Name: LYCEE FECHTALI, Terminus: False
+		Order: 47, ID: 10352, Name: ECOLE LAARBI ELBENNAY, Terminus: False
+		Order: 48, ID: 9634, Name: BOULEVARD OUED TENSIFT, Terminus: False
+		Order: 49, ID: 9633, Name: BOULEVARD OUED OURGHLA, Terminus: False
+		Order: 50, ID: 10247, Name: TERMINUS FERARA, Terminus: True
+
+	Route Name: L300
+	Frequency: 50
+	Travel Time: 75
+	Number Of Buses: 4
+	Departure: ['6:19', '18:49']
+	Stations:
+		Order: 1, ID: 10304, Name: TERMINUS ZI OULAD SALEH, Terminus: True
+		Order: 2, ID: 10068, Name: PROTECTION CIVIL BOUSKOURA, Terminus: False
+		Order: 3, ID: 9642, Name: BOUSKOURA CENTRE, Terminus: False
+		Order: 4, ID: 10317, Name: ZONE INDUSTRIEL BOUSKOURA, Terminus: False
+		Order: 5, ID: 10163, Name: ROUTE P3013 BOUSKOURA, Terminus: False
+		Order: 6, ID: 9705, Name: COLLEGE IDRISS I, Terminus: False
+		Order: 7, ID: 9790, Name: ECOLE RIAD BOUSKOURA, Terminus: False
+		Order: 8, ID: 10063, Name: PREFECTURE NOUACER, Terminus: False
+		Order: 9, ID: 9566, Name: BACHAOUIA BOUSKOURA, Terminus: False
+		Order: 10, ID: 9669, Name: CENTRE NOUR, Terminus: False
+		Order: 11, ID: 9804, Name: FORET BOUSKOURA, Terminus: False
+		Order: 12, ID: 10016, Name: ONEP BOUSKOURA, Terminus: False
+		Order: 13, ID: 9760, Name: DRABNA ROUTE DE BOUSKOURA, Terminus: False
+		Order: 14, ID: 9731, Name: DAR NESSRANIA, Terminus: False
+		Order: 15, ID: 10198, Name: SIDI MESSAOUD, Terminus: False
+		Order: 16, ID: 10044, Name: PEPINIERE ORIKA, Terminus: False
+		Order: 17, ID: 9961, Name: MOSQUEE ADARISSA, Terminus: False
+		Order: 18, ID: 10106, Name: RESIDENCE DANDOUN, Terminus: False
+		Order: 19, ID: 9852, Name: HAY NAJAH, Terminus: False
+		Order: 20, ID: 10172, Name: ROUTE SIDI MAAROUF, Terminus: False
+		Order: 21, ID: 10108, Name: RESIDENCE EL AHALI, Terminus: False
+		Order: 22, ID: 9712, Name: COMMISSARIAT SIDI MAAROUF, Terminus: False
+		Order: 23, ID: 9877, Name: JARDIN AL MOSTAKBAL, Terminus: False
+		Order: 24, ID: 9658, Name: CENTRE CULTUREL, Terminus: False
+		Order: 25, ID: 10328, Name: AVENUE ABOU BAKR EL KADIRI, Terminus: False
+		Order: 26, ID: 10119, Name: RESIDENCE EL MOSTAKBAL, Terminus: False
+		Order: 27, ID: 10100, Name: RESIDENCE BACHKOU, Terminus: False
+		Order: 28, ID: 9956, Name: METRO, Terminus: False
+		Order: 29, ID: 10368, Name: TECHNOPARC, Terminus: False
+		Order: 30, ID: 10347, Name: DOUAR KHOUADRA, Terminus: False
+		Order: 31, ID: 9596, Name: BOULEVARD DE LA MECQUE, Terminus: False
+		Order: 32, ID: 9814, Name: GARE ONCF DE L'OASIS, Terminus: False
+		Order: 33, ID: 9974, Name: MOSQUEE BACHKOU, Terminus: False
+		Order: 34, ID: 9690, Name: CLINIQUE ABDELMOUMEN, Terminus: False
+		Order: 35, ID: 10214, Name: STATION ANOUAL, Terminus: False
+		Order: 36, ID: 9871, Name: INSTITUT PASTEUR, Terminus: False
+		Order: 37, ID: 10332, Name: BOULEVARD ABDELMOUMEN, Terminus: False
+		Order: 38, ID: 10285, Name: TERMINUS QUARTIER DES HOPITAUX, Terminus: True
+
+	Route Name: L306
+	Frequency: 24
+	Travel Time: 61
+	Number Of Buses: 7
+	Departure: ['6:15', '21:15']
+	Stations:
+		Order: 1, ID: 10260, Name: TERMINUS KHIAYTA, Terminus: True
+		Order: 2, ID: 9757, Name: DOUAR RIFAI, Terminus: False
+		Order: 3, ID: 10023, Name: OULED ISSA, Terminus: False
+		Order: 4, ID: 9753, Name: DOUAR MAATAH, Terminus: False
+		Order: 5, ID: 10196, Name: SIDI BOUZIANE, Terminus: False
+		Order: 6, ID: 9746, Name: DOUAR FOUKRA, Terminus: False
+		Order: 7, ID: 10277, Name: TERMINUS OULAD AHMED, Terminus: True
+		Order: 8, ID: 9764, Name: DYAR AL AMAL, Terminus: False
+		Order: 9, ID: 9723, Name: DAR 16, Terminus: False
+		Order: 10, ID: 10089, Name: RESIDENCE AL FAJR, Terminus: False
+		Order: 11, ID: 10158, Name: ROUTE NATIONALE 1 LISSASFA, Terminus: False
+		Order: 12, ID: 9514, Name: ANGLE ROUTE N1/P3032, Terminus: False
+		Order: 13, ID: 9968, Name: MOSQUEE AL IRAQUI, Terminus: False
+		Order: 14, ID: 10136, Name: ROCADE SUD OUEST, Terminus: False
+		Order: 15, ID: 10029, Name: PALAIS DES AMBASSADES, Terminus: False
+		Order: 16, ID: 9913, Name: LISSASFA 2, Terminus: False
+		Order: 17, ID: 10374, Name: TERMINUS LISSASFA, Terminus: True
+		Order: 18, ID: 9912, Name: LISSASFA 1, Terminus: False
+		Order: 19, ID: 10330, Name: AZBANE 1, Terminus: False
+		Order: 20, ID: 9788, Name: ECOLE NORMALE SUPERIEURE, Terminus: False
+		Order: 21, ID: 9798, Name: FACULTE ROUTE D'EL JADIDA, Terminus: False
+		Order: 22, ID: 10212, Name: STADE PERE JEGO, Terminus: False
+		Order: 23, ID: 9594, Name: BOULEVARD DE BOUSKOURA, Terminus: False
+		Order: 24, ID: 10210, Name: STADE COC, Terminus: False
+		Order: 25, ID: 9978, Name: MOSQUEE EL BATHA, Terminus: False
+		Order: 26, ID: 10074, Name: PTT ROUDANI, Terminus: False
+		Order: 27, ID: 10176, Name: RUE AL MAROUNI, Terminus: False
+		Order: 28, ID: 9903, Name: LAAOUINA MAARIF, Terminus: False
+		Order: 29, ID: 10376, Name: TERMINUS MUSEE ALSA, Terminus: True
+
+	Route Name: L307
+	Frequency: 12
+	Travel Time: 57
+	Number Of Buses: 10
+	Departure: ['6:15', '21:25']
+	Stations:
+		Order: 1, ID: 10301, Name: TERMINUS VILLE ENNASR, Terminus: True
+		Order: 2, ID: 10123, Name: RESIDENCE JAD VICTORIA, Terminus: False
+		Order: 3, ID: 10128, Name: RESIDENCE RAYAN VICTORIA, Terminus: False
+		Order: 4, ID: 9762, Name: DRISS LAHRIZI VICTORIA, Terminus: False
+		Order: 5, ID: 9793, Name: EL FATH VICTORIA, Terminus: False
+		Order: 6, ID: 9664, Name: CENTRE DE SANTE VECTORIA, Terminus: False
+		Order: 7, ID: 10139, Name: ROND POINT VICTORIA, Terminus: False
+		Order: 8, ID: 9747, Name: DOUAR KROUTA, Terminus: False
+		Order: 9, ID: 9805, Name: FORET OULAD SALH, Terminus: False
+		Order: 10, ID: 10036, Name: PARC INDUSTRIEL, Terminus: False
+		Order: 11, ID: 9702, Name: COLLEGE BOUSKOURA, Terminus: False
+		Order: 12, ID: 10027, Name: P3011 BOUSKOURA, Terminus: False
+		Order: 13, ID: 9812, Name: GARE BOUSKOURA, Terminus: False
+		Order: 14, ID: 9998, Name: MOSQUEE ROI ABDALLAH, Terminus: False
+		Order: 15, ID: 9565, Name: BAB AL BAIDA, Terminus: False
+		Order: 16, ID: 9480, Name: AL ARSAT BOUSKOURA, Terminus: False
+		Order: 17, ID: 10040, Name: PEPINIERE BOUSKOURA, Terminus: False
+		Order: 18, ID: 9751, Name: DOUAR LGOUISSEM, Terminus: False
+		Order: 19, ID: 9854, Name: HAY NASSIM II, Terminus: False
+		Order: 20, ID: 9853, Name: HAY NASSIM, Terminus: False
+		Order: 21, ID: 10039, Name: PENETRATION AZBANE, Terminus: False
+		Order: 22, ID: 10330, Name: AZBANE 1, Terminus: False
+		Order: 23, ID: 9912, Name: LISSASFA 1, Terminus: False
+		Order: 24, ID: 10374, Name: TERMINUS LISSASFA, Terminus: True
+
+	Route Name: L309
+	Frequency: 30
+	Travel Time: 48
+	Number Of Buses: 4
+	Departure: ['6:19', '18:40']
+	Stations:
+		Order: 1, ID: 10224, Name: TERMINUS AL ANDALOUS, Terminus: True
+		Order: 2, ID: 10063, Name: PREFECTURE NOUACER, Terminus: False
+		Order: 3, ID: 9566, Name: BACHAOUIA BOUSKOURA, Terminus: False
+		Order: 4, ID: 9669, Name: CENTRE NOUR, Terminus: False
+		Order: 5, ID: 9554, Name: AUTOROUTE A7, Terminus: False
+		Order: 6, ID: 9932, Name: LYCEE LOUIS MASSIGNON, Terminus: False
+		Order: 7, ID: 10037, Name: PARK DE BOUSKOURA, Terminus: False
+		Order: 8, ID: 10064, Name: PRESTIGIA, Terminus: False
+		Order: 9, ID: 10164, Name: ROUTE P3026, Terminus: False
+		Order: 10, ID: 10315, Name: VILLE VERTE II, Terminus: False
+		Order: 11, ID: 9821, Name: GREEN TOWN, Terminus: False
+		Order: 12, ID: 9544, Name: ARRET PALMERIE 1, Terminus: False
+		Order: 13, ID: 9776, Name: ECOLE EL JABRE, Terminus: False
+		Order: 14, ID: 10314, Name: VILLE VERTE, Terminus: False
+		Order: 15, ID: 10311, Name: UNIVERSITE INTERNATIONALE, Terminus: False
+		Order: 16, ID: 9558, Name: AVENUE HACHMI FILALI, Terminus: False
+		Order: 17, ID: 10267, Name: TERMINUS MANDAROUNA, Terminus: True
+		Order: 18, ID: 10024, Name: OULED TALEB, Terminus: False
+		Order: 19, ID: 9563, Name: AVENUE TADDART, Terminus: False
+		Order: 20, ID: 10071, Name: PROTECTION CIVILE, Terminus: False
+		Order: 21, ID: 10092, Name: RESIDENCE AL MAWLID, Terminus: False
+		Order: 22, ID: 9908, Name: LES JARDINS DE BALI, Terminus: False
+		Order: 23, ID: 10228, Name: TERMINUS BACHKOU, Terminus: True
+
+	Route Name: L310
+	Frequency: 18
+	Travel Time: 68
+	Number Of Buses: 8
+	Departure: ['6:19', '18:40']
+	Stations:
+		Order: 1, ID: 10278, Name: TERMINUS OULAD SALEH, Terminus: True
+		Order: 2, ID: 9993, Name: MOSQUEE OMAR IBN AL KHATTAB, Terminus: False
+		Order: 3, ID: 9994, Name: MOSQUEE OULAD SALH, Terminus: False
+		Order: 4, ID: 10312, Name: VICTORIA CITY, Terminus: False
+		Order: 5, ID: 10139, Name: ROND POINT VICTORIA, Terminus: False
+		Order: 6, ID: 9747, Name: DOUAR KROUTA, Terminus: False
+		Order: 7, ID: 9805, Name: FORET OULAD SALH, Terminus: False
+		Order: 8, ID: 10036, Name: PARC INDUSTRIEL, Terminus: False
+		Order: 9, ID: 9702, Name: COLLEGE BOUSKOURA, Terminus: False
+		Order: 10, ID: 10163, Name: ROUTE P3013 BOUSKOURA, Terminus: False
+		Order: 11, ID: 9705, Name: COLLEGE IDRISS I, Terminus: False
+		Order: 12, ID: 9790, Name: ECOLE RIAD BOUSKOURA, Terminus: False
+		Order: 13, ID: 10063, Name: PREFECTURE NOUACER, Terminus: False
+		Order: 14, ID: 9566, Name: BACHAOUIA BOUSKOURA, Terminus: False
+		Order: 15, ID: 9669, Name: CENTRE NOUR, Terminus: False
+		Order: 16, ID: 9804, Name: FORET BOUSKOURA, Terminus: False
+		Order: 17, ID: 10016, Name: ONEP BOUSKOURA, Terminus: False
+		Order: 18, ID: 9760, Name: DRABNA ROUTE DE BOUSKOURA, Terminus: False
+		Order: 19, ID: 9731, Name: DAR NESSRANIA, Terminus: False
+		Order: 20, ID: 10198, Name: SIDI MESSAOUD, Terminus: False
+		Order: 21, ID: 10013, Name: OFPPT ROUTE MARRAKECH, Terminus: False
+		Order: 21, ID: 10159, Name: ROUTE NATIONALE 11, Terminus: False
+		Order: 22, ID: 9537, Name: ARRET ISCAE, Terminus: False
+		Order: 23, ID: 9748, Name: DOUAR LAATOUR, Terminus: False
+		Order: 24, ID: 10368, Name: TECHNOPARC, Terminus: False
+		Order: 25, ID: 10347, Name: DOUAR KHOUADRA, Terminus: False
+		Order: 26, ID: 9596, Name: BOULEVARD DE LA MECQUE, Terminus: False
+		Order: 27, ID: 9814, Name: GARE ONCF DE L'OASIS, Terminus: False
+		Order: 28, ID: 9974, Name: MOSQUEE BACHKOU, Terminus: False
+		Order: 29, ID: 10367, Name: ROND-POINT BACHKOU, Terminus: False
+		Order: 30, ID: 10339, Name: CLINIQUE DAR SALAM, Terminus: False
+		Order: 30, ID: 10372, Name: TERMINUS HAY LMASJID, Terminus: True
+		Order: 31, ID: 9935, Name: LYCEE MOULAY ABDELLAH, Terminus: False
+		Order: 32, ID: 10282, Name: TERMINUS PLACE SIDI MAAROUF, Terminus: True
+		Order: 33, ID: 10283, Name: TERMINUS PLACE SRAGHNA, Terminus: True
+
+	Route Name: L312
+	Frequency: 81
+	Travel Time: 79
+	Number Of Buses: 2
+	Departure: ['6:00', '18:30']
+	Stations:
+		Order: 1, ID: 10302, Name: TERMINUS ZAOUIA, Terminus: True
+		Order: 2, ID: 10038, Name: PEAGE NOUACEUR, Terminus: False
+		Order: 3, ID: 9535, Name: ARRET EL BIR, Terminus: False
+		Order: 4, ID: 9656, Name: CASERNE NOUACEUR, Terminus: False
+		Order: 5, ID: 9806, Name: FORET RAYAN, Terminus: False
+		Order: 6, ID: 9971, Name: MOSQUEE ARAYANE, Terminus: False
+		Order: 7, ID: 9545, Name: ARRET PERLA, Terminus: False
+		Order: 8, ID: 9548, Name: ARRET TAJ 1, Terminus: False
+		Order: 9, ID: 10053, Name: POLE URBAIN NOUACEUR, Terminus: False
+		Order: 10, ID: 10220, Name: TECHNOPOLE NOUACEUR, Terminus: False
+		Order: 11, ID: 10005, Name: MUNICIPALITE NOUACEUR, Terminus: False
+		Order: 12, ID: 9533, Name: ARRET CHAABI 1, Terminus: False
+		Order: 13, ID: 10004, Name: MUNICIPALITE DEROUA, Terminus: False
+		Order: 14, ID: 9848, Name: HAY MASJID 1, Terminus: False
+		Order: 15, ID: 10313, Name: VILLE DEROUA, Terminus: False
+		Order: 16, ID: 9486, Name: AL MASSIRA 1 DEROUA, Terminus: False
+		Order: 17, ID: 9654, Name: CASERNE DEROUA, Terminus: False
+		Order: 18, ID: 9531, Name: ARRET CARDO, Terminus: False
+		Order: 19, ID: 9479, Name: AL ARSA MEDIOUNA, Terminus: False
+		Order: 20, ID: 10160, Name: ROUTE NATIONALE 9 MEDIOUNA, Terminus: False
+		Order: 21, ID: 9549, Name: ARRET TIYANA 1, Terminus: False
+		Order: 22, ID: 9992, Name: MOSQUEE NOUZHA, Terminus: False
+		Order: 23, ID: 10167, Name: ROUTE P3336 MEDIOUNA, Terminus: False
+		Order: 24, ID: 9801, Name: FERAILLE MEDIOUNA, Terminus: False
+		Order: 25, ID: 9674, Name: CHATEAU MEDIOUNA, Terminus: False
+		Order: 26, ID: 9889, Name: KIADAT MEDIOUNA, Terminus: False
+		Order: 27, ID: 9468, Name: ABRAR MEDIOUNA, Terminus: False
+		Order: 28, ID: 9919, Name: LOTISSEMENT RACHAD, Terminus: False
+		Order: 29, ID: 9743, Name: DOUAR AL MOUMNATE, Terminus: False
+		Order: 30, ID: 9754, Name: DOUAR MZAB, Terminus: False
+		Order: 31, ID: 9750, Name: DOUAR LAHFAYA, Terminus: False
+		Order: 32, ID: 10263, Name: TERMINUS LMKANSA II, Terminus: True
+		Order: 33, ID: 9841, Name: HAY ENNASR 2, Terminus: False
+		Order: 34, ID: 9872, Name: INSTITUT TARIK BNOU ZIAD, Terminus: False
+		Order: 35, ID: 9586, Name: BOULEVARD AMGALA, Terminus: False
+		Order: 36, ID: 10373, Name: TERMINUS JAMILA, Terminus: True
+
+	Route Name: L600
+	Frequency: 23
+	Travel Time: 61
+	Number Of Buses: 6
+	Departure: ['6:00', '21:15']
+	Stations:
+		Order: 1, ID: 10375, Name: TERMINUS MEDIOUNA, Terminus: True
+		Order: 2, ID: 9666, Name: CENTRE EMERGENT, Terminus: False
+		Order: 3, ID: 10007, Name: OFFICE AGRICOLE, Terminus: False
+		Order: 4, ID: 10048, Name: PLACE SIDI MOHAMED, Terminus: False
+		Order: 5, ID: 10143, Name: ROND-POINT MERCHICH, Terminus: False
+		Order: 6, ID: 9674, Name: CHATEAU MEDIOUNA, Terminus: False
+		Order: 7, ID: 9889, Name: KIADAT MEDIOUNA, Terminus: False
+		Order: 8, ID: 9468, Name: ABRAR MEDIOUNA, Terminus: False
+		Order: 9, ID: 9919, Name: LOTISSEMENT RACHAD, Terminus: False
+		Order: 10, ID: 9743, Name: DOUAR AL MOUMNATE, Terminus: False
+		Order: 11, ID: 9754, Name: DOUAR MZAB, Terminus: False
+		Order: 12, ID: 9750, Name: DOUAR LAHFAYA, Terminus: False
+		Order: 13, ID: 10263, Name: TERMINUS LMKANSA II, Terminus: True
+		Order: 14, ID: 9841, Name: HAY ENNASR 2, Terminus: False
+		Order: 15, ID: 9872, Name: INSTITUT TARIK BNOU ZIAD, Terminus: False
+		Order: 16, ID: 9586, Name: BOULEVARD AMGALA, Terminus: False
+		Order: 17, ID: 10268, Name: TERMINUS MOSQUEE EL HOSNA, Terminus: True
+		Order: 18, ID: 10258, Name: TERMINUS JAMILA II, Terminus: True
+		Order: 19, ID: 9845, Name: HAY JAMILA 2, Terminus: False
+		Order: 20, ID: 9733, Name: DAR TOUZANI, Terminus: False
+		Order: 21, ID: 9899, Name: LA MORGUE AIN CHOK, Terminus: False
+		Order: 22, ID: 9947, Name: MARCHE DE BOIS, Terminus: False
+		Order: 23, ID: 10204, Name: SOUK LAAYOUNE, Terminus: False
+		Order: 24, ID: 10097, Name: RESIDENCE ANNACER, Terminus: False
+		Order: 25, ID: 10231, Name: TERMINUS BOUCHENTOUF, Terminus: True
+		Order: 26, ID: 10344, Name: DERB BOUCHENTOUF, Terminus: False
+		Order: 27, ID: 10345, Name: DERB FOUKARA, Terminus: False
+		Order: 28, ID: 10282, Name: TERMINUS PLACE SIDI MAAROUF, Terminus: True
+		Order: 29, ID: 10283, Name: TERMINUS PLACE SRAGHNA, Terminus: True
+
+	Route Name: L604
+	Frequency: 26
+	Travel Time: 68
+	Number Of Buses: 8
+	Departure: ['6:00', '19:00']
+	Stations:
+		Order: 1, ID: 10225, Name: TERMINUS AL HAMD, Terminus: True
+		Order: 2, ID: 9910, Name: LHALHAL, Terminus: False
+		Order: 3, ID: 9482, Name: AL GHOFRANE, Terminus: False
+		Order: 4, ID: 9569, Name: BASATINE AL GHOFRANE, Terminus: False
+		Order: 5, ID: 9970, Name: MOSQUEE ANNOUR, Terminus: False
+		Order: 6, ID: 9771, Name: ECOLE BELFKIH, Terminus: False
+		Order: 7, ID: 9965, Name: MOSQUEE AL ANSAR, Terminus: False
+		Order: 8, ID: 9728, Name: DAR LMIMA, Terminus: False
+		Order: 9, ID: 10057, Name: PONT AUTOROUTE A1, Terminus: False
+		Order: 10, ID: 9677, Name: CHICHANE 1, Terminus: False
+		Order: 11, ID: 10251, Name: TERMINUS HAY EL WAHDA, Terminus: True
+		Order: 12, ID: 10292, Name: TERMINUS SALMIA, Terminus: True
+		Order: 13, ID: 9867, Name: HOPITAL SALMIA, Terminus: False
+		Order: 14, ID: 10213, Name: STADE TISSIMA, Terminus: False
+		Order: 15, ID: 10358, Name: JARDIN ALESCO, Terminus: False
+		Order: 16, ID: 9895, Name: KOREA SEBATA, Terminus: False
+		Order: 17, ID: 9465, Name: 4EME ARRONDISSEMENT, Terminus: False
+		Order: 18, ID: 9929, Name: LYCEE IBNO HAZM, Terminus: False
+		Order: 19, ID: 9810, Name: FOURRIERE BEN M'SIK, Terminus: False
+		Order: 20, ID: 9740, Name: DERB MILAN, Terminus: False
+		Order: 21, ID: 9739, Name: DERB MILA, Terminus: False
+		Order: 22, ID: 9595, Name: BOULEVARD DE GAZA, Terminus: False
+		Order: 23, ID: 10371, Name: TERMINUS HAY EL FARAH, Terminus: True
+		Order: 24, ID: 10073, Name: PTT HAY ALAMAL, Terminus: False
+		Order: 25, ID: 10346, Name: DERB KABIR, Terminus: False
+		Order: 26, ID: 10231, Name: TERMINUS BOUCHENTOUF, Terminus: True
+		Order: 27, ID: 10344, Name: DERB BOUCHENTOUF, Terminus: False
+		Order: 28, ID: 10345, Name: DERB FOUKARA, Terminus: False
+		Order: 29, ID: 10282, Name: TERMINUS PLACE SIDI MAAROUF, Terminus: True
+		Order: 30, ID: 10283, Name: TERMINUS PLACE SRAGHNA, Terminus: True
+
+	Route Name: L606
+	Frequency: 34
+	Travel Time: 67
+	Number Of Buses: 8
+	Departure: ['6:00', '19:00']
+	Stations:
+		Order: 1, ID: 10293, Name: TERMINUS SIDI HAJJAJ, Terminus: True
+		Order: 2, ID: 10019, Name: OUED HASSAR, Terminus: False
+		Order: 3, ID: 9768, Name: ECOLE ABDELLAH HADDAOUI, Terminus: False
+		Order: 4, ID: 9756, Name: DOUAR OULED BOUAZIZ, Terminus: False
+		Order: 5, ID: 9759, Name: DOUAR SIDI MASSIF, Terminus: False
+		Order: 6, ID: 9800, Name: FERAILLE DE TIT MELLIL, Terminus: False
+		Order: 7, ID: 9887, Name: JNANE SBIT, Terminus: False
+		Order: 8, ID: 9945, Name: MARASSI TIT MELLIL, Terminus: False
+		Order: 9, ID: 9901, Name: LA POSTE TIT MELLIL, Terminus: False
+		Order: 10, ID: 10062, Name: PREFECTURE MEDIOUNA, Terminus: False
+		Order: 11, ID: 10274, Name: TERMINUS NAIM 2, Terminus: True
+		Order: 12, ID: 9851, Name: HAY NAIM, Terminus: False
+		Order: 13, ID: 10028, Name: PALAIS ATLAS, Terminus: False
+		Order: 14, ID: 10132, Name: RESIDENCE SAFA, Terminus: False
+		Order: 15, ID: 10217, Name: TACHAROUK BOULEVARD OQBA, Terminus: False
+		Order: 16, ID: 10003, Name: MOSQUEE ZERHOUN, Terminus: False
+		Order: 17, ID: 10255, Name: TERMINUS HOPITAL SIDI MOUMEN, Terminus: True
+		Order: 18, ID: 9680, Name: CIMETIERE SIDI MOUMEN, Terminus: False
+		Order: 19, ID: 10091, Name: RESIDENCE AL HOUDA, Terminus: False
+		Order: 20, ID: 9483, Name: AL HOUDA, Terminus: False
+		Order: 21, ID: 10131, Name: RESIDENCE SAADA, Terminus: False
+		Order: 22, ID: 9651, Name: CARRIERE RHAMNA, Terminus: False
+		Order: 23, ID: 10238, Name: TERMINUS DOHA, Terminus: True
+		Order: 24, ID: 9621, Name: BOULEVARD IMAM ALI, Terminus: False
+		Order: 25, ID: 9686, Name: CITE DE POLICE (BERNOUSSI), Terminus: False
+		Order: 26, ID: 10270, Name: TERMINUS MOSQUEE TARIQ, Terminus: True
+		Order: 27, ID: 10379, Name: TERMINUS TRAM 2 BERNOUSSI, Terminus: True
+		Order: 28, ID: 10230, Name: TERMINUS BERNOUSSI, Terminus: True
+
+	Route Name: L608
+	Frequency: 24
+	Travel Time: 62
+	Number Of Buses: 6
+	Departure: ['6:00', '21:15']
+	Stations:
+		Order: 1, ID: 10299, Name: TERMINUS TIT MELLIL, Terminus: True
+		Order: 2, ID: 9628, Name: BOULEVARD NAKHIL, Terminus: False
+		Order: 3, ID: 9901, Name: LA POSTE TIT MELLIL, Terminus: False
+		Order: 4, ID: 10125, Name: RESIDENCE NAIM, Terminus: False
+		Order: 5, ID: 10109, Name: RESIDENCE EL ALIA, Terminus: False
+		Order: 6, ID: 10082, Name: RESIDENCE ABWAB SALAM, Terminus: False
+		Order: 7, ID: 9551, Name: ARRONDISSEMENT SALAM II, Terminus: False
+		Order: 8, ID: 10066, Name: PROJET SALAM, Terminus: False
+		Order: 9, ID: 10227, Name: TERMINUS ANASSI, Terminus: True
+		Order: 10, ID: 9878, Name: JARDIN ANASSI, Terminus: False
+		Order: 11, ID: 10300, Name: TERMINUS TRAM 1 SIDI MOUMEN, Terminus: True
+		Order: 12, ID: 10095, Name: RESIDENCE ALKIMA, Terminus: False
+		Order: 13, ID: 9922, Name: LYCEE ABDELKHALEK TORRES, Terminus: False
+		Order: 14, ID: 10116, Name: RESIDENCE EL KAWTAR, Terminus: False
+		Order: 15, ID: 10238, Name: TERMINUS DOHA, Terminus: True
+		Order: 16, ID: 9621, Name: BOULEVARD IMAM ALI, Terminus: False
+		Order: 17, ID: 9686, Name: CITE DE POLICE (BERNOUSSI), Terminus: False
+		Order: 18, ID: 9811, Name: GARE AIN SEBAA, Terminus: False
+		Order: 19, ID: 9491, Name: ALLEE DES MIMOSAS, Terminus: False
+		Order: 20, ID: 10009, Name: OFPPT AIN SEBAA, Terminus: False
+		Order: 21, ID: 9489, Name: ALLEE DES CITRONNIERS, Terminus: False
+		Order: 22, ID: 10191, Name: SALLE DERKAOUI, Terminus: False
+		Order: 23, ID: 9675, Name: CHEFCHAOUNI, Terminus: False
+		Order: 24, ID: 10303, Name: TERMINUS ZI BERNOUSSI, Terminus: True
+
+	Route Name: L900
+	Frequency: 9
+	Travel Time: 62
+	Number Of Buses: 15
+	Departure: ['6:00', '21:34']
+	Stations:
+		Order: 1, ID: 10233, Name: TERMINUS CASA PORT, Terminus: True
+		Order: 2, ID: 10343, Name: COLIS POSTAUX, Terminus: False
+		Order: 3, ID: 9562, Name: AVENUE PASTEUR, Terminus: False
+		Order: 4, ID: 9803, Name: FORCE AUXILIAIRE, Terminus: False
+		Order: 5, ID: 9516, Name: ANGLE RUE DE DAX, Terminus: False
+		Order: 6, ID: 10326, Name: ANGLE RUE DE LA VICTOIRE, Terminus: False
+		Order: 7, ID: 9500, Name: ANGLE BOULEVARD BALTI BEN MEKKI, Terminus: False
+		Order: 8, ID: 9519, Name: ANGLE RUE MAAMOURA, Terminus: False
+		Order: 9, ID: 10170, Name: ROUTE R322 ROCHES NOIRES, Terminus: False
+		Order: 10, ID: 10137, Name: ROCHES NOIRES, Terminus: False
+		Order: 11, ID: 9626, Name: BOULEVARD MOULAY SLIMAN, Terminus: False
+		Order: 12, ID: 10323, Name: ZONE INDUSTRIELLE OKACHA, Terminus: False
+		Order: 13, ID: 9507, Name: ANGLE BOULEVARD TAHIRI EL BEKAY, Terminus: False
+		Order: 14, ID: 10051, Name: PLAGE RAHA, Terminus: False
+		Order: 15, ID: 9492, Name: ALLEE LES JARDINS, Terminus: False
+		Order: 16, ID: 10052, Name: PLAGE SAADA, Terminus: False
+		Order: 17, ID: 9501, Name: ANGLE BOULEVARD C AIN SEBAA, Terminus: False
+		Order: 18, ID: 10151, Name: ROUTE DES ZENATA, Terminus: False
+		Order: 19, ID: 9818, Name: GENERAL 1, Terminus: False
+		Order: 20, ID: 9503, Name: ANGLE BOULEVARD MAADAN, Terminus: False
+		Order: 21, ID: 10171, Name: ROUTE R322 ZENATA, Terminus: False
+		Order: 22, ID: 10045, Name: PETIT ZENATA, Terminus: False
+		Order: 23, ID: 9820, Name: GRANDE ZENATA, Terminus: False
+		Order: 24, ID: 9539, Name: ARRET L'AUBERGE 1, Terminus: False
+		Order: 25, ID: 9774, Name: ECOLE EL GHAZOUAN, Terminus: False
+		Order: 26, ID: 10050, Name: PLAGE PALOMA, Terminus: False
+		Order: 27, ID: 9752, Name: DOUAR LHAJ LAMLIH, Terminus: False
+		Order: 28, ID: 10049, Name: PLAGE OULAD HMIMOUN, Terminus: False
+		Order: 29, ID: 10168, Name: ROUTE R309, Terminus: False
+		Order: 30, ID: 9749, Name: DOUAR LACHHAB, Terminus: False
+		Order: 31, ID: 10192, Name: SAMIR (MOH), Terminus: False
+		Order: 32, ID: 10070, Name: PROTECTION CIVIL MOHAMMEDIA, Terminus: False
+		Order: 33, ID: 9523, Name: ANGLE RUE TIZNIT, Terminus: False
+		Order: 34, ID: 9615, Name: BOULEVARD HASSAN II MOH, Terminus: False
+		Order: 35, ID: 9612, Name: BOULEVARD HASSAN 2, Terminus: False
+		Order: 36, ID: 10370, Name: TERMINUS GARE ONCF MOHAMMEDIA, Terminus: True
+		Order: 37, ID: 9866, Name: HOPITAL MY ABDELLAH, Terminus: False
+		Order: 38, ID: 9859, Name: HAY SALAMA ( MOHAMMEDIA ), Terminus: False
+		Order: 39, ID: 10244, Name: TERMINUS FACULTE DES LETTRES, Terminus: True
+		Order: 40, ID: 9530, Name: ARRET BRADAA, Terminus: False
+		Order: 41, ID: 10361, Name: M'SALLA MOHAMMEDIA, Terminus: False
+		Order: 42, ID: 10114, Name: RESIDENCE EL HORRIA, Terminus: False
+		Order: 43, ID: 10378, Name: TERMINUS RACHIDIA, Terminus: True
+
+	Route Name: L902
+	Frequency: 13
+	Travel Time: 54
+	Number Of Buses: 10
+	Departure: ['6:00', '21:10']
+	Stations:
+		Order: 1, ID: 10300, Name: TERMINUS TRAM 1 SIDI MOUMEN, Terminus: True
+		Order: 2, ID: 10110, Name: RESIDENCE EL BAIDA, Terminus: False
+		Order: 3, ID: 9963, Name: MOSQUEE AHL LOGHLAM, Terminus: False
+		Order: 4, ID: 9582, Name: BOULEVARD AHL LOGHLAM AZHAR, Terminus: False
+		Order: 5, ID: 9583, Name: BOULEVARD AHL LOGHLAM SAKANI, Terminus: False
+		Order: 6, ID: 10188, Name: SAKANI AHL LOGHLAM, Terminus: False
+		Order: 7, ID: 9471, Name: AEROPORT TIT MELLIL, Terminus: False
+		Order: 8, ID: 9655, Name: CASERNE MLY YOUSSEF, Terminus: False
+		Order: 9, ID: 9676, Name: CHELLAL, Terminus: False
+		Order: 10, ID: 9646, Name: BRAHMA II, Terminus: False
+		Order: 11, ID: 10318, Name: ZONE INDUSTRIEL CHELLALATE, Terminus: False
+		Order: 12, ID: 10319, Name: ZONE INDUSTRIEL CHELLALATE 1, Terminus: False
+		Order: 13, ID: 9780, Name: ECOLE ESSAFA, Terminus: False
+		Order: 14, ID: 9532, Name: ARRET CASCADE 1, Terminus: False
+		Order: 15, ID: 10018, Name: OUED EL MALEH, Terminus: False
+		Order: 16, ID: 10096, Name: RESIDENCE ANDALOUS, Terminus: False
+		Order: 17, ID: 9882, Name: JARDIN MESBAHYATE, Terminus: False
+		Order: 18, ID: 10075, Name: QADI TAZI (SOS), Terminus: False
+		Order: 19, ID: 9738, Name: DERB MARRAKECH, Terminus: False
+		Order: 20, ID: 9612, Name: BOULEVARD HASSAN 2, Terminus: False
+		Order: 21, ID: 10370, Name: TERMINUS GARE ONCF MOHAMMEDIA, Terminus: True
+
+	Route Name: L903
+	Frequency: 31
+	Travel Time: 61
+	Number Of Buses: 5
+	Departure: ['6:30', '18:55']
+	Stations:
+		Order: 1, ID: 10296, Name: TERMINUS SIDI MOUSSA BEN ALI, Terminus: True
+		Order: 2, ID: 10209, Name: SOUK SWISRA, Terminus: False
+		Order: 3, ID: 10026, Name: P3003 SIDI MOUSSA, Terminus: False
+		Order: 4, ID: 9474, Name: AIN ABBOU, Terminus: False
+		Order: 5, ID: 10162, Name: ROUTE P3003, Terminus: False
+		Order: 6, ID: 10199, Name: SIDI MOUSSA EL MAJDOUB, Terminus: False
+		Order: 7, ID: 9761, Name: DREAM VILAGE, Terminus: False
+		Order: 8, ID: 9541, Name: ARRET LAMJADBA 1, Terminus: False
+		Order: 9, ID: 10021, Name: OULED BA HMAD, Terminus: False
+		Order: 10, ID: 9870, Name: INSTITUT AGRICOLE, Terminus: False
+		Order: 11, ID: 9698, Name: CLUB ESSAKHI, Terminus: False
+		Order: 12, ID: 10165, Name: ROUTE P3307, Terminus: False
+		Order: 13, ID: 10194, Name: SEHAB RMAL, Terminus: False
+		Order: 14, ID: 9577, Name: BNI YAKHLEF 2, Terminus: False
+		Order: 15, ID: 9576, Name: BNI YAKHLEF, Terminus: False
+		Order: 16, ID: 9725, Name: DAR DAW, Terminus: False
+		Order: 17, ID: 10166, Name: ROUTE P3307 AIN TEKKI, Terminus: False
+		Order: 18, ID: 9568, Name: BASATINE AL FIRDAOUS, Terminus: False
+		Order: 19, ID: 9765, Name: DYAR EL ALIA, Terminus: False
+		Order: 20, ID: 10130, Name: RESIDENCE ROKIA, Terminus: False
+		Order: 21, ID: 9635, Name: BOULEVARD PALESTINE, Terminus: False
+		Order: 22, ID: 9855, Name: HAY RACHIDIA 1, Terminus: False
+		Order: 23, ID: 9735, Name: DERB CHABAB C, Terminus: False
+		Order: 24, ID: 9863, Name: HOPITAL CHABAB, Terminus: False
+		Order: 25, ID: 9989, Name: MOSQUEE MALI, Terminus: False
+		Order: 26, ID: 9876, Name: JARDIN 20 AOUT (GARE), Terminus: False
+		Order: 27, ID: 10370, Name: TERMINUS GARE ONCF MOHAMMEDIA, Terminus: True
+
+	Route Name: L904
+	Frequency: 60
+	Travel Time: 54
+	Number Of Buses: 2
+	Departure: ['6:00', '18:34']
+	Stations:
+		Order: 1, ID: 10299, Name: TERMINUS TIT MELLIL, Terminus: True
+		Order: 2, ID: 9628, Name: BOULEVARD NAKHIL, Terminus: False
+		Order: 3, ID: 9901, Name: LA POSTE TIT MELLIL, Terminus: False
+		Order: 4, ID: 10125, Name: RESIDENCE NAIM, Terminus: False
+		Order: 5, ID: 10109, Name: RESIDENCE EL ALIA, Terminus: False
+		Order: 6, ID: 10082, Name: RESIDENCE ABWAB SALAM, Terminus: False
+		Order: 7, ID: 9472, Name: AEROPORT TIT MELLIL 2, Terminus: False
+		Order: 8, ID: 9471, Name: AEROPORT TIT MELLIL, Terminus: False
+		Order: 9, ID: 9655, Name: CASERNE MLY YOUSSEF, Terminus: False
+		Order: 10, ID: 9645, Name: BRAHMA 3, Terminus: False
+		Order: 11, ID: 9816, Name: GENDARMERIE AIN HARROUDA, Terminus: False
+		Order: 12, ID: 10058, Name: PONT ONCF, Terminus: False
+		Order: 13, ID: 10322, Name: ZONE INDUSTRIEL ZENATA, Terminus: False
+		Order: 14, ID: 9540, Name: ARRET LAARJA, Terminus: False
+		Order: 15, ID: 9789, Name: ECOLE OULAD HMIMOUN 1, Terminus: False
+		Order: 16, ID: 9749, Name: DOUAR LACHHAB, Terminus: False
+		Order: 17, ID: 10192, Name: SAMIR (MOH), Terminus: False
+		Order: 18, ID: 10070, Name: PROTECTION CIVIL MOHAMMEDIA, Terminus: False
+		Order: 19, ID: 9523, Name: ANGLE RUE TIZNIT, Terminus: False
+		Order: 20, ID: 9615, Name: BOULEVARD HASSAN II MOH, Terminus: False
+		Order: 21, ID: 9613, Name: BOULEVARD HASSAN 2 MOHAMMEDIA, Terminus: False
+		Order: 22, ID: 9612, Name: BOULEVARD HASSAN 2, Terminus: False
+		Order: 23, ID: 10370, Name: TERMINUS GARE ONCF MOHAMMEDIA, Terminus: True
+		Order: 24, ID: 9866, Name: HOPITAL MY ABDELLAH, Terminus: False
+		Order: 25, ID: 9859, Name: HAY SALAMA ( MOHAMMEDIA ), Terminus: False
+		Order: 26, ID: 10244, Name: TERMINUS FACULTE DES LETTRES, Terminus: True
+		Order: 27, ID: 10121, Name: RESIDENCE FLEURS DE LYS, Terminus: False
+		Order: 28, ID: 9936, Name: LYCEE TECHNIQUE MOHAMMEDIA, Terminus: False
+		Order: 29, ID: 10222, Name: TERMINUS  ISTAHTM (MOH), Terminus: True
+
+	Route Name: L905
+	Frequency: 13
+	Travel Time: 42
+	Number Of Buses: 8
+	Departure: ['6:15', '18:45']
+	Stations:
+		Order: 1, ID: 10239, Name: TERMINUS EL FATH II, Terminus: True
+		Order: 2, ID: 9904, Name: LABRAHMA, Terminus: False
+		Order: 3, ID: 10025, Name: OUM RAYAT, Terminus: False
+		Order: 4, ID: 9983, Name: MOSQUEE ELFATH, Terminus: False
+		Order: 5, ID: 9976, Name: MOSQUEE BASATINE, Terminus: False
+		Order: 6, ID: 9766, Name: DYAR KENZA, Terminus: False
+		Order: 7, ID: 10206, Name: SOUK LWIZIA, Terminus: False
+		Order: 8, ID: 10216, Name: SWILBATE, Terminus: False
+		Order: 9, ID: 9921, Name: LWIZYA II, Terminus: False
+		Order: 10, ID: 9571, Name: BAYTI SAKAN 1, Terminus: False
+		Order: 11, ID: 9918, Name: LOTISSEMENT MALAK 1, Terminus: False
+		Order: 12, ID: 10149, Name: ROUTE DE LOUIZIA, Terminus: False
+		Order: 13, ID: 10124, Name: RESIDENCE LES CHAMPS DE LYS, Terminus: False
+		Order: 14, ID: 10076, Name: QUARTIER ANFA MOHAMMEDIA, Terminus: False
+		Order: 15, ID: 10361, Name: M'SALLA MOHAMMEDIA, Terminus: False
+		Order: 16, ID: 9644, Name: BRADAA, Terminus: False
+		Order: 17, ID: 10244, Name: TERMINUS FACULTE DES LETTRES, Terminus: True
+		Order: 18, ID: 9859, Name: HAY SALAMA ( MOHAMMEDIA ), Terminus: False
+		Order: 19, ID: 9866, Name: HOPITAL MY ABDELLAH, Terminus: False
+		Order: 20, ID: 10370, Name: TERMINUS GARE ONCF MOHAMMEDIA, Terminus: True
+
+	Route Name: L906
+	Frequency: 26
+	Travel Time: 37
+	Number Of Buses: 4
+	Departure: ['6:10', '18:49']
+	Stations:
+		Order: 1, ID: 10273, Name: TERMINUS NAHDA, Terminus: True
+		Order: 2, ID: 10189, Name: SALAM MOHAMMEDIA, Terminus: False
+		Order: 3, ID: 9509, Name: ANGLE MOHAMED 6/11 JANVIER, Terminus: False
+		Order: 4, ID: 10361, Name: M'SALLA MOHAMMEDIA, Terminus: False
+		Order: 5, ID: 10114, Name: RESIDENCE EL HORRIA, Terminus: False
+		Order: 6, ID: 10378, Name: TERMINUS RACHIDIA, Terminus: True
+		Order: 7, ID: 9663, Name: CENTRE DE SANTE RIAD, Terminus: False
+		Order: 8, ID: 9707, Name: COLLEGE YAAKOUB EL MANSOUR, Terminus: False
+		Order: 9, ID: 9792, Name: EL AALIA, Terminus: False
+		Order: 10, ID: 10075, Name: QADI TAZI (SOS), Terminus: False
+		Order: 11, ID: 9958, Name: MORABITINE, Terminus: False
+		Order: 12, ID: 9989, Name: MOSQUEE MALI, Terminus: False
+		Order: 13, ID: 9876, Name: JARDIN 20 AOUT (GARE), Terminus: False
+		Order: 14, ID: 9696, Name: CLINIQUE FDALA, Terminus: False
+		Order: 15, ID: 9520, Name: ANGLE RUE RIF, Terminus: False
+		Order: 16, ID: 9625, Name: BOULEVARD MOHAMED V MO, Terminus: False
+		Order: 17, ID: 10034, Name: PARC (MOH), Terminus: False
+		Order: 18, ID: 10284, Name: TERMINUS PORT MOHAMMEDIA, Terminus: True
+
+	Route Name: L907
+	Frequency: 49
+	Travel Time: 46
+	Number Of Buses: 2
+	Departure: ['6:10', '18:10']
+	Stations:
+		Order: 1, ID: 10287, Name: TERMINUS RACHIDIA 3, Terminus: True
+		Order: 2, ID: 9781, Name: ECOLE GPH, Terminus: False
+		Order: 3, ID: 10215, Name: STATION EL FALAH, Terminus: False
+		Order: 4, ID: 9840, Name: HAY EL WAHDA MO, Terminus: False
+		Order: 5, ID: 9879, Name: JARDIN EL WAHDA, Terminus: False
+		Order: 6, ID: 9925, Name: LYCEE BEN KHALDOUN, Terminus: False
+		Order: 7, ID: 9787, Name: ECOLE MOULAY ABDELLAH, Terminus: False
+		Order: 8, ID: 9600, Name: BOULEVARD DE RIYAD, Terminus: False
+		Order: 9, ID: 10321, Name: ZONE INDUSTRIEL MOHAMMEDIA T2, Terminus: False
+		Order: 10, ID: 10320, Name: ZONE INDUSTRIEL MOHAMMEDIA T1, Terminus: False
+		Order: 11, ID: 9744, Name: DOUAR CHRIF, Terminus: False
+		Order: 12, ID: 9745, Name: DOUAR EL WAHDA, Terminus: False
+		Order: 13, ID: 9622, Name: BOULEVARD LA RESISTENCE MO, Terminus: False
+		Order: 14, ID: 10079, Name: QUARTIER NASSIM, Terminus: False
+		Order: 15, ID: 10075, Name: QADI TAZI (SOS), Terminus: False
+		Order: 16, ID: 9958, Name: MORABITINE, Terminus: False
+		Order: 17, ID: 9989, Name: MOSQUEE MALI, Terminus: False
+		Order: 18, ID: 9547, Name: ARRET TADLA, Terminus: False
+		Order: 19, ID: 9876, Name: JARDIN 20 AOUT (GARE), Terminus: False
+		Order: 20, ID: 10370, Name: TERMINUS GARE ONCF MOHAMMEDIA, Terminus: True
+		Order: 21, ID: 9866, Name: HOPITAL MY ABDELLAH, Terminus: False
+		Order: 22, ID: 9859, Name: HAY SALAMA ( MOHAMMEDIA ), Terminus: False
+		Order: 23, ID: 10244, Name: TERMINUS FACULTE DES LETTRES, Terminus: True
+		Order: 24, ID: 10121, Name: RESIDENCE FLEURS DE LYS, Terminus: False
+		Order: 25, ID: 9936, Name: LYCEE TECHNIQUE MOHAMMEDIA, Terminus: False
+		Order: 26, ID: 10222, Name: TERMINUS  ISTAHTM (MOH), Terminus: True
+		Order: 27, ID: 10245, Name: TERMINUS FACULTES MOHAMMEDIA, Terminus: True
+		Order: 28, ID: 10286, Name: TERMINUS QUARTIER SHEMS, Terminus: True
+

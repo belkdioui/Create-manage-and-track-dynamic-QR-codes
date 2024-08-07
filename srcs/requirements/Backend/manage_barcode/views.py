@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import JsonResponse
 from manage_barcode.utils import utils_1 ,EmailVerification, generate_qr_code
-from .models import FormData, Tickets
+from .models import FormData, Tickets, City, Station, Bus
 import hashlib
 from django.core.exceptions import ObjectDoesNotExist
 from django.db import IntegrityError
@@ -11,6 +11,7 @@ from datetime import date
 import json
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
+
 
 def signup(request):
     if request.user.is_authenticated:
@@ -38,6 +39,8 @@ def signup(request):
                 ctx['errors']['email_error'] = "Error during sending an email"
     return render(request, 'pages/signup.html', context=ctx)
 
+
+
 def get_data_home(request):
     if not request.user.is_authenticated:
         return redirect('/')
@@ -56,8 +59,6 @@ def get_data_home(request):
         'count_ticket' : number_of_tickets,
     }
     return render(request, 'pages/home.html', ctx)
-
-
 
 
 
@@ -104,13 +105,32 @@ def buy_tickets(request):
         }
     return render(request, 'pages/buy-tickets.html', ctx)
 
+
 def Schedules_Stops(request):
+    
+    # City.objects.all().delete()
+    # Bus.objects.all().delete()
+    # Station.objects.all().delete()
+
+    # utils_1.fill_json_in_db("/Users/bel-kdio/Desktop/Create-manage-and-track-dynamic-QR-codes/srcs/requirements/Backend/manage_barcode/static/data_json/data.json")
+
     if not request.user.is_authenticated:
         return redirect('/')
 
     if request.user.is_authenticated and request.user.is_superuser:
         logout_api(request)
         return redirect('/')
+
+    if request.method == 'GET':
+        cities = City.objects.all()
+        city = City.objects.first()
+        bus = Bus.objects.filter(city=city).first()
+        first_one = Station.objects.filter(bus=bus).first()
+        last_one = Station.objects.filter(bus=bus).last()
+        context = {'cities': cities, 'city': city, 'bus': bus, 'first_st': first_one, 'last_st':last_one}
+        return render(request, 'pages/Schedules_Stops.html', context)
+    # elif (request.method == 'POST'):
+
     return render(request, 'pages/Schedules_Stops.html')
 
 
