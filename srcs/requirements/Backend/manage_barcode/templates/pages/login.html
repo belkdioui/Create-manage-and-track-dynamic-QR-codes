@@ -17,6 +17,11 @@
 				createToast('error', "{{error}}")
 			</script>
 		{% endfor %}
+		{% if success %}
+        	<script> 
+        	    createToast('success', "{{success}}")
+        	</script>
+    	{%endif%}
 		<form action="/" method="POST" id="motlform">
 			{% csrf_token %}
 			<div class="form1">
@@ -30,7 +35,7 @@
 				</div>
 				
 				{% if account_disabled %}
-					<a class='verifie_button' href='/email_verification/'>Resend email verification ?</a>
+					<a class='verifie_button' href='/resend_email/'>Resend email verification ?</a>
 				{% endif %}
 				<a href='/reset_password/' class='f-pass'>Forgot password?</a>
 				<div class="signs">
