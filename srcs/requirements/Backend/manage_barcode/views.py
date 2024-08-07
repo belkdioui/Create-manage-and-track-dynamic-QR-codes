@@ -37,7 +37,7 @@ def signup(request):
                 ctx['success'] = 'Check you email for verification link.'
                 return render(request, 'pages/login.html' ,ctx)
             except Exception as e:
-                ctx['errors']['email_error'] = "Error during sending an email"
+                ctx['errors']['email_error'] = f"Error email"
     return render(request, 'pages/signup.html', context=ctx)
 
 

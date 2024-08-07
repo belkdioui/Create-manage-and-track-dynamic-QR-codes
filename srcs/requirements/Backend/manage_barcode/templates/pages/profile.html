@@ -12,7 +12,7 @@
             <div class="photo_container">
                 <img src="{{ profile.avatar }}" id="avatar_photo" >
                 <div class="photo_button">
-                    <button onclick="reclick()" id="Choose_button" type="button" >Choose a file</button>
+                    <button onclick="reclick()" id="Choose_button" type="button" name="avatares">Choose a file</button>
                     <input type="file" id="file-upload" name="photo">
                     <p id="choose_paragraph">Acceptable formats jpg,png only</p>
                 </div>
@@ -49,8 +49,8 @@
             </div>
             <div class="save_button">
                 <button id="edit" type="button" onclick="edit_data()">edit</button>
-                <button type="submit" id="save">save</button>
-                <button type="reset" id="delete" onclick="delete_account()">delete-account</button>
+                <button type="submit" id="save" name="save_all" value="save_all">save</button>
+                <button type="button" id="delete" onclick="delete_account()">delete-account</button>
             </div>
         </div>
     </form>

@@ -24,6 +24,16 @@ def update_data(request):
             password = request.POST.get('pas')
             new_password = request.POST.get('npas')
             confirm_password = request.POST.get('cpas')
+            button = request.POST.get('save_all')
+            print(request.POST)
+            print(button)
+            print(button)
+            print(button)
+            print(button)
+            print(button)
+            print(button)
+            if button != 'save_all':
+                return redirect('/profile/')
             if password and new_password and confirm_password:
                 if authenticate(username=db_user.email, password=password) == None:
                     ctx['errors'].append("Invalide Password")
@@ -44,19 +54,27 @@ def update_data(request):
                     for chunk in file.chunks():
                         destination.write(chunk)
                 db_user.path_avatar = os.path.join('/static/media/', filename)
-
             if (fname != db_user.fname and fname != None):
                 db_user.fname = fname
             if (lname != db_user.lname and lname != None):
                 db_user.lname = lname
             if (email != db_user.email and email != None):
-                user = User.objects.get(username=db_user.email)
                 db_user.email = email
                 user.email = email
             # update mot de pass
-            user.set_password(new_password)
+            if password and new_password and confirm_password:
+                user.set_password(new_password)
             user.save()
             db_user.save()
+            print(fname)
+            print(lname)
+            print(email)
+            print(password)
+            print(new_password)
+            print(confirm_password)
+            print(db_user.path_avatar)
+            print(db_user.path_avatar)
+            print(db_user.path_avatar)
     return redirect('/profile/')
 
 def delete_account(request):
