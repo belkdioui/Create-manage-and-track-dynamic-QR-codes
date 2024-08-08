@@ -1,7 +1,6 @@
 body {
   background-color: #535561;
   min-height: 100dvh;
-  width: 100vw;
   color: white;
   display: flex;
   align-items: center;
@@ -27,6 +26,7 @@ body {
 
 div#myNavbar.collapse.navbar-collapse{
   min-width: fit-content !important;
+  gap: 2rem;
   }
 
 
@@ -68,12 +68,13 @@ div#myNavbar.collapse.navbar-collapse{
 }
 
 
+.nav{
+  gap: 1.5rem;
+}
 
 
-
-
-.nav-item{
-  padding: 0px 2.1rem;
+.nav-link{
+  padding: 0.7rem 2.1rem !important;
 }
 
 .nav-item:has(.active){
@@ -85,6 +86,7 @@ div#myNavbar.collapse.navbar-collapse{
   font-family: monospace;
   color: #FFFFFF!important;
   box-shadow: 0 0 10px #EF552D;
+
   border-radius: 30px;
 }
 
@@ -123,8 +125,17 @@ div#myNavbar.collapse.navbar-collapse{
 
 @media ((max-width: 1357px) and (min-width:991px)){
 
-  .nav-item{
-    padding: 0px 0.8rem;
+  .nav{
+    gap: 1.5rem;
+  }
+  /* .nav-item{
+    padding: 0px 0.6rem;
+  } */
+  div#myNavbar.collapse.navbar-collapse{
+    gap: 0.5rem;
+  }
+  .nav-link{
+    padding: 0.7rem 1.1rem !important;
   }
   
 }

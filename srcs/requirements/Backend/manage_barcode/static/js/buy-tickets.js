@@ -1,3 +1,10 @@
+buytickets = document.getElementById("buytickets").classList.add('active');
+home = document.getElementById("home").classList.remove("active");
+schedulesstop = document.getElementById("Schedules_Stops").classList.remove("active");
+profil = document.getElementById("profile").classList.remove("active");
+
+
+// buytickets.classList.add('active');
 
 
 function decr_incre(value, id, operation)
@@ -110,4 +117,5 @@ function showSpinner() {
 function hideSpinner() {
     spiner = document.getElementById("spinner-overlay").classList.remove('active');
 }
+
 

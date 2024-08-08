@@ -1,3 +1,9 @@
+buytickets = document.getElementById("buytickets").classList.remove('active');
+home = document.getElementById("home").classList.remove("active");
+schedulesstop = document.getElementById("Schedules_Stops").classList.remove("active");
+profil = document.getElementById("profile").classList.add("active");
+
+
 
 function reclick()
 {

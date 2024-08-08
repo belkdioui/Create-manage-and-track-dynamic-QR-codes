@@ -1,3 +1,10 @@
+buytickets = document.getElementById("buytickets").classList.remove('active');
+home = document.getElementById("home").classList.add("active");
+schedulesstop = document.getElementById("Schedules_Stops").classList.remove("active");
+profil = document.getElementById("profile").classList.remove("active");
+
+
+
 function check_if_disable(element) {
     if(element.classList.contains('disabled'))
     {

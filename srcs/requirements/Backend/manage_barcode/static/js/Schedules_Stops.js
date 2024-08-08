@@ -1,3 +1,11 @@
+
+buytickets = document.getElementById("buytickets").classList.remove('active');
+home = document.getElementById("home").classList.remove("active");
+schedulesstop = document.getElementById("Schedules_Stops").classList.add("active");
+profil = document.getElementById("profile").classList.remove("active");
+
+
+
 function change_dir()
 {
 
