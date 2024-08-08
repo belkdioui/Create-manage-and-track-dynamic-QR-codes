@@ -67,7 +67,6 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'project.urls'
 
-import os
 
 TEMPLATES = [
     {
