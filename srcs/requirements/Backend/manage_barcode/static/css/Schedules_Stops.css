@@ -97,7 +97,6 @@ select{
 
 .table td{
     border: none;
-    /* padding-left: 5rem; */
     
 }
 
@@ -111,7 +110,7 @@ select{
 
 .direct_btn{
     font-family: monospace;
-display: inline-block;
+    display: inline-block;
     margin: 3rem 0;
     font-size: 16px;
     padding: 10px 20px;
@@ -199,6 +198,7 @@ th {
     }
     .form-group{
         width: 100%;
+        text-align: center;
         padding-bottom: 1rem;
     }
     .form-group select{
@@ -208,6 +208,9 @@ th {
     }
     .form{
         margin-bottom: 0;
+    }
+    .form-group i {
+        position: unset;
     }
     .table{
         margin-top: 1rem;

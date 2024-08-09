@@ -121,6 +121,9 @@ div#myNavbar.collapse.navbar-collapse{
   margin-top: 20px ;
   text-align: center;
 }
+.nav{
+  gap: 0;
+}
 }
 
 @media ((max-width: 1357px) and (min-width:991px)){
